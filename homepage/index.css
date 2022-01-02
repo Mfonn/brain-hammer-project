@@ -1,0 +1,731 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    overflow: hidden;
+}
+/* 
+mat-dialog-container {
+    display: block;
+    padding: 0px !important;
+    border-radius: 4px;
+    box-sizing: border-box;
+    overflow: auto;
+    outline: 0;
+    width: 90%;
+    height: 51%;
+} */
+
+.image {
+    height: 100%;
+    width: fit-content;
+    background-size: cover;
+
+    /* to blur the image */
+    filter: blur(1.5px) brightness(45%);
+
+    /*to place other elements on the image*/
+    position: absolute;
+    z-index: 0;
+
+}
+
+
+/* for the navigation bar*/
+.nav-container {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 2px;
+
+}
+
+.nav-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+
+    position: relative;
+    height: 42px;
+    right: 48px;
+    top: -35px;
+}
+ul {
+    float: right;
+}
+
+li {
+    display: inline;
+}
+
+.signup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 7px;
+
+    position: static;
+    width: 92px;
+    height: 42px;
+    left: 174px;
+    top: 0px;
+
+    background: #386DF5;
+    color: #ffffff;
+    text-decoration: none;
+    /* /shadow/base */
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.items {
+    position: static;
+    width: 92px;
+    height: 24px;
+    left: 90px;
+    top: 9px;
+    
+    /* text-base/leading-6/font-medium */
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    /* identical to box height, or 150% */
+    
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 20px;  
+}
+
+.signin {
+    margin: 0px 20px;
+}
+
+/* for the logo*/
+
+.logo {
+    left: 50px;
+}
+
+.workinghammer {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left:  60px;
+    margin-top: 44px;
+}
+
+.logo1 {
+    position: absolute;
+    width: 45.8px;
+    height: 45.8px;
+    left: 1%;
+    top: 35px;
+}
+
+
+/* for the header */
+.header {
+    z-index: 2;
+    position: absolute;
+    top: 170px;
+    left: 200px;
+
+}
+
+.mainheader {
+
+    width: 1152px;
+    height: 60px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: -0.025em;
+    /* white */
+
+    color: #ffffff;
+}
+
+.words {
+    width: 500px;
+    height: 84px;
+
+    /* text-xl/leading-7/font-normal */
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    /* or 140% */
+
+
+    color: #FFFFFF;
+}
+
+
+/*for find work & hire talent*/
+
+.whattodo {
+    position: absolute;
+    z-index: 2;
+    width: 38%;
+    height: 76px;
+    left: 195px;
+    top: 390px;
+
+    background: #18191B;
+    mix-blend-mode: multiply;
+    opacity: 0.6;
+    box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.863);
+    border-radius: 47px;
+}
+
+.working {
+    position: absolute;
+    z-index: 2;
+    width: 34%;
+    height: 76px;
+    left: 195px;
+    top: 390px;
+}
+
+ .findwork {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: center;
+    padding: 17px 41px;
+
+    z-index: 3;
+    width: 160px;
+    height: 62px;
+    margin-left: 9px;
+    margin-top: 7px;
+
+    background: #386DF5;
+    border-color: #386DF5;
+    color: #ffffff;
+    opacity: 1;
+    /* /shadow/base */
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+    border-radius: 167px;
+}
+
+.hiretalent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 3;
+    margin-left: 206px;
+    margin-top: -42px;
+
+    color: #ffffff;
+    opacity: 1;
+    background-color: inherit;
+
+    border-width: 0px;
+}
+
+
+/*for the search box*/
+.searchbox {
+    background-color: #ffffff;
+    z-index: 10;
+    position: relative;
+    width: 70%;
+    height: 58px;
+    top: 481px;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.searchitems {
+    display: inline-block;
+}
+
+.search {
+    position: absolute;
+
+    width: 24%;
+    height: 59px;
+
+    margin-left: -24%;
+
+    background: #386DF5;
+    color: #ffffff;
+    text-align: center;
+
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 6%);
+    border-radius: 4px;
+}
+
+.searchword {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 14px;
+}
+
+.searchkey {
+    position: absolute;
+    left: 42px;
+    top: 20px;
+
+    color: #6B7280;
+
+}
+
+.imageicon {
+    top: 20px;
+    position: absolute;
+    left: 21px;
+
+    color: #6B7280;
+
+}
+
+.location {
+    position: absolute;
+    left: 258px;
+    top: 18px;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    color: #6B7280;
+
+
+}
+
+.locationicon {
+    top: 18px;
+    position: absolute;
+    left: 236px;
+
+    color: #6B7280;
+
+}
+
+/*for the sign in and sign up buttons */
+.popup {
+    cursor: pointer;
+
+}
+
+.popup:hover {
+    position: static;
+    width: 92px;
+    height: 42px;
+    left: 160px;
+    top: 0px;
+
+    padding: 7px 7px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+
+    background-color: #002ea3;
+    backdrop-filter: blur(2px);
+}
+
+
+
+
+button, .signin {
+    background: none;
+	color: #ffffff;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
+
+
+
+
+
+/* for signin popup component */
+
+
+.signin {
+    margin: 0px 20px;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.items {
+    position: static;
+    width: 92px;
+    height: 24px;
+    left: 90px;
+    top: 9px;
+    
+    /* text-base/leading-6/font-medium */
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    /* identical to box height, or 150% */
+    
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 20px;  
+}
+
+.popup {
+    cursor: pointer;
+    
+}
+
+.popup:hover {
+    position: static;
+    width: 92px;
+    height: 42px;
+    left: 160px;
+    top: 0px;
+
+    padding: 7px 7px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+
+    background-color: #002ea3;
+    backdrop-filter: blur(2px);
+}
+
+/* .bgmodal {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position: relative;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+
+    opacity: 0;
+
+}
+
+.bgmodal .active {
+    opacity: 1;
+}
+
+.modal-content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 5px;
+
+    position: relative;
+    width: 383px;
+    height: 506px;
+   
+
+    background: #FFFFFF;
+    border-radius: 8px;
+
+} */
+
+.bgmodal {
+    z-index: 999;
+    position: absolute;
+    left: -60%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input {
+    width: 50%;
+
+    display: block;
+    margin: 15px auto;
+}
+
+
+/* Sign in to your account */
+
+.account-signin {
+    position: static;
+    width: 311px;
+    height: 36px;
+    left: 0px;
+    top: 0px;
+
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    /* identical to box height, or 129% */
+
+    text-align: center;
+
+    color: #111827;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px -17px 0px;
+
+}
+
+.bluehammer {
+    width: 10%;
+    height: 6%;
+
+    margin-top: 21px;
+}
+
+.sign-in-with {
+    position: static;
+    width: 78px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+
+    /* text-sm/leading-5/font-medium */
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+
+    /* gray/900 */
+
+    color: #111827;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 45px 0px 0px 0px;
+}
+
+.facebook-icon {
+    color: #808080;
+    transform: scale(0.7);
+}
+
+button .facebook-icon {
+    padding: 6px 2px;
+    width: 119px;
+    margin-top: -4px;
+    height: 39px;
+    margin-left: -16px;
+    border-radius: 3px;
+    border: solid 1px #808080;
+}
+
+.google-icon {
+    color: #808080;
+    transform: scale(0.7);
+    font-weight: 700;
+}
+
+button .google-icon {
+    padding: 6px 42px 2px;
+    width: 119px;
+    margin-top: -4px;
+    margin-left: -29px;
+    height: 39px;
+    border-radius: 3px;
+    border: solid 1px #808080;
+}
+
+.twitter-icon {
+    color: #808080;
+    transform: scale(0.7);
+    font-weight: 700;
+}
+
+button .twitter-icon {
+    padding: 6px 42px 2px;
+    width: 119px;
+    margin-top: -4px;
+    margin-left: -29px;
+    height: 39px;
+    border-radius: 3px;
+    border: solid 1px #808080;
+
+}
+
+h3 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #808080; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    color: #808080;
+    margin-top: 17px;
+ } 
+ 
+ h3 span { 
+     background:#fff; 
+     padding:0 10px; 
+     color: #808080;
+     font-size: 12px;
+ }
+
+ label {
+     font-size: 10px;
+     color: #808080;
+     font-weight: 200;
+ }
+
+ .input {
+     margin: 2px 0px 0px 0px;
+     width: 93%;
+     height: 28px;
+     border-radius: 4px #808080;
+ }
+
+ .emailbox {
+     margin-bottom: 4px;
+ }
+
+ .namelabel {
+     margin-top: 4px;
+ }
+
+ .remember {
+    display: inline-block;
+    margin: 18px 10px 0px 0px;
+    width: 7%;
+ }
+
+ .forgot {
+     text-decoration: none;
+     color: #386DF5;
+     margin-left: 31%;
+ }
+
+ .signinbutton {
+    display: block;
+    border-radius: 38px;
+    color: #ffffff;
+    margin: 8px;
+    padding: 10px 110px;
+    background-color: #254caf;
+    cursor: pointer;
+ }
+
+ .signinbutton:hover {
+     background-color: #254CAF;
+ }
+
+ .signupbutton {
+    display: block;
+    border-radius: 38px;
+    color: #386DF5;
+    margin: 8px;
+    padding: 10px 110px;
+    background-color: #ffffff;
+    cursor: pointer;
+ }
+
+ .signupbutton:hover {
+     background-color: #386DF5;
+     color: #ffffff;
+ }
