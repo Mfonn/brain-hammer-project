@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="./scss/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="home.js"></script>
 </head>
 <body>
     <div class="top-section">
@@ -32,18 +33,31 @@
                         </li>
         
                         <li>
-                            <button (click)="openDiallog()" class="button signin popup items">
+                            <button id="myBtn" class="button signin popup items">
                                 Sign Up
                             </button>
                         </li>
+                    </ul>                   
+                    
+                    <ul class="nav-item">
+                        <li>
+                            <button class="postad items signin button popup">
+                                <a href="#" class= "postad items signin button login" >Login In</a>
+                            </button>
+
+                            <button class="dropbtn login postad signin button">
+                                <i class="fa fa-bars"></i>
+                              </button>
+                        </li>
                     </ul>
+
                 </nav>
             </div>
         </div>
     
         <div class="header">
             <h2 class="mainheader">A work market near you</h2>
-            <p class="words">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua. </p>
+            <p class="words">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.  </p>
         </div>
     
         <div class="whattodo">
@@ -204,6 +218,38 @@
                 </p>
             </div>
     
+
+            <div id="myModal" class="modal">
+
+                <div class="modal-content">
+                    <form action="">
+                        <img src="/assets/images/bluehammer.png" class="bluehammer">
+                        <h2 class="account-signin">Sign in to your account</h2>
+                        
+                        <p class="sign-in-with">Sign in with</p>
+                        
+                        <button><mat-icon class="facebook-icon">facebook</mat-icon></button>
+                        <button><mat-icon class="google-icon">Google</mat-icon></button>
+                        <button><mat-icon class="twitter-icon">Twitter</mat-icon></button>
+                
+                        <h3><span>Or continue with</span></h3>
+                
+                        <label for="email"><b>Email address</b></label>
+                        <input type="text" class="emailbox input">
+                
+                        <label for="name"><b class="namelabel">Name</b></label>
+                        <input type="text" class="namebox input">
+                
+                        <label>
+                        <input type="checkbox" checked="unchecked" name="remember" class="remember"> Remember me
+                        <a href="#" class="forgot">Forgot password</a>
+                        </label>
+                
+                        <button type="submit" class="signinbutton">Sign In</button>
+                        <button type="submit" class="signupbutton">Sign Up</button>
+                    </form>
+                </div>
+            </div>
     
     
 </body>
