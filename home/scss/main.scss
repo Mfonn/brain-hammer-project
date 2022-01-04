@@ -117,17 +117,22 @@
 /* for the footer section */
 .footersection {
     background-color: #202426;
+
+    width: 100%;
     padding: 69px 80px 28px 11px;
+
     color: #ffffff;
 
     .container {
         margin: auto;
-        margin-left: 14px;
+        margin-left: 6%;
     }
 
     .list {
         list-style: none;
         position: inherit;
+
+        padding: 0px;
     }
 
     .row {
@@ -143,7 +148,7 @@
     }
 
     .footer-column {
-        width: 40%;
+        width: 25%;
         padding: 0 10px;
     }
 
@@ -151,7 +156,7 @@
         font-family: Inter;
         font-style: normal;
         font-weight: 600;
-        font-size: 11px;
+        font-size: 18px;
 
         line-height: 20px;
 
@@ -189,7 +194,7 @@
         font-family: Inter;
         font-style: normal;
         font-weight: normal;
-        font-size: 10px;
+        font-size: 16px;
         line-height: 24px;
     
         color: #D1D5DB;
@@ -200,9 +205,9 @@
         font-family: Inter;
         font-style: normal;
         font-weight: normal;
-        font-size: 10px;
+        font-size: 13px;
 
-        line-height: 17px;
+        line-height: 21px;
         margin-bottom: 15px;
     
         color: #D1D5DB;
@@ -236,9 +241,9 @@
 
     hr {
         color: #4B5563;
-        width: 86%;
+        width: 92%;
         
-        margin-left: 3%;
+        margin-left: 1%;
         margin-right: 7.5%;
         
     }
@@ -249,7 +254,7 @@
         font-weight: normal;
 
         font-size: 9px;
-        margin-left: 24px;
+        margin-left: 1%;
         line-height: 24px;
         margin-top: 25px;
 
@@ -272,9 +277,6 @@
         padding: 5px;
     }
 
-    // p.copyright p.social-links {
-    //     display: inline-block !important;
-    // }
 }
 
 
@@ -295,10 +297,16 @@
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; 
+
+    width: 41%;
+    height: 53%;
+    
+    margin-top: 20%;
+    border-radius: 10px;
   }
 
   
@@ -509,6 +517,22 @@ h3 {
 
 
 
+ @media only screen and (min-width: 1200px) {
+    .footersection {
+        .latest {
+            font-size: 15px;
+        }
+
+        .footer-column {
+            width: 30%;
+        }
+    }
+}
+
+
+
+
+
  @media only screen and (max-width: 900px) {
      .whattodo {
          width: 33%;
@@ -544,6 +568,26 @@ h3 {
 
         line-height: 17px;
      }
+
+
+
+     .footersection {
+        .footer-col {
+            width: 33%;
+            padding: 0 23px;
+        }
+
+        .footer-column {
+            width: 91%;
+            margin-bottom: 30px;
+        }
+
+        .social-links img {
+            width: 10px;
+            height: 10px;
+            padding: 0px;
+        }
+    }
  }
 
 
@@ -586,11 +630,6 @@ h3 {
         font-size: 14px;
     }
 
- }
-
-
-
- @media only screen and (max-width: 600px) {
      .working {
          font-size: 8px;
          width: 38%;
@@ -618,5 +657,27 @@ h3 {
      .mainheader {
          font-size: 26px;
      }
+
+     .footersection {
+        .headings {
+            font-size: 15px;
+        }
+
+        .links a {
+            font-size: 12px;
+        }
+
+        .footer-col {
+            width: 28%;
+        }
+
+        .latest {
+            font-size: 10px;
+        }
+
+        .copyright {
+            font-size: 6px;
+        }
+    }
  }
 

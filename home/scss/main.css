@@ -101,18 +101,20 @@
 /* for the footer section */
 .footersection {
   background-color: #202426;
+  width: 100%;
   padding: 69px 80px 28px 11px;
   color: #ffffff;
 }
 
 .footersection .container {
   margin: auto;
-  margin-left: 14px;
+  margin-left: 6%;
 }
 
 .footersection .list {
   list-style: none;
   position: inherit;
+  padding: 0px;
 }
 
 .footersection .row {
@@ -130,7 +132,7 @@
 }
 
 .footersection .footer-column {
-  width: 40%;
+  width: 25%;
   padding: 0 10px;
 }
 
@@ -138,7 +140,7 @@
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
-  font-size: 11px;
+  font-size: 18px;
   line-height: 20px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -165,7 +167,7 @@
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
+  font-size: 16px;
   line-height: 24px;
   color: #D1D5DB;
 }
@@ -174,8 +176,8 @@
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
-  line-height: 17px;
+  font-size: 13px;
+  line-height: 21px;
   margin-bottom: 15px;
   color: #D1D5DB;
 }
@@ -205,8 +207,8 @@
 
 .footersection hr {
   color: #4B5563;
-  width: 86%;
-  margin-left: 3%;
+  width: 92%;
+  margin-left: 1%;
   margin-right: 7.5%;
 }
 
@@ -215,7 +217,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 9px;
-  margin-left: 24px;
+  margin-left: 1%;
   line-height: 24px;
   margin-top: 25px;
   color: #9CA3AF;
@@ -260,10 +262,12 @@
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
-  /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 41%;
+  height: 53%;
+  margin-top: 20%;
+  border-radius: 10px;
 }
 
 /* for modal content */
@@ -461,6 +465,15 @@ label {
   color: #ffffff;
 }
 
+@media only screen and (min-width: 1200px) {
+  .footersection .latest {
+    font-size: 15px;
+  }
+  .footersection .footer-column {
+    width: 30%;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .whattodo {
     width: 33%;
@@ -487,6 +500,19 @@ label {
     margin-top: 1%;
     margin-left: 6%;
     line-height: 17px;
+  }
+  .footersection .footer-col {
+    width: 33%;
+    padding: 0 23px;
+  }
+  .footersection .footer-column {
+    width: 91%;
+    margin-bottom: 30px;
+  }
+  .footersection .social-links img {
+    width: 10px;
+    height: 10px;
+    padding: 0px;
   }
 }
 
@@ -520,9 +546,6 @@ label {
   .searchword {
     font-size: 14px;
   }
-}
-
-@media only screen and (max-width: 600px) {
   .working {
     font-size: 8px;
     width: 38%;
@@ -544,6 +567,21 @@ label {
 @media only screen and (max-width: 400px) {
   .mainheader {
     font-size: 26px;
+  }
+  .footersection .headings {
+    font-size: 15px;
+  }
+  .footersection .links a {
+    font-size: 12px;
+  }
+  .footersection .footer-col {
+    width: 28%;
+  }
+  .footersection .latest {
+    font-size: 10px;
+  }
+  .footersection .copyright {
+    font-size: 6px;
   }
 }
 /*# sourceMappingURL=main.css.map */
