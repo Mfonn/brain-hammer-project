@@ -1,6 +1,8 @@
     body, html {
         height: 100%;
         width: 100%;
+
+        margin: 0;
     }
 
 
@@ -9,8 +11,8 @@
         background-image: url("/assets/images/manwithmower.png");
     
         /* Add the blur effect */
-        filter: blur(8px);
-        -webkit-filter: blur(8px);
+        filter: blur(1px);
+        -webkit-filter: blur(1px);
     
         /* Full height */
         height: 100%;
@@ -52,7 +54,7 @@
   }
   
   /* Change the color of links on hover */
-  .topnav .topheader:hover {
+  .signup .signin:hover {
     background-color: #002ea3;
     color: #ffffff;
   }
@@ -95,6 +97,55 @@
         color: #FFFFFF;
   }
 
+
+  /* for the elements on the topsection */
+  .header {
+    text-align: center;
+  }
+
+  .mainheader {
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 49px;
+
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: -0.025em;
+
+    margin-bottom: 12px;
+
+    color: #FFFFFF;
+  }
+
+
+  .words {
+    font-family: Aleo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    width: 65%;
+    margin: auto;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+
+
+
+  /* for the lower section of the top page */
+  .whattodo {
+    z-index: 2;
+    width: 26%;
+    height: 58px;
+
+    background: #18191B;
+    mix-blend-mode: multiply;
+    opacity: 0.6;
+    box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.863);
+    border-radius: 47px;
+  }
 
 
 
@@ -270,6 +321,10 @@
     margin-top: 32px;
     margin-right: 6px;
     font-size: 15px !important;
+}
+
+.buttons:hover {
+    background-color: #092a7c;
 }
 
 .signup {
@@ -455,6 +510,32 @@
 
 
 @media only screen and (min-width: 1200px) {
+    .mainheader {
+        font-size: 81px;
+        margin-bottom: 51px;
+    }
+
+    .header {
+        margin-top: 15%;
+    }
+
+    .words {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .logo {
+        width: 66%;
+    }
+
+    .topnav .topheader {
+        padding: 20px 20px;
+    }
+
+    .buttons {
+        font-size: 20px;
+    }
+
     .gridsection {
         .task {
             font-size: 20px;
@@ -489,6 +570,15 @@
 
 
 @media only screen and (max-width: 900px) {
+    .topnav .topheader {
+        padding: 6px 6px;
+    }
+
+    .buttons {
+        font-size: 11px !important;
+    }
+
+
     .footersection {
         .footer-col {
             width: 33%;
@@ -513,27 +603,13 @@
 
 
 @media only screen and (max-width: 600px) {
-    .topnav .topheader:not(:first-child) {display: none;}
-    .topnav .topheader.icon {
-      float: right;
-      display: block;
-    }
-
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .topheader.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive .topheader {
-      float: none;
-      display: block;
-      text-align: left;
+    .logo {
+        width: 55%;
     }
 
     .logo1 {
         margin-left: 5px;
-        margin-top: 10px;
+        margin-top: 27px;
 
         width: 26px;
         height: 26px;
@@ -541,7 +617,17 @@
 
     .workinghammer {
         font-size: 15px;
-        margin-top: 11px;
+        margin-top: 29px;
+    }
+
+
+    .mainheader {
+        font-size: 36px;
+        margin-bottom: 7px;
+    }
+
+    .words {
+        font-size: 12px;
     }
 }
 
@@ -550,6 +636,39 @@
 
 
 @media only screen and (max-width: 400px) {
+    .logo {
+        width: 48%;
+    }
+
+    .logo1 {
+        margin-top: 22px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .workinghammer {
+        display: none;
+    }
+
+    .nav-container {
+        padding-top: 0;
+    }
+
+    .words {
+        font-size: 8px;
+        line-height: 12px;
+        width: 80%;
+    }
+
+    .mainheader {
+        font-size: 27px;
+    }
+
+    .header {
+        margin-top: 23%;
+    }
+
+
     .footersection {
         .headings {
             font-size: 15px;

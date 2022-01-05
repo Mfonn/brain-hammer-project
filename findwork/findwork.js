@@ -6,3 +6,9 @@ function myFunction() {
       x.className = "headersection";
     }
   }
+
+
+  // for the checkboxes in the dropdown menu 
+  function myFunction(x) {
+    x.classList.toggle("fa-thumbs-down");
+  }
