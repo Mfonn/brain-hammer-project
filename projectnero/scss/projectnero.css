@@ -144,11 +144,12 @@ body {
   padding: 10px;
 }
 
-.middlesection .column .column1 {
+.middlesection .column1 {
   width: 57%;
+  background-color: green;
 }
 
-.middlesection .column .column2 {
+.middlesection .column2 {
   width: 43%;
 }
 
@@ -163,6 +164,49 @@ body {
   padding-bottom: 50px;
 }
 
+.middlesection .row .topminiheader {
+  background-color: #ffffff;
+  margin-top: -39px;
+  border-bottom: solid 1px #808080;
+}
+
+.middlesection .row .topminiheader .want {
+  font-size: 25px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-top: 32px;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+
+.middlesection .row .topminiheader .details {
+  display: inline-block;
+  margin-left: 31px;
+  margin-right: 33px;
+  color: #6B7280;
+}
+
+.middlesection .row .topminiheader .proposal {
+  display: inline-block;
+  color: #6B7280;
+}
+
+.middlesection .row .topminiheader .active {
+  color: #386DF5;
+  text-decoration: underline;
+  text-underline-offset: 0.9em;
+}
+
+.middlesection .row .topminiheader .display:hover {
+  color: #092a7c;
+}
+
+.middlesection .row .topminiheader .proposal:hover {
+  color: #386DF5;
+  text-decoration: underline;
+  text-underline-offset: 0.9em;
+}
+
 .middlesection .row img {
   color: #000000;
   float: right;
@@ -173,9 +217,10 @@ body {
 
 .middlesection .row .red {
   background-color: #ffffff;
-  height: 87px;
+  height: 96px;
   margin-bottom: 5px;
   border-radius: 4px;
+  border: solid 1px #EEEEEE;
 }
 
 .middlesection .row .red p {
@@ -241,9 +286,12 @@ body {
 
 .middlesection .row .blue {
   background-color: #ffffff;
-  height: 131px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   border-radius: 4px;
   margin-bottom: 5px;
+  border: solid 1px #EEEEEE;
 }
 
 .middlesection .row .blue .checked {
@@ -283,12 +331,30 @@ body {
 
 .middlesection .row .blue .statistics {
   background-color: #ffffff;
+  width: 29%;
+  padding: 1px;
+  border: none;
+  border-right: 1px solid #bebebe;
+  color: black;
+}
+
+.middlesection .row .blue .statistic {
+  color: #A9A9A9;
+}
+
+.middlesection .row .blue .aboutcontact {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.middlesection .row .blue .avgreply {
+  margin-top: 5px;
 }
 
 .middlesection .row .green {
-  background-color: green;
   height: 70px;
   margin-bottom: 5px;
+  border: solid 1px #EEEEEE;
 }
 
 .middlesection .col-11 {
@@ -460,35 +526,65 @@ body {
   .middlesection .gridbox {
     margin-left: 79px;
   }
+  .middlesection .column {
+    width: 100%;
+  }
+  .middlesection .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
   .middlesection .row .red {
-    height: 79px;
+    background-color: #ffffff;
+    height: 96px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
+  .middlesection .row .red p {
+    display: inline-block;
+    margin-left: 13px;
   }
   .middlesection .row .red .dollarsign {
-    font-size: 12px;
+    color: #002ea3;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 0;
   }
   .middlesection .row .red .amount {
-    font-size: 12px;
+    font-family: Titillium Web;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: -3px;
   }
   .middlesection .row .red .rates {
-    font-size: 8px;
-  }
-  .middlesection .row .red img {
-    width: 15px;
+    font-size: 10px;
+    margin-bottom: 0;
+    margin-left: 0px;
+    color: #808080;
   }
   .middlesection .row .red .contactemployer {
-    font-size: 7px;
+    color: #ffffff;
+    background-color: #386DF5;
+    font-size: 8px;
     padding: 12px;
-    padding-right: 18px;
-    padding-left: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
     border-radius: 8px;
-    margin-left: 5px;
+    margin-left: 11px;
+    margin-top: 10px;
+    border: none;
   }
   .middlesection .row .red .tender {
-    padding: 9px;
-    padding-right: 27px;
-    padding-left: 27px;
-    font-size: 9px;
-    border-radius: 8px;
+    background-color: #F3F7FF;
+    color: #386DF5;
+    padding: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10px;
+    font-weight: 600;
+    border: 1px solid #386DF5;
+    border-radius: 7px;
   }
   .footersection .footer-col {
     width: 45%;
@@ -598,58 +694,6 @@ body {
     content: "";
     clear: both;
     display: table;
-  }
-  .middlesection .row .red {
-    background-color: #ffffff;
-    height: 96px;
-    margin-bottom: 5px;
-    border-radius: 4px;
-  }
-  .middlesection .row .red p {
-    display: inline-block;
-    margin-left: 13px;
-  }
-  .middlesection .row .red .dollarsign {
-    color: #002ea3;
-    font-size: 17px;
-    font-weight: 600;
-    margin-bottom: 0;
-  }
-  .middlesection .row .red .amount {
-    font-family: Titillium Web;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 0;
-    margin-left: -3px;
-  }
-  .middlesection .row .red .rates {
-    font-size: 10px;
-    margin-bottom: 0;
-    margin-left: 0px;
-    color: #808080;
-  }
-  .middlesection .row .red .contactemployer {
-    color: #ffffff;
-    background-color: #386DF5;
-    font-size: 8px;
-    padding: 12px;
-    padding-left: 8px;
-    padding-right: 8px;
-    border-radius: 8px;
-    margin-left: 11px;
-    margin-top: 10px;
-    border: none;
-  }
-  .middlesection .row .red .tender {
-    background-color: #F3F7FF;
-    color: #386DF5;
-    padding: 11px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 10px;
-    font-weight: 600;
-    border: 1px solid #386DF5;
-    border-radius: 7px;
   }
 }
 

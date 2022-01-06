@@ -165,14 +165,16 @@ body {
     width: 50%;
     padding: 10px;
 
-    .column1 {
-        width: 57%;
-    }
+}
+        .column1 {
+            width: 57%;
+            background-color: green;
+        }
 
-    .column2 {
-        width: 43%;
-    }
-  }
+        .column2 {
+            width: 43%;
+        }
+  
 
 
   
@@ -188,6 +190,56 @@ body {
       padding-top: 20px;
       padding-bottom: 50px;
 
+
+      .topminiheader {
+        background-color: #ffffff;
+        margin-top: -39px;
+        border-bottom: solid 1px #808080;
+        .want {
+            font-size: 25px;
+
+            padding: 10px;
+            padding-left: 25px;
+            padding-top: 32px;
+
+            margin-bottom: 0px;
+
+            font-weight: 600;
+        }
+
+        .details {
+            display: inline-block;
+
+            margin-left: 31px;
+            margin-right: 33px;
+
+            color: #6B7280;
+        }
+
+        .proposal {
+            display: inline-block;
+
+            color: #6B7280;
+        }
+
+        .active {
+            color: #386DF5;
+            text-decoration: underline;
+            text-underline-offset: 0.9em;
+        }
+
+        .display:hover {
+            color: #092a7c;
+        }
+
+        .proposal:hover {
+            color: #386DF5;
+            text-decoration: underline;
+            text-underline-offset: 0.9em;
+        }
+    }
+
+
       img {
         color: #000000;
         float: right;
@@ -198,10 +250,12 @@ body {
 
     .red {
         background-color: #ffffff;
-        height: 87px;
+        height: 96px;
         
         margin-bottom: 5px;
         border-radius: 4px;
+
+        border: solid 1px #EEEEEE;
 
         p {
             display: inline-block;
@@ -274,9 +328,11 @@ body {
 
     .blue {
         background-color: #ffffff;
-        height: 131px;
+        height: fit-content;
         border-radius: 4px;
         margin-bottom: 5px;
+
+        border: solid 1px #EEEEEE;
 
         .checked {
             color: #386DF5;
@@ -316,17 +372,36 @@ body {
         }
 
         .statistics {
-            background-color: #ffffff;;
+            background-color: #ffffff;
+            width: 29%;
+            padding: 1px;
+            border: none;
+            border-right: 1px solid #bebebe;
+            color: black;
+        }
+
+        .statistic {
+            color: #A9A9A9;
+        }
+
+        .aboutcontact {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .avgreply {
+            margin-top: 5px;
         }
 
     }
 
 
     .green {
-        background-color: green;
         height: 70px;
 
         margin-bottom: 5px;
+
+        border: solid 1px #EEEEEE;
     }
 }
 
@@ -559,44 +634,91 @@ body {
             margin-left: 79px;
         }
 
-        .row {
+        .column {
+            width: 100%;
+        }
+
+
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+
+    
+
+          .row {
+
             .red {
-                height: 79px;
-            
-            .dollarsign {
-                font-size: 12px;
+                background-color: #ffffff;
+                height: 96px;
+                
+                margin-bottom: 5px;
+                border-radius: 4px;
+        
+                p {
+                    display: inline-block;
+                    margin-left: 13px;
+                }
+        
+                .dollarsign {
+                    color: #002ea3;
+                    font-size: 17px;
+                    font-weight: 600;
+        
+                    margin-bottom: 0;
+                }
+        
+                .amount {
+                    font-family: Titillium Web;
+                    font-size: 16px;
+                    font-weight: bold;
+        
+                    margin-bottom: 0;
+                    margin-left: -3px;
+        
+                }
+        
+                .rates {
+                    font-size: 10px;
+        
+                    margin-bottom: 0;
+                    margin-left: 0px;
+                    color: #808080;
+        
+                }
+        
+                .contactemployer {
+                    color: #ffffff;
+                    background-color: #386DF5;
+                    font-size: 8px;
+                    padding: 12px;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    border-radius: 8px;
+                    margin-left: 11px;
+                    margin-top: 10px;
+                    border: none;
+                }
+     
+        
+                .tender {
+                    background-color: #F3F7FF;
+                    color: #386DF5;
+                    padding: 11px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    font-size: 10px;
+                    font-weight: 600;
+                    border: 1px solid #386DF5;
+                    border-radius: 7px;
+                }
+        
+    
             }
-
-            .amount {
-                font-size: 12px;
+        
             }
-
-            .rates {
-                font-size: 8px;
-            }
-
-            img {
-                width: 15px;
-            }
-
-            .contactemployer {
-                font-size: 7px;
-                padding: 12px;
-                padding-right: 18px;
-                padding-left: 18px;
-                border-radius: 8px;
-                margin-left: 5px;
-            }
-
-            .tender {
-                padding: 9px;
-                padding-right: 27px;
-                padding-left: 27px;
-                font-size: 9px;
-                border-radius: 8px;
-            }
-        }
-        }
     }
 
 
@@ -747,76 +869,7 @@ body {
             display: table;
           }
 
-     .row {
-        .red {
-            background-color: #ffffff;
-            height: 96px;
-            
-            margin-bottom: 5px;
-            border-radius: 4px;
-    
-            p {
-                display: inline-block;
-                margin-left: 13px;
-            }
-    
-            .dollarsign {
-                color: #002ea3;
-                font-size: 17px;
-                font-weight: 600;
-    
-                margin-bottom: 0;
-            }
-    
-            .amount {
-                font-family: Titillium Web;
-                font-size: 16px;
-                font-weight: bold;
-    
-                margin-bottom: 0;
-                margin-left: -3px;
-    
-            }
-    
-            .rates {
-                font-size: 10px;
-    
-                margin-bottom: 0;
-                margin-left: 0px;
-                color: #808080;
-    
-            }
-    
-            .contactemployer {
-                color: #ffffff;
-                background-color: #386DF5;
-                font-size: 8px;
-                padding: 12px;
-                padding-left: 8px;
-                padding-right: 8px;
-                border-radius: 8px;
-                margin-left: 11px;
-                margin-top: 10px;
-                border: none;
-            }
- 
-    
-            .tender {
-                background-color: #F3F7FF;
-                color: #386DF5;
-                padding: 11px;
-                padding-left: 20px;
-                padding-right: 20px;
-                font-size: 10px;
-                font-weight: 600;
-                border: 1px solid #386DF5;
-                border-radius: 7px;
-            }
-    
 
-        }
-    
-        }
     }
 
 }
