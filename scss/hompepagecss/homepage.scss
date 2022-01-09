@@ -1,0 +1,1142 @@
+    body, html {
+        height: 100%;
+        width: 100%;
+
+        margin: 0;
+    }
+
+
+    .topsection {
+        height: fit-content;
+    }
+
+    .bg-image {
+                /* The image used */
+                background-image: url("/assets/images/manwithmower.png");
+      
+                /* Full height */
+                height: 100vh;
+              
+                /* Center and scale the image nicely */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+        
+                        /* to blur the image */
+                filter: blur(1.5px) brightness(45%);
+    }
+  
+  /* For the page */
+  .page-container {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+
+      /* for the signup, signin, post ad buttons */
+            .buttons {
+                background-color:  #386DF5;
+                border: transparent;
+                
+                margin-top: 32px;
+                margin-right: 6px;
+                font-size: 14px !important;
+            }
+
+            .buttons:hover {
+                background-color: #092a7c;
+            }
+
+            .signup {
+                background-color: transparent;
+            }
+
+            .signin {
+                background-color: transparent;
+            }
+
+/* for the elements on the topsection */
+  .header {
+    margin-top: 4%;
+    
+    .mainheader {
+        font-family: Lora;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+    
+        line-height: 64px;
+        letter-spacing: -0.025em;
+    
+        margin-bottom: 12px;
+    
+        color: #FFFFFF;
+      }
+
+      .words {
+        font-family: Aleo;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        width: 60%;
+        line-height: 19px;
+        color: #FFFFFF;
+        opacity: 0.8;
+      }
+  }
+
+/* for the lower section of the top page */
+/*for find work & hire talent*/
+
+.whattodo {
+    position: absolute;
+
+    z-index: 2;
+    width: 241px;
+    height: 58px;
+    left: 21%;
+    top: 59%;
+
+    background: #18191B;
+    mix-blend-mode: multiply;
+    opacity: 0.6;
+    box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.863);
+    border-radius: 47px;
+}
+
+
+.working {
+    position: absolute;
+    z-index: 2;
+    width: 34%;
+    height: 76px;
+    left: 21%;
+    top: 55%;
+
+
+    .findwork {
+        display: flex;
+        width: 123px;
+
+        flex-direction: row;
+        justify-content: center;
+
+        align-items: center;
+        padding: 15px 29px;
+
+        z-index: 3;
+        margin-left: 9px;
+        margin-top: 27px;
+
+        background: #386DF5;
+        border-color: #386DF5;
+        color: #ffffff;
+        opacity: 1;
+        /* /shadow/base */
+
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+        border-radius: 167px;
+    }
+
+    .hiretalent {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+        align-items: center;
+
+        z-index: 3;
+        position: absolute;
+
+        margin-left: 144px;
+        margin-top: 42px;
+
+        color: #ffffff;
+        opacity: 1;
+        background-color: inherit;
+        border-width: 0px;
+    }
+    
+}
+
+.searchbox {
+    /* for the search boxes */
+.searchitems {
+    
+    margin-top: 128px;
+    margin-left: 22%;
+    padding-bottom: 49px;
+
+
+    .searchkey {
+
+        padding: 16px;
+        border-radius: 7px;
+        border: none;
+        width: 30%;
+
+    }
+
+    .location {
+
+        padding: 16px;
+        border-radius: 7px;
+        border: none;
+        width: 30%;
+        margin-left: -15px;
+
+    }
+
+    .search {
+        background-color: #386DF5;
+        border: none;
+        color: #ffffff;
+        font-size: 19px;
+        border-radius: 9px;
+        width: 18%;
+        padding: 15px;
+        border-top-left-radius: 1px;
+        border-bottom-left-radius: 1px;
+        margin-left: -9px;
+    }
+
+    h6 {
+        margin: 0;
+    }
+}
+}
+
+
+
+
+  }
+
+
+  /* for thr navigation bar */
+  .topnav {
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav .topheader {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 14px;
+    text-decoration: none;
+    display: flex;
+  }
+  
+  /* Change the color of links on hover */
+  .signup .signin:hover {
+    background-color: #002ea3;
+    color: #ffffff;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav .topheader.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+
+
+  .logo {
+      width: 69%;
+  }
+
+
+  .logo1 {
+    margin-left: 25px;
+    margin-top: 28px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .workinghammer {
+      font-size: 20px;
+      margin-top: 32px;
+
+      font-family: Arvo;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 25px;
+
+
+        color: #FFFFFF;
+  }
+
+
+  /* for the elements on the topsection */
+  .header {
+    text-align: center;
+    margin-top: 11%;
+  }
+
+  .mainheader {
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 49px;
+
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: -0.025em;
+
+    margin-bottom: 12px;
+
+    color: #FFFFFF;
+  }
+
+
+  .words {
+    font-family: Aleo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    width: 65%;
+    margin: auto;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+
+
+
+  /* for the lower section of the top page */
+/*for find work & hire talent*/
+
+.whattodo {
+    position: absolute;
+
+    z-index: 2;
+    width: 28%;
+    height: 73px;
+    left: 14%;
+    top: 70%;
+
+    background: #18191B;
+    mix-blend-mode: multiply;
+    opacity: 0.6;
+    box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.863);
+    border-radius: 47px;
+}
+
+.working {
+    position: absolute;
+    z-index: 2;
+    width: 34%;
+    height: 76px;
+    left: 14%;
+    top: 74%;
+}
+
+ .findwork {
+    display: flex;
+    width: 43%;
+
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: center;
+    padding: 17px 26px;
+
+    z-index: 3;
+    margin-left: 9px;
+    margin-top: -28px;
+
+    background: #386DF5;
+    border-color: #386DF5;
+    color: #ffffff;
+    opacity: 1;
+    /* /shadow/base */
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+    border-radius: 167px;
+}
+
+.hiretalent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    margin-left: 51%;
+    color: #ffffff;
+    opacity: 1;
+    background-color: inherit;
+    border-width: 0px;
+}
+  
+
+
+/* for the search boxes */
+.searchitems {
+    
+    margin-top: 144px;
+    margin-left: 122px;
+
+
+    .searchkey {
+
+        padding: 16px;
+        border-radius: 7px;
+        border: none;
+        width: 30%;
+
+    }
+
+    .location {
+
+        padding: 16px;
+        border-radius: 7px;
+        border: none;
+        width: 30%;
+        margin-left: -15px;
+
+    }
+
+    .search {
+        background-color: #386DF5;
+        border: none;
+        color: #ffffff;
+        font-size: 19px;
+        border-radius: 9px;
+        width: 18%;
+        padding: 15px;
+        border-top-left-radius: 1px;
+        border-bottom-left-radius: 1px;
+        margin-left: -9px;
+    }
+
+    h6 {
+        margin: 0;
+    }
+}
+
+
+
+
+
+    /* for the grid section */
+    .gridsection {
+        background-color: #E5E5E5;
+        padding-bottom: 50px;
+
+        margin-top: -22px;
+    }
+
+    .grid {
+        padding: 5px;
+        margin-right: 20%;
+
+        display: grid;
+        grid-gap: 1px;
+
+        background-color: #E5E5E5;
+
+        grid-template-rows: auto;
+
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+
+        .col {
+            margin-bottom: 72px;
+            padding: 5px;
+            margin-top: 20px;
+        }
+    }
+
+
+
+    .images {
+        display: block;
+
+        width: 100%;
+        height: 75%;
+
+        border-radius: 5px;
+    }
+
+    .fa {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 20px;
+
+        color: #6B7280;
+    }
+
+    .stars {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 20px;
+
+        color: #6B7280;
+        margin-top: -7px;
+    }
+
+
+
+    .image1, .image4 {
+        margin-left: 20px;
+    }
+
+    .task  {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 24px;  
+
+        color: #333333;
+        margin-top: 10px;
+    }
+
+    .price {
+        font-family: Titillium Web;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 24px;
+
+        color: #333333;
+        margin-top: -8px;
+    }
+
+
+    .date {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 17px;
+
+        color: #6B7280;
+    }
+
+    .published {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+
+        line-height: 24px;
+        color: #000000;
+
+        padding-top: 10px;
+        margin-left: 30px;
+        margin-bottom: -18px;
+    }
+
+
+
+
+
+
+    /* for the signup button and pop up modal */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 999; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+    
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+    
+        width: 41%;
+        height: 53%;
+        
+        margin-top: 20%;
+        border-radius: 10px;
+      }
+
+      form {
+        padding: 38px;
+      }
+
+      .sign-in-width {
+          margin-top: 10%;
+      }
+
+
+
+
+  /* for the signup, signin, post ad buttons */
+.buttons {
+    background-color:  #386DF5;
+    border: transparent;
+    
+    margin-top: 32px;
+    margin-right: 6px;
+    font-size: 15px !important;
+}
+
+.buttons:hover {
+    background-color: #092a7c;
+}
+
+.signup {
+    background-color: transparent;
+}
+
+.signin {
+    background-color: transparent;
+}
+
+
+
+
+
+  /* for the footer section */
+.footersection {
+    background-color: #202426;
+
+    padding: 69px 80px 28px 11px;
+
+    color: #ffffff;
+
+    .container {
+        margin: auto;
+        margin-left: 6%;
+    }
+
+    .list {
+        list-style: none;
+        position: inherit;
+
+        padding: 0px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-col {
+        width: 15%;
+        padding: 0 10px;
+        
+        margin-bottom: 20px;
+    }
+
+    .footer-column {
+        width: 25%;
+        padding: 0 10px;
+    }
+
+    .headings {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+
+        line-height: 20px;
+
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        color: #9CA3AF;
+
+        position: relative;
+
+        cursor: pointer;
+
+    }
+
+    li {
+        display: block;
+    }
+
+    ul {
+        float: none;
+    }
+
+
+    .links {
+    
+        text-decoration: none;
+        position: relative;
+    
+    
+        }
+    
+    .links a {
+        text-decoration: none;
+    
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+    
+        color: #D1D5DB;
+    
+    }
+
+    .latest {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+
+        line-height: 21px;
+        margin-bottom: 15px;
+    
+        color: #D1D5DB;
+    }
+
+    .enter {
+        height: 33px;
+        border-radius: 7px;
+        width: 154px;
+        padding: 10px;
+    }
+
+    .subscribe {
+        font-size: 12px;
+
+        padding: 9px 9px;
+
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+        border-radius: 4px;
+
+        background-color: #002ea3;
+        backdrop-filter: blur(2px);
+
+        cursor: pointer;
+    }
+
+    .subscribe:hover {
+        background-color: #092a7c;
+    }
+
+
+    hr {
+        color: #4B5563;
+        width: 92%;
+        
+        margin-left: 1%;
+        margin-right: 7.5%;
+        
+    }
+  
+    .copyright {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+
+        font-size: 9px;
+        margin-left: 1%;
+        line-height: 24px;
+        margin-top: 25px;
+
+        color: #9CA3AF;
+
+        display: inline-block;
+    }
+
+    .social-links{
+        float: right;
+
+        margin-right: 10%;
+        margin-top: 25px;
+
+    }
+
+    .social-links img {
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+    }
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+    .page-container {
+
+        .logo {
+            width: 66%;
+        }
+
+        .topnav .topheader {
+            padding: 20px 20px;
+        }
+
+        .buttons {
+            font-size: 20px;
+        }
+
+        .header {
+            margin-top: 15%;
+
+            .mainheader {
+                font-size: 81px;
+                margin-bottom: 51px;
+            }
+
+            .words {
+                font-size: 26px;
+                line-height: 28px;
+            }
+        }  
+        
+        .whattodo {
+            margin-top: 24px;
+        }
+
+        
+  }
+
+    .topnav .topheader {
+        padding: 20px 20px;
+    }
+
+
+
+    .gridsection {
+        .task {
+            font-size: 20px;
+        }
+
+        .price {
+            font-size: 18px;
+        }
+
+        .date {
+            font-size: 13px;
+        }
+    }
+
+
+
+    .footersection {
+        .latest {
+            font-size: 15px;
+        }
+
+        .footer-column {
+            width: 30%;
+        }
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    .page-container {
+        .topnav .topheader {
+            padding: 6px 6px;
+        }
+    
+        .buttons {
+            font-size: 11px !important;
+        }
+
+        .header {
+            .mainheader {
+                margin-bottom: 0;
+                font-size: 30px;
+            }
+
+            .words {
+                font-size: 12px;
+                width: 60%;
+            }
+        }
+
+        .whattodo {
+            width: 173px;
+            height: 48px;
+            top: 54%;
+        }
+    
+        .working {
+            top: 50%;
+
+            .findwork {
+                width: 93px;
+                padding: 14px 11px;
+                margin-top: 27px;
+                font-size: 9px;
+                top: 50%;
+            }
+
+            .hiretalent {
+                font-size: 10px;
+                margin-left: 104px;
+                margin-top: 42px;
+            }
+        }
+
+
+        .searchbox {
+
+            .searchitems {
+                margin-top: 122px;
+                margin-left: 13%;
+                padding: 34px;
+            }
+        }
+
+
+    }
+
+
+    .footersection {
+        .footer-col {
+            width: 33%;
+            padding: 0 23px;
+        }
+
+        .footer-column {
+            width: 91%;
+            margin-bottom: 30px;
+        }
+
+        .social-links img {
+            width: 10px;
+            height: 10px;
+            padding: 0px;
+        }
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .page-container {
+        .logo {
+            width: 55%;
+        }
+    
+        .logo1 {
+            margin-left: 5px;
+            margin-top: 27px;
+    
+            width: 26px;
+            height: 26px;
+        }
+    
+        .workinghammer {
+            font-size: 15px;
+            margin-top: 29px;
+        }
+
+        .header {
+            .mainheader {
+                font-size: 25px;
+            }
+
+            .words {
+                font-size: 11px;
+            }
+        }
+
+        .whattodo {
+            width: 122px;
+            height: 38px;
+            top: 60%;
+        }
+
+        .working {
+            top: 50%;
+
+            .findwork {
+                width: 66px;
+                padding: 11px 10px;
+                margin-top: 57px;
+                font-size: 8px;
+                margin-left: 4px;
+            }
+
+            .hiretalent {
+                font-size: 9px;
+                margin-left: 64px;
+                width: 64px;
+                margin-top: 68px;
+            }
+        }
+
+        .searchitems {
+            margin-top: 164px;
+            margin-left: 11%;
+    
+    
+        .search {
+            font-size: 16px;
+            width: 18%;
+            padding: 14px;
+            
+        }
+    
+        .location {
+            width: 25%;
+            padding: 12px;
+            padding-bottom: 14px;
+        }
+    
+        .searchkey {
+            width: 25%;
+            padding: 12px;
+            padding-bottom: 14px;
+        }
+    
+        ::placeholder {
+            font-size: 8px;
+        }
+    } 
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 400px) {
+    .logo {
+        width: 48%;
+    }
+
+    .logo1 {
+        margin-top: 22px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .workinghammer {
+        display: none;
+    }
+
+    .page-container {
+        padding-top: 0;
+
+        .buttons {
+            font-size: 8px !important;
+            margin-right: 0px;
+        }
+
+
+
+
+    .header {
+        margin-top: 23%;
+
+        .mainheader {
+            font-size: 20px;
+            line-height: 29px;
+    
+        }
+        .words {
+            font-size: 10px;
+            line-height: 12px;
+            width: 70%;
+        }
+    
+    }
+
+    .whattodo {
+        width: 126px;
+        height: 44px;
+        top: 59%;
+    }
+
+    
+    .searchbox {
+        .searchitems {
+            margin-top: 169px;
+
+            .searchkey {
+                padding: 12px;
+                width: 19%;
+                padding-top: 10px
+
+            }
+
+            .location {
+                padding: 12px;
+                width: 19%;
+                padding-top: 10px;
+            }
+
+            ::placeholder {
+                font-size: 6px;
+            }
+    
+            .search {
+                font-size: 8px;
+                position: absolute;
+                padding: 16px;
+                margin-top: -1px;
+
+            }
+        }
+    }
+
+    
+
+    .footersection {
+        .headings {
+            font-size: 15px;
+        }
+
+        .links a {
+            font-size: 12px;
+        }
+
+        .footer-col {
+            width: 28%;
+        }
+
+        .latest {
+            font-size: 10px;
+        }
+
+        .copyright {
+            font-size: 6px;
+        }
+    }
+}
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scss/indexscss/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</head>
+<body>
+
+ 
+    <div class="bg-image">
+       
+        
+    </div>
+
+    <div class="page-container">
+        <div class="topnav" id="myTopnav">
+            <div class="logo topheader">
+                <img class= "logo1" src="/assets/images/logo.png"> 
+                <h6 class="workinghammer"> Working Hammer</h6>
+            </div>
+            
+
+
+            <button id= "myBtn" class= "topheader buttons signup" >Sign Up</button>
+            <button id= "myBtnn" class= "topheader buttons signin" >Sign In</button>
+            <button class= "topheader buttons postad" >Post ad</button>
+          </div>
+    
+
+        <div class="header">
+            <h2 class="mainheader">A work market near you</h2>
+            <p class="words">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.  </p>
+        </div>
+
+        <div class="whattodo">
+    
+        </div>
+
+        <div class= "working">
+            <button class="hiretalent">Hire Talent</button>
+            <button class="findwork">Find Work</button>   
+        </div>
+
+
+        <div class="searchbox">
+            <div class="searchitems">
+                <input class="searchkey" style="font-family: FontAwesome;" placeholder="&#xf002  Search Talent"></input>
+                <input class="location" style="font-family: FontAwesome;" placeholder="&#xf041 Select a location"></input>
+                <button class="search"><h6 class="searchword">Search</h6></button>
+            </div>
+
+    </div>
+    </div>
+
+
+
+    <div class="mapsection full" id="map">
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d719091.4247868968!2d-76.36069900118085!3d45.24878608060937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sng!4v1641123194104!5m2!1sen!2sng" width="100%" height="10%" style="border:0; margin: 0;" allowfullscreen="">
+                
+                </iframe>
+            </div>
+            </div>
+    </div>
+ 
+
+
+    <!-- for the signin popup modal -->
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <form action="">
+                <img src="/assets/images/bluehammer.png" class="bluehammer">
+                <h2 class="account-signin">Sign in to your account</h2>
+                
+                <p class="sign-in-with">Sign in with</p>
+                
+                <button class="icons"><i class="fab fa-facebook icon"></i></button>
+                <button class="icons"><i class="fab fa-google icon"></i></button>
+                <button class="icons"><i class="fas fa-envelope icon"></i></button>
+        
+                <h3><span>Or continue with</span></h3>
+        
+                <label for="email"><b>Email address</b></label>
+                <input type="text" class="emailbox input">
+        
+                <label for="name"><b class="namelabel">Name</b></label>
+                <input type="text" class="namebox input">
+        
+                <label>
+                <input type="checkbox" checked="unchecked" name="remember" class="remember"> Remember me
+                <a href="#" class="forgot">Forgot password</a>
+                </label>
+        
+                <button type="submit" class="signinbutton">Sign In</button>
+                <button type="submit" class="signupbutton">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+
+        <!-- for the signup popup modal -->
+
+    <div id="myModal2" class="modal">
+
+        <div class="modal-content">
+            <form action="">
+                <img src="/assets/images/bluehammer.png" class="bluehammer">
+                <h2 class="account-signin">Sign up to workinghammer</h2>
+                
+                <p class="sign-in-with">Sign in with</p>
+                
+                <button class="icons"><i class="fab fa-facebook icon"></i></button>
+                <button class="icons"><i class="fab fa-twitter"></i></i></button>
+                <button class="icons"><i class="fab fa-apple"></i></i></button>
+        
+                <h3><span>Or continue with</span></h3>
+        
+                <label for="email"><b>Email address</b></label>
+                <input type="text" class="emailbox input">
+        
+                <label for="name"><b class="namelabel">Name</b></label>
+                <input type="text" class="namebox input">
+
+                <label for="password"><b class="passwordlabel">Password</b></label>
+                <input type="text" class="password input">
+        
+                <label>
+                <input type="checkbox" checked="unchecked" name="remember" class="remember"> Remember me
+                <a href="#" class="forgot">Forgot password</a>
+                </label>
+        
+                <button type="submit" class="signinbutton">Sign In</button>
+            </form>
+        </div>
+    </div>
+   
+
+
+
+</body>
+</html>
