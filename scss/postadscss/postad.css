@@ -1,0 +1,181 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100vw !important;
+  overflow-y: scroll;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.headersection {
+  background-color: #ffffff;
+  overflow: hidden;
+  padding: 12 10 12 10px;
+}
+
+/* Style the links inside the navigation bar */
+.logo1 {
+  position: absolute;
+  width: 28px;
+  left: 106px;
+  top: 28px;
+}
+
+.logo {
+  left: 50px;
+}
+
+.workinghammer {
+  color: #000000;
+  font-size: 19px;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0em;
+  margin: 0;
+  margin-top: 18px;
+  margin-left: 12px;
+}
+
+.headersection .whiteheader {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 125px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.headersection .icon {
+  display: none;
+}
+
+.myTopnav {
+  margin-top: 59px;
+  margin-right: 20px;
+}
+
+/* for post ad, notifications and avatar */
+.postad {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: #386DF5;
+  border: none;
+  float: right;
+  margin-right: 131px;
+  margin-top: -41px;
+}
+
+.postad:hover {
+  background-color: #092a7c;
+}
+
+.notification {
+  color: #808080;
+  float: right;
+  margin-top: -32px;
+  margin-right: 89px;
+}
+
+.avatar {
+  vertical-align: middle;
+  float: right;
+  margin-top: -41px;
+  margin-right: 31px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* for the middlesection */
+.middlesection {
+  background-color: #E5E5E5;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-left: 109px;
+  padding-right: 50px;
+  /* Style the navigation bar */
+  /* Navbar links */
+  /* Navbar links on mouse-over */
+}
+
+.middlesection .navbar {
+  width: 100%;
+  overflow: auto;
+  padding-top: 5px;
+}
+
+.middlesection .navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: #A9A9A9;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.middlesection .navbar a:hover {
+  background-color: #000;
+}
+
+.middlesection .fa-chevron-right:before {
+  margin-left: 25px;
+}
+
+.topminiheader {
+  background-color: #ffffff;
+  margin-top: -21px;
+  border-bottom: solid 1px #808080;
+}
+
+.topminiheader .postad2 {
+  font-size: 25px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-top: 32px;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+
+.topminiheader .hiretalent2 {
+  display: inline-block;
+  margin-left: 31px;
+  margin-right: 33px;
+  color: #6B7280;
+}
+
+.topminiheader .findwork2 {
+  display: inline-block;
+  color: #6B7280;
+}
+
+.topminiheader .active {
+  color: #386DF5;
+  text-decoration: underline;
+  text-underline-offset: 0.9em;
+}
+
+.topminiheader .hiretalent2:hover {
+  color: #092a7c;
+}
+
+.topminiheader .findwork2:hover {
+  color: #386DF5;
+  text-decoration: underline;
+  text-underline-offset: 0.9em;
+}
+/*# sourceMappingURL=postad.css.map */

@@ -204,6 +204,10 @@ body, html {
   margin-left: -9px;
 }
 
+.page-container .searchbox .searchitems .search:hover {
+  background-color: #002ea3;
+}
+
 .page-container .searchbox .searchitems h6 {
   margin: 0;
 }

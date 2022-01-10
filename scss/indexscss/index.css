@@ -9,7 +9,7 @@ iframe {
 
 .bg-image {
   /* The image used */
-  background-image: url("/assets/images/priscilla-du-preez-JCZ2pE-Szpw-unsplash.jpg");
+  background-image: url("../../assets/images/priscilla-du-preez-JCZ2pE-Szpw-unsplash.jpg");
   /* Full height */
   height: 90%;
   /* Center and scale the image nicely */
@@ -200,6 +200,10 @@ iframe {
   border-top-left-radius: 1px;
   border-bottom-left-radius: 1px;
   margin-left: -9px;
+}
+
+.page-container .searchbox .searchitems .search:hover {
+  background-color: #002ea3;
 }
 
 .page-container .searchbox .searchitems h6 {

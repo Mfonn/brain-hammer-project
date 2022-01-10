@@ -1,0 +1,784 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100vw !important;
+  overflow-y: scroll;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.headersection {
+  background-color: #ffffff;
+  overflow: hidden;
+  padding: 12 10 12 10px;
+}
+
+/* Style the links inside the navigation bar */
+.logo1 {
+  position: absolute;
+  width: 28px;
+  left: 106px;
+  top: 28px;
+}
+
+.logo {
+  left: 50px;
+}
+
+.workinghammer {
+  color: #000000;
+  font-size: 19px;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0em;
+  margin: 0;
+  margin-top: 18px;
+  margin-left: 12px;
+}
+
+.headersection .whiteheader {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 125px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.headersection .icon {
+  display: none;
+}
+
+.myTopnav {
+  margin-top: 59px;
+  margin-right: 20px;
+}
+
+/* for post ad, notifications and avatar */
+.postad {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: #386DF5;
+  border: none;
+  float: right;
+  margin-right: 131px;
+  margin-top: -41px;
+}
+
+.postad:hover {
+  background-color: #092a7c;
+}
+
+.notification {
+  color: #808080;
+  float: right;
+  margin-top: -32px;
+  margin-right: 89px;
+}
+
+.avatar {
+  vertical-align: middle;
+  float: right;
+  margin-top: -41px;
+  margin-right: 31px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* for the middlesection */
+.middlesection {
+  background-color: #E5E5E5;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-left: 109px;
+  padding-right: 50px;
+  /* Style the navigation bar */
+  /* Navbar links */
+  /* Navbar links on mouse-over */
+}
+
+.middlesection .navbar {
+  width: 100%;
+  overflow: auto;
+  padding-top: 5px;
+}
+
+.middlesection .navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: #A9A9A9;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.middlesection .navbar a:hover {
+  background-color: #000;
+}
+
+.middlesection .fa-chevron-right:before {
+  margin-left: 25px;
+}
+
+/*navbar in the column */
+.topminiheader {
+  background-color: #ffffff;
+  margin-top: -27px;
+  border-bottom: solid 1px #808080;
+}
+
+.topminiheader .profiledetails {
+  font-size: 25px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-top: 35px;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+
+.topminiheader .profile {
+  display: inline-block;
+  margin-left: 26px;
+  margin-right: 1px;
+  font-size: 14px;
+  color: #6B7280;
+}
+
+.topminiheader .active {
+  color: #386DF5;
+}
+
+.topminiheader .display:hover {
+  color: #092a7c;
+}
+
+.formbox {
+  background-color: #ffffff;
+}
+
+.formbox .usergroup {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.formbox .usergroup .userlabel {
+  margin-left: 25px;
+  margin-right: 306px;
+  color: #374151;
+  font-size: 14px;
+}
+
+.formbox .usergroup .username {
+  width: 21%;
+  border: 1px solid #D1D5DB;
+}
+
+.formbox hr {
+  width: 85%;
+  margin-left: 25px;
+  color: #E5E7EB;
+}
+
+.formbox .aboutgroup {
+  margin-top: 12px;
+  margin-left: 25px;
+  color: #374151;
+  font-size: 15px;
+}
+
+.formbox .aboutgroup .about {
+  margin-right: 329px;
+}
+
+.formbox .aboutgroup .aboutinput {
+  border: 1px solid #D1D5DB;
+}
+
+.formbox .aboutgroup .writeabout {
+  margin-left: 370px;
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+
+.formbox .photogroup {
+  margin-left: 25px;
+  color: #374151;
+  font-size: 14px;
+}
+
+.formbox .photogroup .photo {
+  margin-right: 331px;
+}
+
+.formbox .photogroup .change {
+  margin-left: 20px;
+  margin-bottom: 14px;
+  color: #374151;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #D1D5DB;
+  background-color: #ffffff;
+}
+
+.formbox .photohr {
+  margin-bottom: 15%;
+}
+
+.formbox .personal {
+  color: #111827;
+  margin-left: 25px;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.formbox .information {
+  margin-left: 25px;
+  margin-top: 2px;
+  color: #6B7280;
+  font-size: 14px;
+}
+
+.formbox .namegroup {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.formbox .namegroup .namelabel {
+  margin-left: 25px;
+  margin-right: 302px;
+  color: #374151;
+  font-size: 14px;
+}
+
+.formbox .namegroup .firstname {
+  width: 21%;
+  border: 1px solid #D1D5DB;
+}
+
+.formbox .lnamegroup {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.formbox .lnamegroup .lnamelabel {
+  margin-left: 25px;
+  margin-right: 305px;
+  color: #374151;
+  font-size: 14px;
+}
+
+.formbox .lnamegroup .lastname {
+  width: 21%;
+  border: 1px solid #D1D5DB;
+}
+
+.formbox .emailgroup {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.formbox .emailgroup .email {
+  margin-left: 25px;
+  margin-right: 283px;
+  color: #374151;
+  font-size: 14px;
+}
+
+.formbox .emailgroup .emailaddress {
+  width: 30%;
+  border: 1px solid #D1D5DB;
+}
+
+.formbox .countrygroup {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.formbox .countrygroup .country {
+  margin-left: 25px;
+  margin-right: 272px;
+  color: #374151;
+  font-size: 14px;
+}
+
+.formbox .countrygroup select {
+  border: 1px solid #D1D5DB;
+  background-color: #ffffff;
+  padding-right: 95px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.formbox .countrygroup select .option {
+  color: #111827;
+}
+
+.formbox .streetgroup {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.formbox .streetgroup .streetaddress {
+  margin-left: 25px;
+  margin-right: 286px;
+  color: #374151;
+  font-size: 14px;
+}
+
+.formbox .streetgroup .streetaddy {
+  width: 32%;
+  border: 1px solid #D1D5DB;
+}
+
+.formbox .citygroup {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.formbox .citygroup .city {
+  margin-left: 25px;
+  margin-right: 340px;
+  color: #374151;
+  font-size: 14px;
+}
+
+.formbox .citygroup .cityaddress {
+  width: 25%;
+  border: 1px solid #D1D5DB;
+}
+
+.formbox .stategroup {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.formbox .stategroup .state {
+  margin-left: 25px;
+  margin-right: 278px;
+  color: #374151;
+  font-size: 14px;
+}
+
+.formbox .stategroup .stateaddy {
+  width: 25%;
+  border: 1px solid #D1D5DB;
+}
+
+.formbox .postalgroup {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.formbox .postalgroup .postal {
+  margin-left: 25px;
+  margin-right: 303px;
+  color: #374151;
+  font-size: 14px;
+}
+
+.formbox .postalgroup .postaladdy {
+  width: 25%;
+  border: 1px solid #D1D5DB;
+}
+
+.formbox .notificationhr {
+  margin-bottom: 12%;
+}
+
+.formbox .notifications {
+  color: #111827;
+  margin-left: 25px;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.formbox .important {
+  margin-left: 25px;
+  margin-top: 2px;
+  color: #6B7280;
+  font-size: 14px;
+}
+
+.formbox .byemail {
+  display: inline-block;
+  margin-left: 25px;
+  color: #374151;
+  font-size: 14px;
+}
+
+.formbox .headings {
+  display: inline-block;
+  margin-bottom: 0px;
+  color: #374151;
+}
+
+.formbox .paragraph {
+  display: inline-block;
+  display: inline-block;
+  margin-left: 394px;
+  margin-top: 0;
+  font-size: 10px;
+  color: #6B7280;
+}
+
+.formbox .checkbox {
+  margin-left: 315px;
+}
+
+.formbox .checkbox2 {
+  margin-left: 398px;
+}
+
+.formbox .pushnoti .title {
+  display: inline-block;
+  display: inline-block;
+  margin-left: 262px;
+  margin-top: 0;
+  font-size: 10px;
+  color: #6B7280;
+}
+
+.formbox .pushnoti .headings {
+  margin-top: 0px;
+}
+
+.formbox .pushnoti .radiobox {
+  margin-left: 398px;
+}
+
+.formbox .buttons {
+  float: right;
+  margin-right: 12%;
+  padding-top: 2px;
+  padding-bottom: 20px;
+}
+
+.formbox .buttons .cancel {
+  border: 1px solid #D1D5DB;
+  background-color: #ffffff;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.formbox .buttons .cancel:hover {
+  background-color: #808080;
+}
+
+.formbox .buttons .save {
+  border: 1px solid #D1D5DB;
+  background-color: #386DF5;
+  color: #ffffff;
+  padding: 7px;
+  padding-left: 13px;
+  padding-right: 13px;
+  border-radius: 4px;
+}
+
+.formbox .buttons .save:hover {
+  background-color: #2b4997;
+}
+
+@media only screen and (max-width: 900px) {
+  .headersection .workinghammer {
+    font-size: 15px;
+  }
+  .headersection .logo1 {
+    width: 22px;
+    left: 76px;
+    top: 32px;
+  }
+  .headersection .whiteheader {
+    padding: 14px 88px;
+  }
+  .topminiheader .profile {
+    margin-right: -15px;
+    font-size: 12px;
+  }
+  .middlesection {
+    padding-left: 52px;
+  }
+  .middlesection .navbar a {
+    font-size: 14px;
+  }
+  .formbox .usergroup .userlabel {
+    margin-right: 117px;
+  }
+  .formbox .usergroup .username {
+    width: 39%;
+    margin-left: 27px;
+    margin-top: 10px;
+  }
+  .formbox .aboutgroup .about {
+    margin-right: 167px;
+  }
+  .formbox .aboutgroup .writeabout {
+    margin-left: 210px;
+  }
+  .formbox .photogroup .photo {
+    margin-right: 174px;
+  }
+  .formbox .photogroup .emptyavatar {
+    width: 35px;
+  }
+  .formbox .namegroup .firstname {
+    width: 33%;
+  }
+  .formbox .namegroup .namelabel {
+    margin-right: 144px;
+  }
+  .formbox .lnamegroup .lnamelabel {
+    margin-right: 151px;
+  }
+  .formbox .lnamegroup .lastname {
+    width: 32%;
+  }
+  .formbox .emailgroup .email {
+    margin-right: 128px;
+  }
+  .formbox .emailgroup .emailaddress {
+    width: 38%;
+  }
+  .formbox .countrygroup .country {
+    margin-right: 85px;
+    display: block;
+  }
+  .formbox .countrygroup select {
+    margin-left: 27px;
+    margin-top: 5px;
+    width: 42%;
+  }
+  .formbox .streetgroup .streetaddress {
+    margin-right: 132px;
+  }
+  .formbox .citygroup .city {
+    margin-right: 186px;
+  }
+  .formbox .stategroup .state {
+    margin-right: 123px;
+    width: 32%;
+  }
+  .formbox .postalgroup .postal {
+    margin-right: 150px;
+  }
+  .formbox .notifications {
+    font-size: 15px;
+  }
+  .formbox .important {
+    font-size: 10px;
+  }
+  .formbox .checkbox {
+    margin-left: 148px;
+  }
+  .formbox .paragraph {
+    margin-left: 231px;
+  }
+  .formbox .checkbox2 {
+    margin-left: 233px;
+  }
+  .formbox .pushnoti .radiobox {
+    margin-left: 233px;
+  }
+  .formbox .pushnoti .title {
+    margin-left: 230px;
+    display: block;
+  }
+  .formbox .buttons {
+    margin-right: 47px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .headersection {
+    padding-bottom: 20px;
+  }
+  .headersection .whiteheader {
+    padding-bottom: 0px;
+    top: 10px;
+  }
+  .notification {
+    margin-top: 19px;
+    margin-right: 15px;
+    width: 15px;
+  }
+  .avatar {
+    margin-top: 13px;
+    margin-right: 31px;
+    width: 20px;
+    height: 20px;
+  }
+  .myTopnav {
+    margin-top: 6px;
+    margin-right: 0;
+  }
+  .headersection .logo1 {
+    width: 17px;
+    left: 53px;
+    top: 27px;
+  }
+  .headersection .workinghammer {
+    margin-left: 0;
+    font-size: 12px !important;
+  }
+  .headersection .whiteheader {
+    padding: 5px 71px;
+  }
+  .topminiheader .profile {
+    margin-right: -24px;
+    font-size: 8px;
+  }
+  .topminiheader .profiledetails {
+    font-size: 21px;
+  }
+  .middlesection .navbar a {
+    font-size: 13px;
+  }
+  .formbox .photohr {
+    margin-bottom: 118px;
+  }
+  .formbox .information {
+    font-size: 12px;
+  }
+  .formbox .usergroup .username {
+    margin-left: 27px;
+    margin-top: 10px;
+  }
+  .formbox .aboutgroup .aboutinput {
+    margin-top: 10px;
+  }
+  .formbox .aboutgroup .writeabout {
+    margin-left: 3px;
+  }
+  .formbox .photogroup .photo {
+    margin-right: 61px;
+  }
+  .formbox .namegroup .firstname {
+    margin-left: 27px;
+    margin-top: 10px;
+    width: 46%;
+  }
+  .formbox .lnamegroup .lastname {
+    width: 45%;
+    margin-top: 5px;
+    margin-left: 28px;
+  }
+  .formbox .emailgroup .emailaddress {
+    width: 59%;
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+  .formbox .streetgroup .streetaddress {
+    display: block;
+  }
+  .formbox .streetgroup .streetaddy {
+    margin-left: 25px;
+    margin-top: 5px;
+    width: 44%;
+  }
+  .formbox .citygroup .city {
+    display: block;
+  }
+  .formbox .citygroup .cityaddress {
+    margin-top: 5px;
+    width: 42%;
+    margin-left: 27px;
+  }
+  .formbox .stategroup .state {
+    display: block;
+  }
+  .formbox .stategroup .stateaddy {
+    margin-left: 28px;
+    margin-top: 5px;
+    width: 42%;
+  }
+  .formbox .postalgroup .postal {
+    display: block;
+  }
+  .formbox .postalgroup .postaladdy {
+    margin-left: 30px;
+    width: 42%;
+    margin-top: 5px;
+  }
+  .formbox .important {
+    font-size: 9px;
+    width: 78%;
+  }
+  .formbox .checkbox {
+    margin-left: 45px;
+  }
+  .formbox .paragraph {
+    margin-left: 128px;
+    width: 49%;
+  }
+  .formbox .checkbox2 {
+    margin-left: 130px;
+  }
+  .formbox .pushnoti .title {
+    margin-left: 129px;
+    width: 47%;
+  }
+  .formbox .pushnoti .radiobox {
+    margin-left: 130px;
+  }
+  .formbox .buttons {
+    margin-right: 17px;
+  }
+  .formbox .buttons .cancel {
+    padding: 4px;
+    font-size: 9px;
+  }
+  .formbox .buttons .save {
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 7px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .headersection .avatar {
+    margin-top: 16px;
+    width: 16px;
+    height: 16px;
+  }
+  .headersection .notification {
+    margin-right: 9px;
+    margin-top: 19px;
+    width: 12px;
+  }
+  .headersection .whiteheader {
+    padding: 5px 58px;
+  }
+  .headersection .logo1 {
+    left: 39px;
+  }
+  .topminiheader .profile {
+    font-size: 6px;
+  }
+  .formbox .personal {
+    font-size: 15px;
+  }
+  .formbox .information {
+    font-size: 10px;
+  }
+  .middlesection {
+    padding-left: 23px;
+    padding-right: 30px;
+  }
+}
+/*# sourceMappingURL=profiledetails.css.map */
