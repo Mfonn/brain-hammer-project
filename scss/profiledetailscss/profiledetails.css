@@ -64,25 +64,7 @@ body {
   margin-right: 20px;
 }
 
-/* for post ad, notifications and avatar */
-.postad {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 3px;
-  color: #ffffff;
-  background-color: #386DF5;
-  border: none;
-  float: right;
-  margin-right: 131px;
-  margin-top: -41px;
-}
-
-.postad:hover {
-  background-color: #092a7c;
-}
-
+/* notifications and avatar */
 .notification {
   color: #808080;
   float: right;
@@ -766,6 +748,9 @@ body {
   }
   .headersection .logo1 {
     left: 39px;
+  }
+  .middlesection .navbar a {
+    padding: 7px;
   }
   .topminiheader .profile {
     font-size: 6px;

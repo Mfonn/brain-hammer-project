@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scss/bankaccountscss/bankaccount.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./js/bankaccount.js"></script>
+</head>
+<body>
+
+    <div class="headersection" id="myTopnav">
+
+
+        <div class="logo whiteheader">
+            <img class= "logo1" src="/assets/images/bluehammer.png"> 
+            <h6 class="workinghammer"> Working Hammer</h6>
+        </div>
+
+
+        <div id="myTopnav" class="myTopnav">
+            <img src="/assets/images/Avatar.png" alt="Avatar" class="avatar">
+            <img src="/assets/images/Message.png" alt="chatbot" class="notification">
+            </a>
+    
+        </div>
+
+
+    </div>
+
+    <div class="middlesection">
+        <div class="navbar">
+            <a href="#"><i class="fa fa-fw fa-home"></i> <i class="fas fa-chevron-right"></i></a>
+            <a href="#"></i> Bank Accounts </a>
+          </div>
+
+
+          <div class="topminiheader">
+            <p class="paymentcards">Payment Cards</p>
+         </div>
+
+
+         <div class= "maincolumn">
+                <div class="row">
+                    <div class="column column1">
+                    
+                            <div class="cardgroup">
+                                <input type="radio"  name="same" value="same" class="card">
+                                <label for="wechat" class="pay">
+                                <button class="headings">WeChat Payment</button>
+                                <img class="wepng" src="/assets/images/wechat.png">
+                                
+                                </label>
+                            </div>
+
+                            <div class="cardgroup dropdown" onclick="myFunction()">
+                                <input type="radio"  name="same" value="same" class="card">
+                                <label for="wechat" class="pay">
+                                <button class="headings dropbtn">Debit or Credit Card</button>
+                                <div id="myDropdown" class="dropdown-content">
+
+                                    <div class="dropdownrow">
+                                        <div class="dropdowncolumn dropdowncolumn1" style="background-color:#ffffff;">
+                                            
+                                            <label for="cardnumber" class="inputlabel">
+                                                <p class="cardnumber">Card number</p>
+                                                <input type="text" name="cardnumber" class="inputbox">
+                                            </label>
+
+                                            <label for="expirydate" class="inputlabel inputlabel2">
+                                                <p class="cardnumber expiry">Expiry date</p>
+                                                <input type="text" name="cardnumber expiry" class="inputbox">
+                                            </label>
+                                        </div>
+                                        <div class="dropdowncolumn dropdowncolumn2" style="background-color:#ffffff;">
+                                            <label for="cardnumber" class="inputlabel">
+                                                <p class="cardnumber">Cardholder name</p>
+                                                <input type="text" name="cardnumber" class="inputbox">
+                                            </label>
+
+                                            <label for="expirydate" class="inputlabel inputlabel2">
+                                                <p class="cardnumber expiry">CCV/CVV</p>
+                                                <input type="text" name="cardnumber expiry" class="inputbox">
+                                            </label>
+                                        </div>
+                                      </div>
+
+                                    <!-- <label for="cardnumber" class="inputlabel">
+                                        <p class="cardnumber">Card number</p>
+                                        <input type="text" name="cardnumber" class="inputbox">
+                                    </label>
+                                    
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a> -->
+                                </div>
+                                
+                                    
+                                
+                                </label>
+                            </div>
+
+                            <div class="cardgroup">
+                                <input type="radio"  name="same" value="same" class="card">
+                                <label for="wechat" class="pay">
+                                <button class="headings">PayPal</button>
+                                <img class="wepng" src="/assets/images/paypal.png">
+                                
+                                </label>
+                            </div>
+
+                            <div class="cardgroup">
+                                <input type="radio"  name="same" value="same" class="card">
+                                <label for="wechat" class="pay">
+                                <button class="headings">UnionPay</button>
+                                <img class="wepng" src="/assets/images/union.png">
+                                
+                                </label>
+                            </div>
+                             
+                    </div>
+
+
+                    <div class="column column2">
+                        <div class="depositgroup smallheader">
+                            <label for="country" class="deposit" >Deposit Currency</label>
+                            <select name="countries" id="countries">
+                              <option value="canadian" class="canadian">Canadian dollar</option>
+                            </select>
+          
+                          </div>
+
+
+                        <div class="amountgroup smallheader">
+                            <label for="amount" class="depositamount">Deposit Amount</label>
+                            <input type="text" class="amount" style="font-family: FontAwesome;" placeholder= "$                           30">
+                        </div>
+
+                        <div class="processgroup smallheader">
+                            <p class="process">Processing Fee</p>
+                            <p class="price">$1.21CAN</p>
+                        </div>
+
+                        <div class="totalgroup smallheader">
+                            <p class="total">Total</p>
+                            <p class="totalamount">$31.20CAN</p>
+                        </div>
+
+                        <button class="confirmation">Confirm and pay $31.20 CAN</button>
+
+                    </div>
+                </div>
+         </div>
+
+    </div>
+
+    <div class="footersection">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4 class="headings">SOLUTIONS</h4>
+                    <ul class="list">
+                        <li class="links"><a href="#">Marketing</a></li>
+                        <li class="links"><a href="#">Analytics</a></li>
+                        <li class="links"><a href="#">Commerce</a></li>
+                        <li class="links"><a href="#">Insights</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="headings">SUPPORT</h4>
+                    <ul class="list">
+                        <li class="links"><a href="#">Pricing</a></li>
+                        <li class="links"><a href="#">Documentation</a></li>
+                        <li class="links"><a href="#">Guides</a></li>
+                        <li class="links"><a href="#">API Status</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="headings">COMPANY</h4>
+                    <ul class="list">
+                        <li class="links"><a href="#">About</a></li>
+                        <li class="links"><a href="#">Blog</a></li>
+                        <li class="links"><a href="#">Jobs</a></li>
+                        <li class="links"><a href="#">Press</a></li>
+                        <li class="links"><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="headings">LEGAL</h4>
+                    <ul class="list">
+                        <li class="links"><a href="#">Claim</a></li>
+                        <li class="links"><a href="#">Privacy</a></li>
+                        <li class="links"><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="headings">SUBSCRIBE TO OUR NEWSLETTER</h4>
+                    <p class="latest">The latest news, articles, and resources, sent to <br>
+                         your inbox weekly.</p>
+                    <input class="enter" placeholder="Enter your email">
+                    <button class="subscribe">Subscribe</button>
+                </div>
+            </div>
+
+
+        <hr>
+
+        <p class="copyright">c 2020 Workhummer, Inc. All rights reserved.</p>
+        <p class="social-links">
+            <a href="#"><img src="/assets/images/facebook.png"></a>
+            <a href="#"><img src="/assets/images/instagram.png"></a>
+            <a href="#"><img src="/assets/images/twitter.png"></a>
+            <a href="#"><img src="/assets/images/github.png"></a>
+            <a href="#"><img src="/assets/images/browser.png"></a>
+
+        </p>
+    </div>
+
+</div>
+
+
+
+
+
+ </body>
+ </html>

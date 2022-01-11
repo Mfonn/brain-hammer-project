@@ -75,24 +75,7 @@ body {
     }
     
     
-        /* for post ad, notifications and avatar */
-        .postad {
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            border-radius: 3px;
-            color: #ffffff;
-            background-color: #386DF5;
-            border: none;
-            float: right;
-            margin-right: 131px;
-            margin-top: -41px;
-        }
-    
-        .postad:hover {
-            background-color: #092a7c;
-        }
+        /* notifications and avatar */
     
     
         .notification {
@@ -122,7 +105,7 @@ body {
 /* for the middlesection */
 
 
-    .middlesection {
+.middlesection {
     background-color: #E5E5E5;
     height: fit-content;
 
@@ -130,30 +113,30 @@ body {
     padding-right: 50px;
 
       /* Style the navigation bar */
-.navbar {
-    width: 100%;
-    overflow: auto;
-    padding-top: 5px;
-  }
-  
-  /* Navbar links */
-  .navbar a {
-    float: left;
-    text-align: center;
-    padding: 12px;
-    color: #A9A9A9;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Navbar links on mouse-over */
-  .navbar a:hover {
-    background-color: #000;
-  }
+  .navbar {
+      width: 100%;
+      overflow: auto;
+      padding-top: 5px;
+    }
+    
+    /* Navbar links */
+    .navbar a {
+      float: left;
+      text-align: center;
+      padding: 12px;
+      color: #A9A9A9;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    /* Navbar links on mouse-over */
+    .navbar a:hover {
+      background-color: #000;
+    }
 
-  .fa-chevron-right:before {
-      margin-left: 25px;
-  }
+    .fa-chevron-right:before {
+        margin-left: 25px;
+    }
 }
 
 
@@ -1021,6 +1004,13 @@ body {
     .logo1 {
         left: 39px;
     }
+}
+
+.middlesection {
+
+  .navbar a {
+    padding: 7px;
+  }
 }
 
 
