@@ -24,7 +24,7 @@
 
         <div id="myTopnav" class="myTopnav">
             <img src="/assets/images/Avatar.png" alt="Avatar" class="avatar">
-            <img src="/assets/images/Message.png" alt="chatbot" class="notification">
+            <i class="fas fa-comment-dots notification" onclick="openForm()"></i> 
             <button class="postad">Post ad</button> 
             </a>
     
@@ -72,6 +72,8 @@
                     <img class="close1" src="/assets/images/close.png">
                   </div>
               </div>
+    </div>
+
     </div>
 
 
@@ -143,6 +145,67 @@
     </div>
 
 </div>
+
+
+<!-- for the chat bot -->
+
+
+<div class="chat-popup" id="myForm">
+    <form action="" class="form-container"></form>
+       <button type="button" class="btn cancel" onclick="closeForm()">X</button>
+
+       <div class="chatbox">
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+    
+        <button type="submit" class="btn">Send</button>
+       </div>
+
+       <div class="recommend">
+
+        <div class="bellheader">
+            <div class="group">
+                <img class="bell orange" src="assets/images/yellownoti.png">
+                <img class="bell whitebell" src="assets/images/bell.png">
+                <img class="bell ellipse" src="assets/images/ellipse.png">
+                <p class="bell number">2</p> 
+            </div>
+            
+            <h4 class="notifi">Notification</h4> 
+            <p class="aboutbell"> 5 jobs to recommend to you</p>
+        </div>
+
+        <div class="mainbody">
+            <img class="image1" src="assets/images/mizeach2.png">
+            <div class="abouthim">
+             <p class="name">Mizeach</p>
+            <p class="what">I am a level 3 lumbe...</p>
+            <p class="when">Just now</p>
+            </div>
+
+            <img class="image1 image2" src="assets/images/mizeach3.png">
+            <div class="abouthim abouthim2">
+             <p class="name">Mizeach</p>
+            <p class="what">I am a level 3 lumbe...</p>
+            <p class="when">1 days ago</p>
+            </div>
+
+            <img class="image1 image2" src="assets/images/mizeach3.png">
+            <div class="abouthim abouthim3">
+             <p class="name">Esther Howard</p>
+            <p class="what">hello</p>
+            <p class="when">1 days ago</p>
+            </div>
+
+            
+            
+        </div>
+
+       </div>
+
+     
+    </form>
+  </div>
 
 
 

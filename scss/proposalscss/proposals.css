@@ -90,6 +90,11 @@ body {
   margin-right: 89px;
 }
 
+.notification:hover {
+  cursor: pointer;
+  color: #6B7280;
+}
+
 .avatar {
   vertical-align: middle;
   float: right;
@@ -379,7 +384,9 @@ body {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
+  border: none;
   background-color: #002ea3;
+  color: #ffffff;
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   cursor: pointer;
@@ -418,6 +425,142 @@ body {
   width: 25px;
   height: 25px;
   padding: 5px;
+}
+
+/* for the chatbot */
+.chat-popup {
+  display: block;
+  position: fixed;
+  z-index: 999;
+  top: 10vh;
+  width: 60%;
+  margin-left: 40%;
+  height: 90vh;
+  background-color: #ffffff;
+}
+
+.chat-popup .cancel {
+  top: 3%;
+  position: absolute;
+  margin-left: 95%;
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
+}
+
+.chat-popup .chatbox {
+  background-color: red;
+  width: 65%;
+  height: inherit;
+  float: left;
+}
+
+.chat-popup .recommend {
+  width: 35%;
+  height: inherit;
+  float: right;
+}
+
+.chat-popup .recommend .group {
+  margin-top: 0%;
+  margin-left: 1%;
+  position: absolute;
+}
+
+.chat-popup .recommend .group .bell {
+  margin-top: 2%;
+  margin-left: -5.2%;
+  position: absolute;
+  width: 33px;
+}
+
+.chat-popup .recommend .group .whitebell {
+  margin-top: 9px;
+  margin-left: 10px;
+  width: 14px;
+}
+
+.chat-popup .recommend .group .ellipse {
+  width: 10px;
+  margin-left: 22px;
+}
+
+.chat-popup .recommend .group .number {
+  color: #ffffff;
+  margin-left: 25px;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.chat-popup .recommend .bellheader {
+  margin-top: 38px;
+  margin-bottom: 10px;
+}
+
+.chat-popup .recommend .notifi {
+  display: inline-block;
+  margin-left: 45px;
+  margin-top: 1px;
+  color: #333333;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.chat-popup .recommend .aboutbell {
+  color: #999999;
+  font-size: 9px;
+  display: inline-block;
+  margin-left: 46px;
+  margin-top: -4px;
+}
+
+.chat-popup .recommend .mainbody {
+  padding: 10px;
+}
+
+.chat-popup .recommend .mainbody .image1 {
+  width: 24%;
+  display: inline-block;
+}
+
+.chat-popup .recommend .mainbody .image2 {
+  margin-top: 10px;
+}
+
+.chat-popup .recommend .mainbody .abouthim {
+  width: 70%;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  float: right;
+}
+
+.chat-popup .recommend .mainbody .abouthim .name {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.chat-popup .recommend .mainbody .abouthim .what {
+  display: inline-block;
+  margin: 0;
+  font-size: 12px;
+  color: #999999;
+}
+
+.chat-popup .recommend .mainbody .abouthim .when {
+  display: inline-block;
+  margin: 0;
+  color: #999999;
+  font-size: 10px;
+}
+
+.chat-popup .recommend .mainbody .abouthim2 {
+  margin-top: 10px;
+}
+
+.chat-popup .recommend .mainbody .abouthim3 {
+  margin-top: 10px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -459,6 +602,21 @@ body {
     width: 10px;
     height: 10px;
     padding: 0px;
+  }
+  .chat-popup .recommend .notifi {
+    font-size: 12px;
+  }
+  .chat-popup .recommend .mainbody .image1 {
+    width: 29px;
+  }
+  .chat-popup .recommend .mainbody .abouthim .when {
+    font-size: 8px;
+  }
+  .chat-popup .recommend .mainbody .abouthim .what {
+    font-size: 8px;
+  }
+  .chat-popup .recommend .mainbody .abouthim2 {
+    margin-top: 8px;
   }
 }
 
@@ -580,28 +738,42 @@ body {
     margin-left: 17px;
     margin-top: 12px;
   }
+  .chat-popup {
+    width: 90%;
+    margin-left: 10%;
+  }
+  .chat-popup .chatbox {
+    width: 60%;
+  }
+  .chat-popup .recommend {
+    width: 40%;
+  }
+  .chat-popup .recommend .mainbody .abouthim .when {
+    font-size: 9px;
+  }
+  .chat-popup .recommend .mainbody .abouthim .what {
+    font-size: 9px;
+  }
+  .chat-popup .recommend .mainbody .abouthim .name {
+    font-size: 12px;
+  }
+  .chat-popup .recommend .mainbody .abouthim2 {
+    margin-top: -36px;
+  }
+  .chat-popup .recommend .mainbody .abouthim3 {
+    margin-top: 7px;
+  }
+  .chat-popup .cancel {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 400px) {
-  .headersection .avatar {
-    margin-top: 16px;
-    width: 16px;
-    height: 16px;
-  }
-  .headersection .notification {
-    margin-right: 9px;
-    margin-top: 19px;
-    width: 12px;
-  }
-  .headersection .postad {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
   .headersection .whiteheader {
-    padding: 5px 58px;
+    padding: 5px 44px;
   }
   .headersection .logo1 {
-    left: 39px;
+    left: 25px;
   }
   .middlesection {
     padding-left: 38px;
@@ -630,6 +802,45 @@ body {
   }
   .footersection .copyright {
     font-size: 6px;
+  }
+  .chat-popup .recommend .notifi {
+    font-size: 8px;
+    margin-left: 37px;
+  }
+  .chat-popup .recommend .aboutbell {
+    margin-left: 36px;
+    margin-top: 10px;
+    font-size: 6px;
+  }
+  .chat-popup .recommend .group .number {
+    font-size: 7px;
+    margin-left: 22px;
+  }
+  .chat-popup .recommend .group .ellipse {
+    margin-left: 19px;
+  }
+  .chat-popup .recommend .group .whitebell {
+    margin-top: 7px;
+    margin-left: 8px;
+    width: 12px;
+  }
+  .chat-popup .recommend .group .orange {
+    width: 27px;
+  }
+  .chat-popup .recommend .mainbody .abouthim .when {
+    font-size: 6px;
+  }
+  .chat-popup .recommend .mainbody .abouthim .what {
+    font-size: 7px;
+  }
+  .chat-popup .recommend .mainbody .abouthim .name {
+    font-size: 10px;
+  }
+  .chat-popup .recommend .mainbody .abouthim2 {
+    margin-top: 10px;
+  }
+  .chat-popup .recommend .mainbody .image1 {
+    width: 24px;
   }
 }
 /*# sourceMappingURL=proposals.css.map */
