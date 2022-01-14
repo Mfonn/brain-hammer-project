@@ -1,0 +1,708 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    width: 100vw !important;
+
+    overflow-y: scroll;
+
+}
+body {
+    width: 100%;
+
+    margin: 0;
+
+    background-color: #e5e5e5;
+}
+
+
+
+    .headersection {
+ 
+        background-color: #ffffff;
+        overflow: hidden;
+        padding: 12 10 12 10px; 
+    }
+      
+    /* Style the links inside the navigation bar */
+      .logo1 {
+        position: absolute;
+        width: 28px;
+        left: 106px;
+        top: 28px;
+    }
+    
+    .logo {
+        left: 50px;
+    }
+    
+    .workinghammer {
+        color: #000000;
+        font-size: 19px;
+        font-family: Inter;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 24px;
+        letter-spacing: 0em;
+        margin: 0;
+        margin-top: 18px;
+        margin-left: 12px;
+    }
+    
+    
+      .headersection .whiteheader {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 125px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+    
+  
+
+    
+      
+      /* Hide the link that should open and close the topnav on small screens */
+      .headersection .icon {
+        display: none;
+      }
+    
+
+      .myTopnav {
+        margin-top: 59px;
+        margin-right: 20px;
+    }
+    
+    
+        /* for post ad, notifications and avatar */
+        .postad {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 3px;
+            color: #ffffff;
+            background-color: #386DF5;
+            border: none;
+            float: right;
+            margin-right: 131px;
+            margin-top: -41px;
+        }
+    
+        .postad:hover {
+            background-color: #092a7c;
+        }
+    
+    
+        .notification {
+            color: #808080;
+            float: right;
+            margin-top: -32px;
+            margin-right: 89px;
+        }
+    
+    
+        .avatar {
+            
+            vertical-align: middle;
+            float: right;
+            margin-top: -41px;
+            margin-right: 31px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+    
+          }
+
+
+
+
+
+
+/* for the middlesection */
+.middlesection {
+    background-color: #E5E5E5;
+    height: fit-content;
+
+    padding-left: 109px;
+    padding-right: 50px;
+
+      /* Style the navigation bar */
+        .navbar {
+            width: 100%;
+            overflow: auto;
+            padding-top: 5px;
+        }
+        
+        /* Navbar links */
+        .navbar a {
+            float: left;
+            text-align: center;
+            padding: 12px;
+            color: #A9A9A9;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        /* Navbar links on mouse-over */
+        .navbar a:hover {
+            background-color: #000;
+        }
+
+        .fa-chevron-right:before {
+            margin-left: 25px;
+        }
+
+    }
+
+
+/* for the maincontent */
+
+    .maincontent {
+        width: 80%;
+        margin: auto;
+
+        border-radius: 5px;
+        background-color: #ffffff;
+
+        padding: 20px;
+
+        .done {
+            display: inline-block;
+        }
+
+        .forwho {
+            display: inline-block;
+            background-color: #F1F4FA;
+            width: 200px;
+            height: 45px;
+            border-radius: 30px;
+
+            float: right;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            padding-top: 4px;
+            padding-left: 5px;
+            margin-right: 25px;
+
+
+            .client {
+                color: #ffffff;
+                background-color: #386DF5;
+                border: none;
+                border-radius: 37px;
+                font-size: 12px;
+                height: 36px;
+                width: 50%;
+            }
+
+            .client:hover {
+                background-color: #244eb9;
+            }
+
+            .worker {
+                border: none;
+                color: #386DF5;
+                background-color: transparent;
+                padding: 11px;
+                margin-left: -4px;
+                border-radius: 24px;
+            }
+
+            .worker:hover {
+                background-color: #c7c8ca;
+            }
+        }
+
+        .content {
+
+            margin-top: 30px;
+
+            .div1 {
+                width: 100%;
+                margin-bottom: 35px;
+
+                .imagediv {
+                    width: 20%;
+                    display: inline-block;
+                    padding: 10px;
+                    position: relative;
+                    float: left;
+                    margin-top: -7px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .wordsdiv {
+                    display: inline-block;
+                    width: 75%;
+                    margin-left: 5px;
+                    paddin-top: 10px;
+
+                    .mainwords {
+                        width: 72%;
+                        float: left;
+                    }
+
+                    .wordsheader {
+                        margin: 0;
+                        color: #333333;
+                    }
+
+                    .caption {
+                        display: inline-block;
+                        color: #5D6370;
+                        font-size: 10px;
+                        margin: 0;
+                    }
+
+                    .caption2 {
+                        display: inline-block;
+                        margin: 0;
+                        color: #5D6370;
+                        font-size: 10px;
+
+                        margin-left: 2px;
+                    }
+
+                    .caption3 {
+                        display: inline-block;
+                        font-size: 10px;
+                        color: #5D6370;
+                        margin-left: 10px;
+                    }
+
+                    .caption4 {
+                        display: inline-block;
+                        font-size: 10px;
+                        color: #5D6370;
+                        margin-left: 10px;
+                    }
+
+                    .mainparagraph {
+                        display: inline-block;
+                        font-size: 12px;
+                        color: #5D6370;
+                    }
+
+                    .bids {
+                        display: inline-block;
+                        width: 25%;
+                        float: right;
+
+                        .currency {
+                            display: inline-block;
+                            margin: 0;
+                            color: #386DF5;
+                            font-size: 20px;
+                        }
+
+                        .howmuch {
+                            display: inline-block;
+                            margin: 0;
+                            font-size: 18px;
+                            font-weight: 800;
+                        }
+
+                        .howlong {
+                            display: inline-block;
+                            font-size: 10px;
+                            color: #666666;
+                        }
+
+                        .howmany {
+                            float: right;
+                            font-size: 13px;
+                            margin: 0;
+                            margin-top: 10px;
+                            color: #666666;
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+            .headersection {
+                .workinghammer {
+                    font-size: 15px;
+                }
+        
+                .logo1 {
+                    width: 22px;
+                    left: 76px;
+                    top: 32px;
+                }
+        
+                .whiteheader {
+                    padding: 14px 88px;
+                }
+            
+               
+            }
+
+            .middlesection {
+                padding-left: 82px;
+            }
+
+
+
+            .maincontent {
+
+                .forwho {
+                    width: 190px;
+                    margin-top: 9px;
+
+                    .worker {
+                        padding: 6px;
+                        font-size: 13px;
+                    }
+                }
+
+                .content {
+                    .div1 {
+                        .wordsdiv {
+                            .wordsheader {
+                                font-size: 15px;
+                            }
+                            .caption, .caption2, .caption3, .caption4 {
+                                font-size: 8px;
+                            }
+                            .fa-calendar::before {
+                                margin-right: 1px;
+                            }
+                            .fa-car::before {
+                                margin-right: 1px;
+                            }
+                            .fa-map-marker-alt::before {
+                                margin-right: 1px;
+                            }
+                            .mainparagraph {
+
+                                 font-size: 10px;
+                            }
+                            .mainwords {
+                                width: 100%;
+                            }
+                            .bids {
+                                width: 44%;
+                                float: none;
+
+                                .howmany {
+                                    float: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    /* for navigation bar */
+    .headersection a:not(:first-child) {display: none;}
+    .headersection a.icon {
+      float: right;
+      display: block;
+    }
+
+
+    .headersection.responsive {position: relative;}
+    .headersection.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .headersection.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+ 
+
+ 
+
+    .headersection {
+        padding-bottom: 20px;
+    }
+
+    .headersection .whiteheader {
+        padding-bottom: 0px;
+        top: 10px;
+    }
+
+    .postad {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 4px;
+        color: #ffffff;
+        background-color: #386DF5;
+        font-size: 6px;
+        border: none;
+        float: right;
+        margin-right: 15px;
+        margin-top: 14px;
+    }
+
+
+    .notification {
+        margin-top: 19px;
+        margin-right: 15px;
+        width: 15px;
+    }
+
+    .avatar {
+        margin-top: 13px;
+        margin-right: 31px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .myTopnav {
+        margin-top: 6px;
+        margin-right: 0;
+    }
+
+
+    .headersection .logo1 {
+        width: 17px;
+        left: 53px;
+        top: 27px;
+    }
+
+    .headersection .workinghammer {
+        margin-left: 0;
+        font-size: 12px !important;
+    }
+
+    .headersection .whiteheader{
+
+        padding: 5px 71px;
+    }
+
+
+
+
+    .middlesection {
+        padding-left: 56px;
+
+        .navbar a {
+            font-size: 11px;
+        }
+
+        .fa-chevron-right:before {
+            margin-left: 9px;
+        }
+    }
+
+
+    .maincontent {
+        .done {
+            font-size: 20px;
+        }
+
+        .forwho {
+            margin-right: 0px;
+            height: 41px;
+            width: 145px;
+
+            .client {
+                font-size: 10px;
+                height: 33px;
+            }
+
+            .worker {
+                font-size: 10px;
+            }
+        }
+
+        .content {
+            .div1 {
+                .imagediv {
+                    width: 50%;
+                }
+
+                .wordsdiv {
+                    width: 100%;
+
+
+                    .caption, .caption2, .caption3, .caption4 {
+                          font-size: 6px;
+                    }
+
+                    .bids {
+                        float: none; 
+
+                        .currency, .howmuch {
+                            font-size: 13px;
+                        }
+
+                        .howmany {
+                            font-size: 10px;
+                             margin-top: -1px;
+                             float: none;
+                        }
+                    }
+
+
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    .headersection {
+        .avatar {
+            margin-top: 16px;
+            width: 16px;
+            height: 16px;
+        }
+
+        .notification {
+            margin-right: 9px;
+            margin-top: 19px;
+
+            width: 12px;
+        }
+
+        .postad {
+            padding-left: 6px;
+            padding-right: 6px;
+
+            margin-right: 9px;
+        }
+
+        .whiteheader {
+            padding: 5px 58px;
+        }
+
+        .logo1 {
+            left: 26px;
+        }
+
+        .workinghammer {
+            margin-left: -12px;
+        }
+    }
+
+
+
+    .middlesection {
+        padding-left: 38px;
+
+        .gridbox {
+            margin-left: 47px;
+        }
+
+        .navbar a {
+            font-size: 11px;
+        }
+
+        .fa-chevron-right:before {
+            margin-left: 2px;
+        }
+
+    }
+
+
+
+    .maincontent {
+        .done {
+            font-size: 15px;
+        }
+
+        .forwho {
+            height: 31px;
+            width: 103px;
+            margin-top: 2px;
+
+
+            .client {
+                font-size: 7px;
+                height: 22px;
+            }
+
+            .worker {
+                font-size: 7px;
+                padding: 4px;
+            }
+        }
+
+        .content  {
+            .div1 {
+                .wordsdiv {
+                    .wordsheader {
+                        font-size: 11px;
+                    }
+
+                    .caption, .caption2, .caption3, .caption4 {
+                        font-size: 5px;
+                        margin: 0;
+                    }
+
+                    .mainparagraph {
+                        font-size: 7px;
+                    }
+
+                    .bids {
+                        .currency, .howmuch {
+                            font-size: 10px;
+                        }
+
+                        .howlong {
+                            font-size: 7px;
+                        }
+
+                        .howmany {
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+
+
