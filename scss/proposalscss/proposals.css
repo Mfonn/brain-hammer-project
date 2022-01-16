@@ -429,7 +429,7 @@ body {
 
 /* for the chatbot */
 .chat-popup {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 999;
   top: 10vh;
@@ -449,16 +449,83 @@ body {
 }
 
 .chat-popup .chatbox {
-  background-color: red;
   width: 65%;
   height: inherit;
   float: left;
+  border: 1px solid #EEEEEE;
+}
+
+.chat-popup .chatbox .header1 {
+  height: 15%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.chat-popup .chatbox .header1 .forest {
+  width: 18%;
+  margin-top: 19px;
+  margin-left: 14px;
+  float: left;
+}
+
+.chat-popup .chatbox .header1 .headerwords {
+  width: 60%;
+  display: inline-block;
+  white-space: nowrap;
+  margin-top: -3px;
+  margin-left: 9px;
+}
+
+.chat-popup .chatbox .header1 .headerwords .wanta {
+  font-size: 13px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.chat-popup .chatbox .header1 .headerwords .money {
+  margin: 0;
+  color: #333333;
+  font-weight: 600;
+  margin-top: 2px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.chat-popup .chatbox .header1 .headerwords .timecount {
+  margin: 0;
+  display: inline-block;
+  font-size: 12px;
+  color: #666666;
+}
+
+.chat-popup .chatbox .header1 .awards {
+  color: #386DF5;
+  width: 13%;
+  background-color: #ffffff;
+  border: 1px solid #386DF5;
+  border-radius: 5px;
+  float: right;
+  font-size: 11px;
+  margin-right: 7px;
+  margin-top: 20px;
+  padding: 5px 10px 5px 10px;
+}
+
+.chat-popup .chatbox .chatbody {
+  height: 60%;
+  background-color: blue;
+}
+
+.chat-popup .chatbox .chatfooter {
+  height: 25%;
+  background-color: yellow;
 }
 
 .chat-popup .recommend {
   width: 35%;
   height: inherit;
   float: right;
+  border: 1px solid #EEEEEE;
 }
 
 .chat-popup .recommend .group {
@@ -618,6 +685,26 @@ body {
   .chat-popup .recommend .mainbody .abouthim2 {
     margin-top: 8px;
   }
+  .chat-popup .chatbox .header1 {
+    height: 12%;
+  }
+  .chat-popup .chatbox .header1 .forest {
+    width: 15%;
+    margin-left: 8px;
+  }
+  .chat-popup .chatbox .header1 .headerwords .wanta {
+    font-size: 9px;
+  }
+  .chat-popup .chatbox .header1 .headerwords .money {
+    font-size: 10px;
+  }
+  .chat-popup .chatbox .header1 .headerwords .timecount {
+    font-size: 9px;
+  }
+  .chat-popup .chatbox .header1 .awards {
+    font-size: 8px;
+    padding: 5px 3px 5px 3px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -745,6 +832,15 @@ body {
   .chat-popup .chatbox {
     width: 60%;
   }
+  .chat-popup .chatbox .header1 .forest {
+    width: 11%;
+  }
+  .chat-popup .chatbox .header1 .awards {
+    font-size: 7px;
+  }
+  .chat-popup .chatbox .header1 .headerwords .wanta {
+    font-size: 8px;
+  }
   .chat-popup .recommend {
     width: 40%;
   }
@@ -802,6 +898,24 @@ body {
   }
   .footersection .copyright {
     font-size: 6px;
+  }
+  .chat-popup .chatbox .header1 .forest {
+    display: none;
+  }
+  .chat-popup .chatbox .header1 .awards {
+    margin-right: 3px;
+    margin-top: 17px;
+    font-size: 6px;
+    padding: 6px 1px 5px 3px;
+  }
+  .chat-popup .chatbox .header1 .headerwords .wanta {
+    margin-left: 3px;
+  }
+  .chat-popup .chatbox .header1 .headerwords .wanta .money {
+    font-size: 9px;
+  }
+  .chat-popup .chatbox .header1 .headerwords .wanta .timecount {
+    font-size: 8px;
   }
   .chat-popup .recommend .notifi {
     font-size: 8px;

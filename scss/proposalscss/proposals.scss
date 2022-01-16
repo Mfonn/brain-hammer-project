@@ -512,7 +512,7 @@ body {
 
 /* for the chatbot */
 .chat-popup {
-    display: block;
+    display: none;
     position: fixed;
     z-index: 999;
     top: 10vh;
@@ -532,16 +532,88 @@ body {
     }
 
     .chatbox {
-        background-color: red;
         width: 65%;
         height: inherit;
         float: left;
+
+        border: 1px solid #EEEEEE;
+
+        .header1{
+            height: 15%;
+            background-color: #ffffff;
+            border-bottom: 1px solid #EEEEEE;
+
+            .forest {
+                width: 18%;
+                margin-top: 19px;
+                margin-left: 14px;
+
+                float: left;
+
+            }
+
+            .headerwords {
+                width: 60%;
+                display: inline-block;
+                white-space: nowrap;
+                margin-top: -3px;
+                margin-left: 9px;
+
+                .wanta {
+                    font-size: 13px;
+                    margin: 0;
+                    margin-top: 20px;
+                }
+
+                .money {
+                    margin: 0;
+                    color: #333333;
+                    font-weight: 600;
+                    margin-top: 2px;
+                    display: inline-block;
+                    font-size: 14px;
+                }
+
+                .timecount {
+                    margin: 0;
+                    display: inline-block;
+                    font-size: 12px;
+                    color: #666666;
+                }
+            }
+
+            .awards {
+                color: #386DF5;
+                width: 13%;
+                background-color: #ffffff;
+                border: 1px solid #386DF5;
+                border-radius: 5px;
+                float: right;
+                font-size: 11px;
+                margin-right: 7px;
+                margin-top: 20px;
+                padding: 5px 10px 5px 10px;
+
+            }
+        }
+
+        .chatbody {
+            height: 60%;
+            background-color: blue;
+        }
+
+        .chatfooter {
+            height: 25%;
+            background-color: yellow;
+        }
     }
 
     .recommend {
         width: 35%;
         height: inherit;
         float:right;
+
+        border: 1px solid #EEEEEE;
 
         .group {
             margin-top: 0%;
@@ -752,7 +824,41 @@ body {
                 }
             }
         }
+
+        .chatbox {
+            .header1 {
+                height: 12%;
+
+                .forest {
+                    width: 15%;
+                    margin-left: 8px;
+                }
+
+                .headerwords {
+                    .wanta {
+                        font-size: 9px;
+                    }
+
+                    .money {
+                        font-size: 10px;
+                    }
+
+                    .timecount {
+                        font-size: 9px;
+                    }
+
+                    
+                }
+
+                .awards {
+                    font-size: 8px;
+                    padding: 5px 3px 5px 3px;
+                }
+            }
+        }
     }
+
+
 
 
 }
@@ -927,7 +1033,25 @@ body {
 
         .chatbox {
             width: 60%;
+
+           .header1 {
+            .forest {
+                width: 11%;
+            }
+
+            .awards {
+                font-size: 7px;
+            }
+
+           .headerwords {
+            .wanta {
+                font-size: 8px;
+            } 
+           }
+
         }
+        }
+        
         
         .recommend {
             width: 40%;
@@ -1029,6 +1153,35 @@ body {
 
     .chat-popup {
         .chatbox {
+             .header1 {
+                .forest {
+                    display: none;
+                 }
+
+                 .awards {
+                     margin-right: 3px;
+                     margin-top: 17px;
+                     font-size: 6px;
+                     padding: 6px 1px 5px 3px;
+                 }
+
+                 .headerwords {
+                     .wanta {
+                        margin-left: 3px;
+
+                        .money {
+                            font-size: 9px;
+                        }
+
+                        .timecount {
+                            font-size: 8px;
+                        }
+                     }
+                 }
+
+                
+             }
+
         }
 
         .recommend {

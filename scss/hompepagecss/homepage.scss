@@ -37,7 +37,7 @@
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
 
       /* for the signup, signin, post ad buttons */
             .buttons {
@@ -94,76 +94,58 @@
 /* for the lower section of the top page */
 /*for find work & hire talent*/
 
-.whattodo {
-    position: absolute;
-
-    z-index: 2;
-    width: 241px;
-    height: 58px;
-    left: 21%;
-    top: 59%;
-
+.forwho {
+    display: inline-block;
     background: #18191B;
     mix-blend-mode: multiply;
     opacity: 0.6;
     box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.863);
     border-radius: 47px;
-}
+
+    width: 216px;
+    height: 62px;
+    border-radius: 30px;
+
+    float: left;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    padding-top: 4px;
+    padding-left: 5px;
+    margin-left: 22%;
+    margin-top: 52px;
 
 
-.working {
-    position: absolute;
-    z-index: 2;
-    width: 34%;
-    height: 76px;
-    left: 21%;
-    top: 55%;
-
-
-    .findwork {
-        display: flex;
-        width: 123px;
-
-        flex-direction: row;
-        justify-content: center;
-
-        align-items: center;
-        padding: 15px 29px;
-
-        z-index: 3;
-        margin-left: 9px;
-        margin-top: 27px;
-
-        background: #386DF5;
-        border-color: #386DF5;
+    .client {
         color: #ffffff;
-        opacity: 1;
-        /* /shadow/base */
-
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
-        border-radius: 167px;
+        background-color: #386DF5;
+        border: none;
+        border-radius: 30px;
+        font-size: 15px;
+        height: 52px;
+        width: 50%;
     }
 
-    .hiretalent {
-        display: flex;
-        flex-direction: row;
-
-        justify-content: center;
-        align-items: center;
-
-        z-index: 3;
-        position: absolute;
-
-        margin-left: 144px;
-        margin-top: 42px;
-
-        color: #ffffff;
-        opacity: 1;
-        background-color: inherit;
-        border-width: 0px;
+    .client:hover {
+        background-color: #244eb9;
     }
-    
+
+    .worker {
+        border: none;
+        color: #ffffff;
+        background-color: transparent;
+        padding: 11px;
+        margin-left: -4px;
+        border-radius: 24px;
+        font-size: 14px;
+    }
+
+    .worker:hover {
+        background-color: #c7c8ca;
+    }
 }
+
 
 .searchbox {
     /* for the search boxes */
@@ -171,6 +153,7 @@
     
     margin-top: 128px;
     margin-left: 22%;
+    margin-bottom: 70px;
     padding-bottom: 49px;
 
 
@@ -320,69 +303,7 @@
 
 
   /* for the lower section of the top page */
-/*for find work & hire talent*/
 
-.whattodo {
-    position: absolute;
-
-    z-index: 2;
-    width: 28%;
-    height: 73px;
-    left: 14%;
-    top: 70%;
-
-    background: #18191B;
-    mix-blend-mode: multiply;
-    opacity: 0.6;
-    box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.863);
-    border-radius: 47px;
-}
-
-.working {
-    position: absolute;
-    z-index: 2;
-    width: 34%;
-    height: 76px;
-    left: 14%;
-    top: 74%;
-}
-
- .findwork {
-    display: flex;
-    width: 43%;
-
-    flex-direction: row;
-    justify-content: center;
-
-    align-items: center;
-    padding: 17px 26px;
-
-    z-index: 3;
-    margin-left: 9px;
-    margin-top: -28px;
-
-    background: #386DF5;
-    border-color: #386DF5;
-    color: #ffffff;
-    opacity: 1;
-    /* /shadow/base */
-
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
-    border-radius: 167px;
-}
-
-.hiretalent {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    margin-left: 51%;
-    color: #ffffff;
-    opacity: 1;
-    background-color: inherit;
-    border-width: 0px;
-}
   
 
 
@@ -557,42 +478,183 @@
 
 
 
-    /* for the signup button and pop up modal */
-    .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 999; /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
-    
-    /* Modal Content/Box */
-    .modal-content {
-        background-color: #fefefe;
-    
-        margin: 15% auto;
-        padding: 20px;
-        border: 1px solid #888;
-    
-        width: 41%;
-        height: 53%;
-        
-        margin-top: 20%;
-        border-radius: 10px;
-      }
+ /* for the signup button and pop up modal */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 
-      form {
-        padding: 38px;
-      }
 
-      .sign-in-width {
-          margin-top: 10%;
-      }
+            /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+
+            width: 37%;
+            height: fit-content;
+            
+            margin-top: 13%;
+            border-radius: 5px;
+
+
+            form {
+                padding: 5% 10%;
+              }
+            
+           .sign-in-with {
+                margin-top: 27px;
+                margin-bottom: 2px;
+
+                font-size: 12px;
+                color: #111827;
+              }
+
+            .bluehammer {
+                width: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+
+            .icons {
+                    color: #6B7280;
+                    background-color: #ffffff;
+                    
+                    padding: 3px 35px 3px 35px;
+   
+                    border: 1px solid #D1D5DB;
+                    border-radius: 3px;
+            }
+
+            h3 {
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid #D1D5DB;
+                line-height: 0.1em;
+                margin: 10px 0 20px;
+                color: #D1D5DB;
+                margin-top: 17px;
+             } 
+             
+             h3 span { 
+                 background:#fff; 
+                 padding:0 10px; 
+                 color: #808080;
+                 font-size: 10px;
+             }
+
+
+             label {
+                font-size: 10px;
+                color: #808080;
+                font-weight: 200;
+            }
+           
+            .input {
+                margin: 2px 0px 0px 0px;
+                width: 93%;
+                height: 28px;
+                border-radius: 1px #D1D5DB;
+            }
+           
+            .emailbox {
+                margin-bottom: 4px;
+            }
+           
+            .namelabel {
+                margin-top: 4px;
+            }
+
+            .remember {
+                display: inline-block;
+                margin: 18px 10px 0px 0px;
+                width: 7%;
+             }
+            
+             .forgot {
+                 text-decoration: none;
+                 color: #386DF5;
+                 margin-left: 31%;
+             }
+            
+             .signinbutton {
+                display: block;
+                border-radius: 38px;
+                color: #ffffff;
+                margin: 8px;
+                padding: 10px 110px;
+                background-color: #254caf;
+                cursor: pointer;
+                border: none;
+             }
+            
+             .signinbutton:hover {
+                 background-color: #254CAF;
+             }
+            
+             .signupbutton {
+                display: block;
+                border-radius: 38px;
+                color: #386DF5;
+                margin: 8px;
+                padding: 10px 110px;
+                background-color: #ffffff;
+                cursor: pointer;
+                border: none;
+             }
+            
+             .signupbutton:hover {
+                 background-color: #386DF5;
+                 color: #ffffff;
+             }
+
+
+
+           
+
+        /* for the signup, signin, post ad buttons */
+        .buttons {
+            background-color:  #386DF5;
+            border: transparent;
+    
+            margin-top: 32px;
+            margin-right: 6px;
+            font-size: 15px !important;
+            }
+    
+            .buttons:hover {
+            background-color: #092a7c;
+            }
+    
+            .signup {
+            background-color: transparent;
+            }
+    
+            .signin {
+            background-color: transparent;
+            }
+            
+            
+        }
+
+
+
+
+
+
+}
 
 
 
@@ -823,9 +885,6 @@
             }
         }  
         
-        .whattodo {
-            margin-top: 24px;
-        }
 
         
   }
@@ -896,27 +955,21 @@
             }
         }
 
-        .whattodo {
-            width: 173px;
-            height: 48px;
-            top: 54%;
-        }
-    
-        .working {
-            top: 50%;
+        .forwho {
+            margin-left: 18%;
+            margin-top: 94px;
 
-            .findwork {
-                width: 93px;
-                padding: 14px 11px;
-                margin-top: 27px;
-                font-size: 9px;
-                top: 50%;
+            width: 200px;
+            height:45px;
+
+            .client {
+                border-radius: 37px;
+                font-size: 12px;
+                height:36px;
             }
 
-            .hiretalent {
+            .worker {
                 font-size: 10px;
-                margin-left: 104px;
-                margin-top: 42px;
             }
         }
 
@@ -957,6 +1010,54 @@
             padding: 0px;
         }
     }
+
+
+    .modal {
+        .modal-content {
+            .bluehammer {
+                width: 20px;
+            }
+
+            h2 {
+                font-size: 16px;
+                margin-top: 9px;
+            }
+
+            .sign-in-with {
+                margin-top: 24px;
+                font-size: 10px;
+            }
+
+            .icons {
+                padding: 3px 20px 3px 20px;
+            }
+
+            h3 span {
+                font-size: 9px;
+            }
+
+            label {
+                font-size: 9px;
+            }
+
+            .input {
+                width: 89%;
+                height: 17px;
+            }
+
+            .forgot {
+                margin-left: 13%;
+            }
+
+            .signinbutton, .signupbutton {
+                font-size: 10px;
+                padding: 12px 65px;
+            }
+        }
+
+
+    }
+
 }
 
 
@@ -1017,16 +1118,13 @@
             }
         }
 
-        .searchitems {
-            margin-top: 164px;
-            margin-left: 11%;
-    
-    
-        .search {
-            font-size: 16px;
-            width: 18%;
-            padding: 14px;
-            
+        .searchbox {
+            .searchitems h6 {
+                margin: 0;
+                font-size: 9px;
+                padding: 3px;
+                margin-left: -6px;
+            }
         }
     
         .location {
@@ -1044,7 +1142,60 @@
         ::placeholder {
             font-size: 8px;
         }
-    } 
+    
+    }
+
+    .modal {
+        .modal-content {
+            padding: 10px;
+
+            .bluehammer {
+                width: 16px;
+            }
+
+            h2 {
+                font-size: 12px;
+                margin-top: 8px;
+            }
+
+            .sign-in-with {
+                margin-top: 20px;
+                font-size: 8px;
+            }
+
+            .icons {
+                padding: 2px 14px 2px 14px;
+                font-size: 9px;
+            }
+
+            h3 span {
+                font-size: 8px;
+            }
+
+            label {
+                font-size: 8px;
+            }
+
+            .input {
+                width: 89%;
+                height: 13px;
+            }
+
+            .forgot {
+                margin-left: 7%;
+                font-size: 7px;
+            }
+
+            .remember {
+                font-size: 7px;
+                margin: 8px 2px 0px 0px;
+            }
+
+            .signinbutton, .signupbutton {
+                font-size: 8px;
+                padding: 10px 38px;
+            }
+        }
     }
 }
 
@@ -1094,13 +1245,25 @@
     
     }
 
-    .whattodo {
-        width: 126px;
-        height: 44px;
-        top: 59%;
+    .forwho {
+        margin-left: 23%;
+        margin-top: 154px;
+        width: 91px;
+        height: 33px;
+
+        .client {
+            font-size: 6px;
+            height: 26px;
+        }
+
+        .worker {
+            margin-left: 36px;
+            font-size: 6px;
+            float: right;
+            margin-top: -27px;
+        }
     }
 
-    
     .searchbox {
         .searchitems {
             margin-top: 169px;
@@ -1125,9 +1288,14 @@
             .search {
                 font-size: 8px;
                 position: absolute;
-                padding: 16px;
+                padding: 11px;
                 margin-top: -1px;
+                width: 15%;
 
+            }
+
+            h6 {
+                font-size: 8px;
             }
         }
     }
@@ -1162,5 +1330,49 @@
             font-size: 6px;
         }
     }
+
+
+    .modal {
+        .modal-content {
+            width: 46%;
+            margin-top: 39%;
+
+            .bluehammer {
+                width: 14px;
+            }
+
+            h2 {
+                font-size: 9px;
+                margin-top: 7px;
+            }
+
+            .sign-in-with {
+                margin-top: 12px;
+                font-size: 7px;
+            }
+            .icons {
+                padding: 1px 9px 1px 9px;
+                font-size: 7px;
+            }
+
+            h3 span {
+                font-size: 6px;
+            }
+
+            label {
+                font-size: 7px;
+            }
+
+            .input {
+                height: 8px;
+            }
+
+            .signinbutton, .signupbutton {
+                font-size: 7px;
+                padding: 8px 33px;
+            }
+        }
+    }
+
 
 }

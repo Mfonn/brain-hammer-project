@@ -36,7 +36,9 @@ body, html {
           transform: translate(-50%, -50%);
   z-index: 2;
   width: 100%;
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   /* for the signup, signin, post ad buttons */
   /* for the elements on the topsection */
   /* for the lower section of the top page */
@@ -89,81 +91,58 @@ body, html {
   opacity: 0.8;
 }
 
-.page-container .whattodo {
-  position: absolute;
-  z-index: 2;
-  width: 241px;
-  height: 58px;
-  left: 21%;
-  top: 59%;
+.page-container .forwho {
+  display: inline-block;
   background: #18191B;
   mix-blend-mode: multiply;
   opacity: 0.6;
   -webkit-box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.863);
           box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.863);
   border-radius: 47px;
-}
-
-.page-container .working {
-  position: absolute;
-  z-index: 2;
-  width: 34%;
-  height: 76px;
-  left: 21%;
-  top: 55%;
-}
-
-.page-container .working .findwork {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 123px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  width: 216px;
+  height: 62px;
+  border-radius: 30px;
+  float: left;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px 29px;
-  z-index: 3;
-  margin-left: 9px;
-  margin-top: 27px;
-  background: #386DF5;
-  border-color: #386DF5;
-  color: #ffffff;
-  opacity: 1;
-  /* /shadow/base */
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
-  border-radius: 167px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-top: 4px;
+  padding-left: 5px;
+  margin-left: 22%;
+  margin-top: 52px;
 }
 
-.page-container .working .hiretalent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 3;
-  position: absolute;
-  margin-left: 144px;
-  margin-top: 42px;
+.page-container .forwho .client {
   color: #ffffff;
-  opacity: 1;
-  background-color: inherit;
-  border-width: 0px;
+  background-color: #386DF5;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  height: 52px;
+  width: 50%;
+}
+
+.page-container .forwho .client:hover {
+  background-color: #244eb9;
+}
+
+.page-container .forwho .worker {
+  border: none;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 11px;
+  margin-left: -4px;
+  border-radius: 24px;
+  font-size: 14px;
+}
+
+.page-container .forwho .worker:hover {
+  background-color: #c7c8ca;
 }
 
 .page-container .searchbox {
@@ -173,6 +152,7 @@ body, html {
 .page-container .searchbox .searchitems {
   margin-top: 128px;
   margin-left: 22%;
+  margin-bottom: 70px;
   padding-bottom: 49px;
 }
 
@@ -299,82 +279,6 @@ body, html {
 }
 
 /* for the lower section of the top page */
-/*for find work & hire talent*/
-.whattodo {
-  position: absolute;
-  z-index: 2;
-  width: 28%;
-  height: 73px;
-  left: 14%;
-  top: 70%;
-  background: #18191B;
-  mix-blend-mode: multiply;
-  opacity: 0.6;
-  -webkit-box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.863);
-          box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.863);
-  border-radius: 47px;
-}
-
-.working {
-  position: absolute;
-  z-index: 2;
-  width: 34%;
-  height: 76px;
-  left: 14%;
-  top: 74%;
-}
-
-.findwork {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 43%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 17px 26px;
-  z-index: 3;
-  margin-left: 9px;
-  margin-top: -28px;
-  background: #386DF5;
-  border-color: #386DF5;
-  color: #ffffff;
-  opacity: 1;
-  /* /shadow/base */
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
-  border-radius: 167px;
-}
-
-.hiretalent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 3;
-  margin-left: 51%;
-  color: #ffffff;
-  opacity: 1;
-  background-color: inherit;
-  border-width: 0px;
-}
-
 /* for the search boxes */
 .searchitems {
   margin-top: 144px;
@@ -538,26 +442,150 @@ body, html {
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
+  /* Modal Content/Box */
 }
 
-/* Modal Content/Box */
-.modal-content {
+.modal .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 41%;
-  height: 53%;
-  margin-top: 20%;
-  border-radius: 10px;
+  width: 37%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 13%;
+  border-radius: 5px;
+  /* for the signup, signin, post ad buttons */
 }
 
-form {
-  padding: 38px;
+.modal .modal-content form {
+  padding: 5% 10%;
 }
 
-.sign-in-width {
-  margin-top: 10%;
+.modal .modal-content .sign-in-with {
+  margin-top: 27px;
+  margin-bottom: 2px;
+  font-size: 12px;
+  color: #111827;
+}
+
+.modal .modal-content .bluehammer {
+  width: 24px;
+}
+
+.modal .modal-content h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.modal .modal-content .icons {
+  color: #6B7280;
+  background-color: #ffffff;
+  padding: 3px 35px 3px 35px;
+  border: 1px solid #D1D5DB;
+  border-radius: 3px;
+}
+
+.modal .modal-content h3 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #D1D5DB;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  color: #D1D5DB;
+  margin-top: 17px;
+}
+
+.modal .modal-content h3 span {
+  background: #fff;
+  padding: 0 10px;
+  color: #808080;
+  font-size: 10px;
+}
+
+.modal .modal-content label {
+  font-size: 10px;
+  color: #808080;
+  font-weight: 200;
+}
+
+.modal .modal-content .input {
+  margin: 2px 0px 0px 0px;
+  width: 93%;
+  height: 28px;
+  border-radius: 1px #D1D5DB;
+}
+
+.modal .modal-content .emailbox {
+  margin-bottom: 4px;
+}
+
+.modal .modal-content .namelabel {
+  margin-top: 4px;
+}
+
+.modal .modal-content .remember {
+  display: inline-block;
+  margin: 18px 10px 0px 0px;
+  width: 7%;
+}
+
+.modal .modal-content .forgot {
+  text-decoration: none;
+  color: #386DF5;
+  margin-left: 31%;
+}
+
+.modal .modal-content .signinbutton {
+  display: block;
+  border-radius: 38px;
+  color: #ffffff;
+  margin: 8px;
+  padding: 10px 110px;
+  background-color: #254caf;
+  cursor: pointer;
+  border: none;
+}
+
+.modal .modal-content .signinbutton:hover {
+  background-color: #254CAF;
+}
+
+.modal .modal-content .signupbutton {
+  display: block;
+  border-radius: 38px;
+  color: #386DF5;
+  margin: 8px;
+  padding: 10px 110px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+
+.modal .modal-content .signupbutton:hover {
+  background-color: #386DF5;
+  color: #ffffff;
+}
+
+.modal .modal-content .buttons {
+  background-color: #386DF5;
+  border: transparent;
+  margin-top: 32px;
+  margin-right: 6px;
+  font-size: 15px !important;
+}
+
+.modal .modal-content .buttons:hover {
+  background-color: #092a7c;
+}
+
+.modal .modal-content .signup {
+  background-color: transparent;
+}
+
+.modal .modal-content .signin {
+  background-color: transparent;
 }
 
 /* for the signup, signin, post ad buttons */
@@ -741,9 +769,6 @@ form {
     font-size: 26px;
     line-height: 28px;
   }
-  .page-container .whattodo {
-    margin-top: 24px;
-  }
   .topnav .topheader {
     padding: 20px 20px;
   }
@@ -783,25 +808,19 @@ form {
     font-size: 12px;
     width: 60%;
   }
-  .page-container .whattodo {
-    width: 173px;
-    height: 48px;
-    top: 54%;
+  .page-container .forwho {
+    margin-left: 18%;
+    margin-top: 94px;
+    width: 200px;
+    height: 45px;
   }
-  .page-container .working {
-    top: 50%;
+  .page-container .forwho .client {
+    border-radius: 37px;
+    font-size: 12px;
+    height: 36px;
   }
-  .page-container .working .findwork {
-    width: 93px;
-    padding: 14px 11px;
-    margin-top: 27px;
-    font-size: 9px;
-    top: 50%;
-  }
-  .page-container .working .hiretalent {
+  .page-container .forwho .worker {
     font-size: 10px;
-    margin-left: 104px;
-    margin-top: 42px;
   }
   .page-container .searchbox .searchitems {
     margin-top: 122px;
@@ -824,6 +843,37 @@ form {
     width: 10px;
     height: 10px;
     padding: 0px;
+  }
+  .modal .modal-content .bluehammer {
+    width: 20px;
+  }
+  .modal .modal-content h2 {
+    font-size: 16px;
+    margin-top: 9px;
+  }
+  .modal .modal-content .sign-in-with {
+    margin-top: 24px;
+    font-size: 10px;
+  }
+  .modal .modal-content .icons {
+    padding: 3px 20px 3px 20px;
+  }
+  .modal .modal-content h3 span {
+    font-size: 9px;
+  }
+  .modal .modal-content label {
+    font-size: 9px;
+  }
+  .modal .modal-content .input {
+    width: 89%;
+    height: 17px;
+  }
+  .modal .modal-content .forgot {
+    margin-left: 13%;
+  }
+  .modal .modal-content .signinbutton, .modal .modal-content .signupbutton {
+    font-size: 10px;
+    padding: 12px 65px;
   }
 }
 
@@ -868,36 +918,73 @@ form {
     width: 64px;
     margin-top: 68px;
   }
-  .page-container .searchitems {
-    margin-top: 164px;
-    margin-left: 11%;
+  .page-container .searchbox .searchitems h6 {
+    margin: 0;
+    font-size: 9px;
+    padding: 3px;
+    margin-left: -6px;
   }
-  .page-container .searchitems .search {
-    font-size: 16px;
-    width: 18%;
-    padding: 14px;
-  }
-  .page-container .searchitems .location {
+  .page-container .location {
     width: 25%;
     padding: 12px;
     padding-bottom: 14px;
   }
-  .page-container .searchitems .searchkey {
+  .page-container .searchkey {
     width: 25%;
     padding: 12px;
     padding-bottom: 14px;
   }
-  .page-container .searchitems ::-webkit-input-placeholder {
+  .page-container ::-webkit-input-placeholder {
     font-size: 8px;
   }
-  .page-container .searchitems :-ms-input-placeholder {
+  .page-container :-ms-input-placeholder {
     font-size: 8px;
   }
-  .page-container .searchitems ::-ms-input-placeholder {
+  .page-container ::-ms-input-placeholder {
     font-size: 8px;
   }
-  .page-container .searchitems ::placeholder {
+  .page-container ::placeholder {
     font-size: 8px;
+  }
+  .modal .modal-content {
+    padding: 10px;
+  }
+  .modal .modal-content .bluehammer {
+    width: 16px;
+  }
+  .modal .modal-content h2 {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  .modal .modal-content .sign-in-with {
+    margin-top: 20px;
+    font-size: 8px;
+  }
+  .modal .modal-content .icons {
+    padding: 2px 14px 2px 14px;
+    font-size: 9px;
+  }
+  .modal .modal-content h3 span {
+    font-size: 8px;
+  }
+  .modal .modal-content label {
+    font-size: 8px;
+  }
+  .modal .modal-content .input {
+    width: 89%;
+    height: 13px;
+  }
+  .modal .modal-content .forgot {
+    margin-left: 7%;
+    font-size: 7px;
+  }
+  .modal .modal-content .remember {
+    font-size: 7px;
+    margin: 8px 2px 0px 0px;
+  }
+  .modal .modal-content .signinbutton, .modal .modal-content .signupbutton {
+    font-size: 8px;
+    padding: 10px 38px;
   }
 }
 
@@ -932,10 +1019,21 @@ form {
     line-height: 12px;
     width: 70%;
   }
-  .page-container .whattodo {
-    width: 126px;
-    height: 44px;
-    top: 59%;
+  .page-container .forwho {
+    margin-left: 23%;
+    margin-top: 154px;
+    width: 91px;
+    height: 33px;
+  }
+  .page-container .forwho .client {
+    font-size: 6px;
+    height: 26px;
+  }
+  .page-container .forwho .worker {
+    margin-left: 36px;
+    font-size: 6px;
+    float: right;
+    margin-top: -27px;
   }
   .page-container .searchbox .searchitems {
     margin-top: 169px;
@@ -965,8 +1063,12 @@ form {
   .page-container .searchbox .searchitems .search {
     font-size: 8px;
     position: absolute;
-    padding: 16px;
+    padding: 11px;
     margin-top: -1px;
+    width: 15%;
+  }
+  .page-container .searchbox .searchitems h6 {
+    font-size: 8px;
   }
   .gridsection .published {
     font-size: 19px;
@@ -986,6 +1088,38 @@ form {
   }
   .footersection .copyright {
     font-size: 6px;
+  }
+  .modal .modal-content {
+    width: 46%;
+    margin-top: 39%;
+  }
+  .modal .modal-content .bluehammer {
+    width: 14px;
+  }
+  .modal .modal-content h2 {
+    font-size: 9px;
+    margin-top: 7px;
+  }
+  .modal .modal-content .sign-in-with {
+    margin-top: 12px;
+    font-size: 7px;
+  }
+  .modal .modal-content .icons {
+    padding: 1px 9px 1px 9px;
+    font-size: 7px;
+  }
+  .modal .modal-content h3 span {
+    font-size: 6px;
+  }
+  .modal .modal-content label {
+    font-size: 7px;
+  }
+  .modal .modal-content .input {
+    height: 8px;
+  }
+  .modal .modal-content .signinbutton, .modal .modal-content .signupbutton {
+    font-size: 7px;
+    padding: 8px 33px;
   }
 }
 /*# sourceMappingURL=homepage.css.map */
