@@ -211,7 +211,7 @@ body {
 
 /* for the grid and map section */
 .middlesection {
-    height: 500px;
+   
     width: 100%;
     z-index: 1;
     top: 0;
@@ -404,13 +404,12 @@ body {
     .maingrid {
         padding: 10px;
 
-        overflow-y: scroll;
 
         .columnone {
             width: 100%;
             height: fit-content;
 
-            margin-bottom: 10px;
+
 
             .image {
                 width: 30%;
@@ -426,13 +425,13 @@ body {
 
                 .mainimage {
                     width: 96%;
+                    float: right;
                 }
 
 
             }
 
             .image2 {
-                margin-top: 20px;
 
                 .mainimage2 {
                     width: 98%;
@@ -441,9 +440,9 @@ body {
             }
 
             .mainimage3 {
-                width: 88%;
+                margin-top: 64px;
             }
-    
+
             .aboutimage {
                 width: 67%;
                 float: right;
@@ -462,7 +461,7 @@ body {
                     margin: 0;
                     margin-top: 8px;
                     font-size: 12px;
-                    margin-bottom: 9%;
+                    margin-bottom: 3%;
                     
                 }
 
@@ -500,8 +499,8 @@ body {
                     float: right;
                     display: inline-block;
                     color: #6B7280;
-                    font-size: 14px;
-                    margin-top: 23px;
+                    font-size: 12px;
+                    margin-top: 17px;
                     margin-bottom: 0;
                 }
 
@@ -510,6 +509,7 @@ body {
                     font-weight: 700;
                     float: right;
                     margin-bottom: 0;
+                    font-size: 14px;
                 }
 
              
@@ -519,6 +519,18 @@ body {
                 margin-top: 14px;
             }
         }
+
+        .columnone:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+
+
+        .two {
+            margin-top: 4%;
+        }
+          
 
 
        
@@ -889,6 +901,8 @@ body {
     }
 
     .gridsection {
+
+
         .maingrid {
             .columnone {
                 .image {
@@ -898,7 +912,7 @@ body {
                 }
                 .aboutimage {
                     margin-top: 0px;
-                    margin-bottom: 40px;
+                    margin-bottom: 10px;
 
                     .want {
                         font-size: 13px;
@@ -922,11 +936,11 @@ body {
                     }
 
                     .howmuch {
-                        font-size: 13px;
+                        font-size: 12px;
                     }
 
                     .howlong {
-                        font-size: 10px;
+                        font-size: 8px;
                     }
 
                     .howlong2 {
@@ -1009,12 +1023,12 @@ body {
                     }
 
                     .howmuch {
-                        font-size: 11px;
+                        font-size: 10px;
                     }
 
                     .howlong {
-                        font-size: 11px;
-                        margin-top: 11px;
+                        font-size: 8px;
+                        margin-top: 13px;
                     }
 
                     .stars {

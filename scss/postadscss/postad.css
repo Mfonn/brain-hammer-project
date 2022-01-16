@@ -184,6 +184,8 @@ body {
   padding-top: 55px;
   padding-left: 30px;
   padding-right: 30px;
+  /* for the slider */
+  /* Rounded sliders */
 }
 
 .maincontent .title, .maincontent .tag, .maincontent .description, .maincontent .address,
@@ -248,6 +250,7 @@ body {
   width: 70%;
   border-radius: 10px;
   padding: 30px;
+  margin-bottom: 10px;
 }
 
 .maincontent .photo img {
@@ -275,6 +278,125 @@ body {
   margin-left: 37%;
   margin-top: 10px;
   font-size: 13px;
+}
+
+.maincontent .let {
+  display: inline-block;
+  margin: 0;
+  color: #6B7280;
+  font-size: 12px;
+}
+
+.maincontent .toggleswitch {
+  background-color: #F6F6F6;
+  width: 372px;
+  border-radius: 84px;
+  padding: 23px;
+  padding-bottom: 3px;
+  white-space: nowrap;
+  margin-bottom: 5%;
+}
+
+.maincontent .urgent {
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+
+.maincontent .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.maincontent .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.maincontent .slider {
+  position: absolute;
+  cursor: pointer;
+  top: -29px;
+  left: 0;
+  right: 0;
+  bottom: 29px;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.maincontent .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  top: 8px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.maincontent input:checked + .slider {
+  background-color: #2196F3;
+}
+
+.maincontent input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+.maincontent input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.maincontent .slider.round {
+  border-radius: 34px;
+}
+
+.maincontent .slider.round:before {
+  border-radius: 50%;
+}
+
+.maincontent .second {
+  color: #E5E7EB;
+  width: 108%;
+  margin-left: -29px;
+  margin-bottom: 6%;
+}
+
+.maincontent .buttons {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.maincontent .buttons .instant {
+  border: 1px solid #D1D5DB;
+  background-color: #ffffff;
+  margin-right: 2%;
+  padding: 10px;
+  border-radius: 5px;
+  color: #374151;
+}
+
+.maincontent .buttons .ad {
+  color: #ffffff;
+  background-color: #386DF5;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 0;
 }
 
 @media only screen and (max-width: 900px) {
@@ -317,6 +439,23 @@ body {
   .middlesection .maincontent .photo .mainupload3 {
     margin-left: 31%;
     font-size: 10px;
+  }
+  .middlesection .maincontent .toggleswitch {
+    border-radius: 52px;
+    width: 350px;
+    height: 80px;
+  }
+  .middlesection .maincontent .toggleswitch .let {
+    font-size: 10px;
+  }
+  .middlesection .maincontent .toggleswitch .urgent {
+    font-size: 12px;
+  }
+  .middlesection .maincontent .slider {
+    top: -26px;
+    left: 47px;
+    right: -38px;
+    bottom: 30px;
   }
 }
 
@@ -440,6 +579,39 @@ body {
     margin-left: 13%;
     font-size: 7px;
   }
+  .middlesection .maincontent .toggleswitch {
+    padding: 17px;
+    width: 243px;
+    height: 63px;
+  }
+  .middlesection .maincontent .toggleswitch .urgent {
+    font-size: 10px;
+  }
+  .middlesection .maincontent .toggleswitch .let {
+    font-size: 9px;
+  }
+  .middlesection .maincontent .slider {
+    top: -22px;
+    left: -52px;
+    right: 68px;
+    bottom: 32px;
+  }
+  .middlesection .maincontent .slider:before {
+    top: 4px;
+  }
+  .middlesection .maincontent .buttons .ad {
+    padding-left: 11px;
+    padding-right: 11px;
+    border: 0;
+    font-size: 8px;
+  }
+  .middlesection .maincontent .buttons .instant {
+    font-size: 10px;
+    padding: 7px;
+  }
+  .middlesection .maincontent .second {
+    width: 115%;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -485,8 +657,32 @@ body {
   .middlesection .topminiheader .hiretalent2, .middlesection .topminiheader .findwork2 {
     font-size: 12px;
   }
-  .middlesection .photo {
-    width: 112%;
+  .middlesection .maincontent .second {
+    width: 125%;
+  }
+  .middlesection .maincontent .photo {
+    width: 84%;
+  }
+  .middlesection .maincontent .toggleswitch {
+    padding: 12px;
+    width: 185px;
+    height: 52px;
+  }
+  .middlesection .maincontent .toggleswitch .urgent {
+    font-size: 9px;
+  }
+  .middlesection .maincontent .toggleswitch .let {
+    font-size: 7px;
+  }
+  .middlesection .maincontent .slider {
+    top: -19px;
+    left: -43px;
+    right: 63px;
+    bottom: 32px;
+  }
+  .middlesection .maincontent .slider:before {
+    height: 13px;
+    width: 13px;
   }
 }
 /*# sourceMappingURL=postad.css.map */

@@ -192,7 +192,6 @@ body {
 
 /* for the grid and map section */
 .middlesection {
-  height: 500px;
   width: 100%;
   z-index: 1;
   top: 0;
@@ -379,7 +378,6 @@ body {
 
 .gridsection .maingrid {
   padding: 10px;
-  overflow-y: scroll;
 }
 
 .gridsection .maingrid .columnone {
@@ -387,7 +385,6 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin-bottom: 10px;
 }
 
 .gridsection .maingrid .columnone .image {
@@ -405,10 +402,7 @@ body {
 
 .gridsection .maingrid .columnone .image .mainimage {
   width: 96%;
-}
-
-.gridsection .maingrid .columnone .image2 {
-  margin-top: 20px;
+  float: right;
 }
 
 .gridsection .maingrid .columnone .image2 .mainimage2 {
@@ -417,7 +411,7 @@ body {
 }
 
 .gridsection .maingrid .columnone .mainimage3 {
-  width: 88%;
+  margin-top: 64px;
 }
 
 .gridsection .maingrid .columnone .aboutimage {
@@ -441,7 +435,7 @@ body {
   margin: 0;
   margin-top: 8px;
   font-size: 12px;
-  margin-bottom: 9%;
+  margin-bottom: 3%;
 }
 
 .gridsection .maingrid .columnone .aboutimage .mizeach {
@@ -477,8 +471,8 @@ body {
   float: right;
   display: inline-block;
   color: #6B7280;
-  font-size: 14px;
-  margin-top: 23px;
+  font-size: 12px;
+  margin-top: 17px;
   margin-bottom: 0;
 }
 
@@ -487,10 +481,21 @@ body {
   font-weight: 700;
   float: right;
   margin-bottom: 0;
+  font-size: 14px;
 }
 
 .gridsection .maingrid .columnone .aboutimage2 {
   margin-top: 14px;
+}
+
+.gridsection .maingrid .columnone:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gridsection .maingrid .two {
+  margin-top: 4%;
 }
 
 /* for the footer section */
@@ -767,7 +772,7 @@ body {
   }
   .gridsection .maingrid .columnone .aboutimage {
     margin-top: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
   .gridsection .maingrid .columnone .aboutimage .want {
     font-size: 13px;
@@ -786,10 +791,10 @@ body {
     font-size: 12px;
   }
   .gridsection .maingrid .columnone .aboutimage .howmuch {
-    font-size: 13px;
+    font-size: 12px;
   }
   .gridsection .maingrid .columnone .aboutimage .howlong {
-    font-size: 10px;
+    font-size: 8px;
   }
   .gridsection .maingrid .columnone .aboutimage .howlong2 {
     font-size: 10px;
@@ -839,11 +844,11 @@ body {
     width: 15px;
   }
   .gridsection .maingrid .columnone .aboutimage .howmuch {
-    font-size: 11px;
+    font-size: 10px;
   }
   .gridsection .maingrid .columnone .aboutimage .howlong {
-    font-size: 11px;
-    margin-top: 11px;
+    font-size: 8px;
+    margin-top: 13px;
   }
   .gridsection .maingrid .columnone .aboutimage .stars {
     font-size: 10px;
