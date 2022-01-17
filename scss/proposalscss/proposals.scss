@@ -599,12 +599,71 @@ body {
 
         .chatbody {
             height: 60%;
-            background-color: blue;
+            background-color: #ffffff;
+
+            .message1 {
+                float: right;
+                margin-top: 7%;
+                margin-right: 2%;
+
+                .pop1 {
+                    display: inline-block;
+                    width: 30%;
+                }
+
+                .one {
+                    display: inline-block;
+                    color: #ffffff;
+                    background-color: #386DF5;
+                    padding: 12px;
+                    font-size: 13px;
+                    border-radius: 5px;
+                } 
+            }
         }
 
         .chatfooter {
-            height: 25%;
-            background-color: yellow;
+            height: 25vh;
+            background-color: #FBFBFB;
+            border: 1px solid #EEEEEE;
+
+            .enter {
+                height: 75%;
+                width: 100%;
+                border: none;
+                background-color: #FBFBFB;
+                padding: 9px;
+                padding-top: 0px;
+            }
+
+            ::placeholder {
+                margin-top: -10px;
+                font-size: 14px;
+            }
+
+            .footer2 {
+                .send {
+                    float: right;
+                    color: #ffffff;
+                    background-color: #386DF5;
+                    border: none;
+                    padding: 8px 19px 8px 19px;
+                    border-radius: 4px;
+                    margin-right: 5px;
+                }
+
+                .emojis {
+                    display: inline-block;
+                    color: #9CA3AF;
+                    padding: 10px;
+
+                    .fa-comment-alt:before, .fa-image:before {
+                        margin-left: 10px;
+                    }
+                
+                
+                }
+            }
         }
     }
 
@@ -775,6 +834,10 @@ body {
         .gridbox {
             margin-left: 79px;
         }
+
+        .navbar a {
+            font-size: 13px;
+        }
     }
 
 
@@ -816,6 +879,10 @@ body {
 
                     .what {
                         font-size: 8px;
+                    }
+
+                    .name {
+                        font-size: 10px;
                     }
                 }
 
@@ -1050,9 +1117,24 @@ body {
            }
 
         }
+
+        .chatfooter {
+            .footer2 {
+                .send {
+                    padding: 4px 13px 4px 13px;
+                    font-size: 9px;
+                }
+
+                .emojis {
+                    .fa-comment-alt:before, .fa-image:before, .fa-smile:before {
+                        font-size: 12px;
+                    }
+                }
+            }
         }
-        
-        
+
+    }
+
         .recommend {
             width: 40%;
 

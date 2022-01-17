@@ -1,0 +1,763 @@
+* {
+    box-sizing: border-box;
+    }
+html {
+    width: 100vw !important;
+
+    overflow-y: scroll;
+
+}
+body {
+    width: 100%;
+
+    margin: 0;
+
+    background-color: #E5E5E5;
+}
+
+
+
+    .headersection {
+ 
+        background-color: #ffffff;
+        overflow: hidden;
+        padding: 12 10 12 10px;
+    }
+      
+      /* Style the links inside the navigation bar */
+      .logo1 {
+        position: absolute;
+        width: 28px;
+        left: 106px;
+        top: 28px;
+    }
+    
+    .logo {
+        left: 50px;
+    }
+    
+    .workinghammer {
+        color: #000000;
+        font-size: 19px;
+        font-family: Inter;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 24px;
+        letter-spacing: 0em;
+        margin: 0;
+        margin-top: 18px;
+        margin-left: 12px;
+    }
+    
+    
+      .headersection .whiteheader {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 125px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+    
+  
+
+    
+      
+      /* Hide the link that should open and close the topnav on small screens */
+      .headersection .icon {
+        display: none;
+      }
+    
+
+      .myTopnav {
+        margin-top: 59px;
+        margin-right: 20px;
+    }
+    
+    
+        /* for post ad, notifications and avatar */
+        .postad {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 3px;
+            color: #ffffff;
+            background-color: #386DF5;
+            border: none;
+            float: right;
+            margin-right: 131px;
+            margin-top: -41px;
+        }
+    
+        .postad:hover {
+            background-color: #092a7c;
+        }
+    
+    
+        .notification {
+            color: #808080;
+            float: right;
+            margin-top: -32px;
+            margin-right: 89px;
+        }
+
+        .notification:hover {
+            cursor: pointer;
+            color:#6B7280;
+        }
+    
+    
+    
+        .avatar {
+            
+            vertical-align: middle;
+            float: right;
+            margin-top: -41px;
+            margin-right: 31px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+    
+          }
+
+
+
+
+   /* for the banner section*/ 
+   .bannersection {
+        width: 100%;
+
+        .banner {
+            width: 100%;
+        }
+
+        .banneravat {
+            margin-left: 10%;
+            width: 8%;
+            margin-top: -44px;
+            border-radius: 50px;
+        }
+   }
+
+
+   .aboutricardo {
+    padding: 0px;
+    margin-left: 10%;
+
+            .ric {
+                display: inline-block;
+                font-size: 20px;
+                font-weight: 900;
+                color: #333333;
+            }
+
+            .message {
+                background-color: #ffffff;
+                border: 1px solid #386DF5;
+                border-radius: 5px;
+                color: #386DF5;
+                padding: 8px;
+                margin-left: 2%;
+            }
+
+            .fa-envelope:before {
+                margin-right: 7px;
+            }
+
+            .writer {
+                color: #374151;
+                font-weight: 600;
+                font-size: 17px;
+                margin-top: -5px;
+
+                margin-bottom: 25px;
+            }
+
+            .fa-star:before {
+                color: #FF9E0C;
+                font-size: 12px;
+            }
+
+            .work125 {
+                color: #5D6370;
+                font-size: 14px;
+                text-decoration: underline;
+            }
+
+
+            .time {
+                display: inline-block;
+            }
+
+            .aboutcontact {
+
+                margin-top: 5%;
+                margin-left: -7px;
+            }
+
+            .statistics {
+                border: none;
+                background-color: transparent;
+
+                color: #000000;
+                font-weight: bold;
+
+                font-size: 14px;
+                padding-right: 40px;
+
+            }
+
+            .statistic {
+                color: #A9A9A9;
+                margin: 0;
+                font-weight: 200;
+            }
+
+            .line {
+
+                border-right: 1px solid #EBEBEB;
+            }
+
+            .work {
+                color: #333333;
+                margin-top: 27px;
+            }
+
+   }
+
+
+   .listing {
+        margin-left: 10%;
+        height: 500px;
+
+        img {
+            width: 90%;
+        }
+
+        .listings {
+            .col {
+                
+            float: left;
+            width: 25%;
+             }
+  
+
+            
+        }
+   }
+
+
+
+
+     /* for the footer section */
+     .footersection {
+        background-color: #202426;
+
+        padding: 69px 80px 28px 11px;
+
+        color: #ffffff;
+
+        .container {
+            margin: auto;
+            margin-left: 6%;
+        }
+
+        .list {
+            list-style: none;
+            position: inherit;
+
+            padding: 0px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer-col {
+            width: 15%;
+            padding: 0 10px;
+            
+            margin-bottom: 20px;
+        }
+
+        .footer-column {
+            width: 25%;
+            padding: 0 10px;
+        }
+
+        .headings {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+
+            line-height: 20px;
+
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+
+            color: #9CA3AF;
+
+            position: relative;
+
+            cursor: pointer;
+
+        }
+
+        li {
+            display: block;
+        }
+
+        ul {
+            float: none;
+        }
+
+
+        .links {
+        
+            text-decoration: none;
+            position: relative;
+        
+        
+            }
+        
+        .links a {
+            text-decoration: none;
+        
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+        
+            color: #D1D5DB;
+        
+        }
+
+        .latest {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+
+            line-height: 21px;
+            margin-bottom: 15px;
+        
+            color: #D1D5DB;
+        }
+
+        .enter {
+            height: 33px;
+            border-radius: 7px;
+            width: 154px;
+            padding: 10px;
+        }
+
+        .subscribe {
+            font-size: 12px;
+
+            padding: 9px 9px;
+
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+            border-radius: 4px;
+            border: none;
+
+            background-color: #002ea3;
+            color: #ffffff;
+            backdrop-filter: blur(2px);
+
+            cursor: pointer;
+        }
+
+        .subscribe:hover {
+            background-color: #092a7c;
+        }
+
+
+        hr {
+            color: #4B5563;
+            width: 92%;
+            
+            margin-left: 1%;
+            margin-right: 7.5%;
+            
+        }
+    
+        .copyright {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+
+            font-size: 9px;
+            margin-left: 1%;
+            line-height: 24px;
+            margin-top: 25px;
+
+            color: #9CA3AF;
+
+            display: inline-block;
+        }
+
+        .social-links{
+            float: right;
+
+            margin-right: 10%;
+            margin-top: 25px;
+
+        }
+
+        .social-links img {
+            width: 25px;
+            height: 25px;
+            padding: 5px;
+        }
+
+    }
+
+
+
+
+
+
+
+
+    @media only screen and (min-width: 1200px) {
+        .footersection {
+            .latest {
+                font-size: 15px;
+            }
+    
+            .footer-column {
+                width: 30%;
+            }
+        }
+    }
+
+
+
+
+
+
+    @media only screen and (max-width: 900px) {
+        .headersection {
+            .workinghammer {
+                font-size: 15px;
+            }
+    
+            .logo1 {
+                width: 22px;
+                left: 76px;
+                top: 32px;
+            }
+    
+            .whiteheader {
+                padding: 14px 88px;
+            }
+        
+           
+        }
+
+
+        .aboutricardo {
+            .ric {
+                font-size: 15px;
+            }
+
+            .message {
+                padding: 6px;
+                font-size: 10px;
+            }
+
+
+            .fa-envelope:before {
+                margin-right: 5px;
+            }
+
+            .fa-star:before {
+                font-size: 11px;
+            }
+
+            .work125 {
+                font-size: 12px;
+            }
+
+            .writer {
+                font-weight: 500;
+                font-size: 12px;
+                margin-bottom: 15px;
+            }
+
+            .statistics {
+                font-size: 12px;
+            }
+
+            .work {
+                font-size: 15px;
+                width: 70%;
+            }
+        }
+    
+
+    
+    
+    
+        .footersection {
+            .footer-col {
+                width: 45%;
+                padding: 0 23px;
+            }
+    
+            .footer-column {
+                width: 91%;
+                margin-bottom: 30px;
+            }
+    
+            .social-links img {
+                width: 10px;
+                height: 10px;
+                padding: 0px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+    @media screen and (max-width: 600px) {
+
+        /* for navigation bar */
+        .headersection a:not(:first-child) {display: none;}
+        .headersection a.icon {
+          float: right;
+          display: block;
+        }
+    
+    
+        .headersection.responsive {position: relative;}
+        .headersection.responsive a.icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .headersection.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+    
+     
+    
+     
+    
+        .headersection {
+            padding-bottom: 20px;
+        }
+    
+        .headersection .whiteheader {
+            padding-bottom: 0px;
+            top: 10px;
+        }
+    
+        .postad {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-radius: 4px;
+            color: #ffffff;
+            background-color: #386DF5;
+            font-size: 6px;
+            border: none;
+            float: right;
+            margin-right: 15px;
+            margin-top: 14px;
+        }
+    
+    
+        .notification {
+            margin-top: 19px;
+            margin-right: 15px;
+            width: 15px;
+        }
+    
+        .avatar {
+            margin-top: 13px;
+            margin-right: 31px;
+            width: 20px;
+            height: 20px;
+        }
+    
+        .myTopnav {
+            margin-top: 6px;
+            margin-right: 0;
+        }
+    
+    
+        .headersection .logo1 {
+            width: 17px;
+            left: 53px;
+            top: 27px;
+        }
+    
+        .headersection .workinghammer {
+            margin-left: 0;
+            font-size: 12px !important;
+        }
+    
+        .headersection .whiteheader{
+    
+            padding: 5px 71px;
+        }
+    
+    
+        .workavailable {
+            font-size: 8px;
+        }
+    
+        .Ottawa {
+            font-size: 18px;
+            margin-left: 21px;
+        }
+
+
+
+
+        .aboutricardo {
+            .ric {
+                font-size: 12px;
+            }
+
+            .message {
+                padding: 5px;
+                font-size: 8px;
+            }
+
+            .fa-envelope:before {
+                margin-right: 3px;
+            }
+
+            .writer {
+                font-size: 11px;
+                margin-bottom: 11px;
+            }
+
+            .fa-star:before {
+                font-size: 9px;
+            }
+
+            .work125 {
+                font-size: 10px;
+            }
+
+            .statistics {
+                padding-right: 20px;
+                font-size: 10px;
+            }
+
+            .work {
+                font-size: 11px;
+            }
+        }
+
+        listing {
+            .listings {
+                .col {
+                    width: 60%;
+                 }
+    
+            } 
+        }
+
+
+    }    
+
+
+
+
+
+    @media screen and (max-width: 400px) {
+
+        .headersection {
+            .whiteheader {
+                padding: 5px 44px;
+            }
+    
+            .logo1 {
+                left: 25px;
+            }
+        }
+
+
+
+        .aboutricardo {
+            .ric {
+                font-size: 10px;
+            }
+
+            .message {
+                padding: 5px;
+                font-size: 7px;
+            }
+
+            .fa-envelope:before {
+                display: none;
+            }
+
+            .fa-star:before {
+                font-size: 8px;
+            }
+
+            .work125 {
+                font-size: 9px;
+            }
+
+            .writer {
+                font-size: 8px;
+            }
+
+            .statistics {
+                padding-right: 10px;
+                font-size: 8px;
+            }
+
+            .work {
+                font-size: 9px;
+            }
+
+
+        }
+  
+    
+ 
+    
+    
+        .footersection {
+            .headings {
+                font-size: 15px;
+            }
+    
+            .links a {
+                font-size: 12px;
+            }
+    
+            .footer-col {
+                width: 47%;
+                padding: 0 23px;
+            }
+    
+            .latest {
+                font-size: 10px;
+            }
+    
+            .copyright {
+                font-size: 6px;
+            }
+        }
+    }
