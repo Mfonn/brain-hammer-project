@@ -231,22 +231,62 @@ body {
 
    .listing {
         margin-left: 10%;
-        height: 500px;
+        margin-top: 8%;
 
         img {
             width: 90%;
         }
 
         .listings {
+            width: 100%;
+
             .col {
                 
             float: left;
             width: 25%;
+
+            .captions {
+                .help {
+                    margin-bottom: -10px;
+                    color: #333333;
+                }
+
+                .prices {
+                    font-weight: 600;
+                    color: #333333;
+                }
+
+                .long {
+                    font-size: 12px;
+                    color: #6B7280;
+                }
+
+                .work125 {
+                    font-size: 10px;
+                    color: #6B7280;
+                    margin-top: -6px;
+                }
+            }
              }
   
 
             
         }
+   }
+
+   .numberev {
+        display: inline-block;
+        margin-right: 2%;
+        margin-left: 10%;
+        margin-top: 10%;
+        font-weight: 800;
+        font-size: 20px;
+        color: #111827;
+   }
+
+   .language {
+       display: inline-block;
+       font-size: 12px;
    }
 
 
@@ -500,7 +540,41 @@ body {
                 width: 70%;
             }
         }
-    
+        
+
+        .listing {
+            .listings {
+                .col {
+                    .captions {
+                        .help {
+                            font-size: 10px;
+                        }
+
+                        .prices {
+                            font-size: 12px;
+                        }
+
+                        .long {
+                            font-size: 10px;
+                        }
+
+                        .work125 {
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .numberev {
+            font-size: 17px;
+        }
+
+        .language {
+            font-size: 9px;
+        }
+
 
     
     
@@ -666,13 +740,44 @@ body {
             }
         }
 
-        listing {
+        .listing {
+            height: 1000px;
+
+            .richeader {
+                margin-bottom: -10px;
+            }
+
             .listings {
                 .col {
                     width: 60%;
+                    margin-top: 10%;
+
+                    .captions {
+                        .help {
+                            font-size: 15px;
+                        }
+
+                        .prices {
+                            font-size: 14px;
+                        }
+
+                        .long {
+                            font-size: 12px;
+
+                        }
+
+                        .work125 {
+                            font-size: 10px;
+                        }
+                    }
                  }
     
             } 
+        }
+
+
+        .numberev {
+            margin-top: 0;
         }
 
 
@@ -720,6 +825,7 @@ body {
 
             .writer {
                 font-size: 8px;
+                margin-top: 1px;
             }
 
             .statistics {
@@ -733,8 +839,39 @@ body {
 
 
         }
+
+
+
+
+        .listing {
+            .richeader {
+                font-size: 13px;
+            }
+
+            .listings {
+                .col {
+                    .captions {
+                        .help {
+                            font-size: 12px;
+                        }
+
+                        .prices {
+                            font-size: 12px;
+                        }
+
+                        .long {
+                            font-size: 10px;
+                        }
+
+                        .work125 {
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+        }
   
-    
+ 
  
     
     

@@ -517,14 +517,15 @@ body {
 }
 
 .chat-popup .chatbox .chatbody .message1 {
-  float: right;
   margin-top: 7%;
-  margin-right: 2%;
+  width: 100%;
+  height: 10%;
 }
 
 .chat-popup .chatbox .chatbody .message1 .pop1 {
   display: inline-block;
-  width: 30%;
+  float: right;
+  width: 9%;
 }
 
 .chat-popup .chatbox .chatbody .message1 .one {
@@ -534,12 +535,43 @@ body {
   padding: 12px;
   font-size: 13px;
   border-radius: 5px;
+  float: right;
+  margin-right: 10px;
+}
+
+.chat-popup .chatbox .chatbody .message2 {
+  margin-top: 10%;
+}
+
+.chat-popup .chatbox .chatbody .pop2 {
+  border-radius: 20px;
+  float: left;
+  display: inline-block;
+  width: 9%;
+}
+
+.chat-popup .chatbox .chatbody .two {
+  display: inline-block;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 12px;
+  width: 60%;
+  font-size: 13px;
+  margin-top: 0;
+  border-radius: 5px;
+  float: left;
+  margin-right: 10px;
+}
+
+.chat-popup .chatbox .chatbody .message3 {
+  margin-left: 2%;
 }
 
 .chat-popup .chatbox .chatfooter {
   height: 25vh;
   background-color: #FBFBFB;
   border: 1px solid #EEEEEE;
+  padding-bottom: 10%;
 }
 
 .chat-popup .chatbox .chatfooter .enter {
@@ -653,6 +685,8 @@ body {
 
 .chat-popup .recommend .mainbody {
   padding: 10px;
+  height: 90vh;
+  background-color: #ffffff;
 }
 
 .chat-popup .recommend .mainbody .image1 {
@@ -780,6 +814,13 @@ body {
   .chat-popup .chatbox .header1 .awards {
     font-size: 8px;
     padding: 5px 3px 5px 3px;
+  }
+  .chat-popup .chatbox .chatbody .message1 .one {
+    padding: 10px;
+    font-size: 10px;
+  }
+  .chat-popup .chatbox .chatbody .message1 .two {
+    font-size: 10px;
   }
 }
 
@@ -920,6 +961,7 @@ body {
   .chat-popup .chatbox .chatfooter .footer2 .send {
     padding: 4px 13px 4px 13px;
     font-size: 9px;
+    margin-top: 10px;
   }
   .chat-popup .chatbox .chatfooter .footer2 .emojis .fa-comment-alt:before, .chat-popup .chatbox .chatfooter .footer2 .emojis .fa-image:before, .chat-popup .chatbox .chatfooter .footer2 .emojis .fa-smile:before {
     font-size: 12px;
@@ -999,6 +1041,17 @@ body {
   }
   .chat-popup .chatbox .header1 .headerwords .wanta .timecount {
     font-size: 8px;
+  }
+  .chat-popup .chatbox .chatbody .message1 .one {
+    padding: 8px;
+    font-size: 8px;
+    margin-top: 0px;
+    margin-right: 5px;
+  }
+  .chat-popup .chatbox .chatbody .message1 .two {
+    margin-top: -10px;
+    width: 70%;
+    font-size: 7px;
   }
   .chat-popup .recommend .notifi {
     font-size: 8px;
