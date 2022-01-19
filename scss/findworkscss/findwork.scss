@@ -554,7 +554,7 @@ body {
     
         color: #ffffff;
     
-        .container { 
+        .container {
             margin: auto;
             margin-left: 6%;
         }
@@ -579,7 +579,7 @@ body {
         }
     
         .footer-column {
-            width: 25%;
+            width: 27%;
             padding: 0 10px;
         }
     
@@ -649,6 +649,7 @@ body {
             border-radius: 7px;
             width: 154px;
             padding: 10px;
+            float: left;
         }
     
         .subscribe {
@@ -665,6 +666,9 @@ body {
             backdrop-filter: blur(2px);
     
             cursor: pointer;
+            float: left;
+    
+            margin-left: 9px;
         }
     
         .subscribe:hover {
@@ -711,6 +715,7 @@ body {
         }
     
     }
+    
 
 
 

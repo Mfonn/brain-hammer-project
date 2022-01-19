@@ -202,6 +202,7 @@ body {
 .listing {
   margin-left: 10%;
   margin-top: 8%;
+  display: block;
 }
 
 .listing img {
@@ -209,7 +210,8 @@ body {
 }
 
 .listing .listings {
-  width: 100%;
+  width: 90%;
+  display: inline-block;
 }
 
 .listing .listings .col {
@@ -253,6 +255,84 @@ body {
   font-size: 12px;
 }
 
+.who {
+  width: 90%;
+  margin-left: 10%;
+}
+
+.who .whoheader .boss {
+  display: inline-block;
+  color: #111827;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: underline;
+  text-underline-offset: 1.9em;
+}
+
+.who .whoheader .worker {
+  display: inline-block;
+  margin-left: 2%;
+  color: #111827;
+  font-size: 15px;
+}
+
+.who .division {
+  border: 1px solid #EEEEEE;
+  margin-left: 10%;
+}
+
+.notes {
+  margin-top: 4%;
+}
+
+.notes .notes1 .march {
+  color: #6B7280;
+  font-size: 12px;
+}
+
+.notes .notes1 .amet {
+  width: 80%;
+  color: #333333;
+  font-weight: 500;
+}
+
+.notes .notes1 .imagediv {
+  margin-top: 3%;
+}
+
+.notes .notes1 .imagediv .png {
+  display: inline-block;
+}
+
+.notes .notes1 .imagediv .aboutpng {
+  display: inline-block;
+  margin-left: 1%;
+}
+
+.notes .notes1 .imagediv .aboutpng .imageword {
+  margin: 0;
+  margin-bottom: 10%;
+  color: #333333;
+}
+
+.notes .notes1 .imagediv .aboutpng .starss {
+  color: #386DF5;
+  font-size: 14px;
+}
+
+.more {
+  margin-left: 10%;
+  margin-top: 8%;
+  margin-bottom: 12%;
+  padding: 5px;
+  color: #374151;
+}
+
+.more:hover {
+  background-color: #cccccc;
+  border: none;
+}
+
 /* for the footer section */
 .footersection {
   background-color: #202426;
@@ -286,7 +366,7 @@ body {
 }
 
 .footersection .footer-column {
-  width: 25%;
+  width: 27%;
   padding: 0 10px;
 }
 
@@ -341,6 +421,7 @@ body {
   border-radius: 7px;
   width: 154px;
   padding: 10px;
+  float: left;
 }
 
 .footersection .subscribe {
@@ -355,6 +436,8 @@ body {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   cursor: pointer;
+  float: left;
+  margin-left: 9px;
 }
 
 .footersection .subscribe:hover {
@@ -458,6 +541,27 @@ body {
   }
   .language {
     font-size: 9px;
+  }
+  .who .whoheader .boss {
+    font-size: 13px;
+  }
+  .who .whoheader .worker {
+    font-size: 13px;
+  }
+  .notes .notes1 .amet {
+    font-size: 14px;
+  }
+  .notes .notes1 .imagediv .png {
+    width: 7%;
+  }
+  .notes .notes1 .imagediv .aboutpng .imageword {
+    font-size: 14px;
+  }
+  .notes .notes1 .imagediv .aboutpng .starss {
+    font-size: 12px;
+  }
+  .more {
+    font-size: 10px;
   }
   .footersection .footer-col {
     width: 45%;
@@ -579,7 +683,7 @@ body {
     font-size: 11px;
   }
   .listing {
-    height: 1000px;
+    margin-bottom: 5%;
   }
   .listing .richeader {
     margin-bottom: -10px;
@@ -602,6 +706,33 @@ body {
   }
   .numberev {
     margin-top: 0;
+    font-size: 15px;
+  }
+  .who .whoheader .boss {
+    font-size: 11px;
+  }
+  .who .whoheader .worker {
+    font-size: 11px;
+  }
+  .notes .notes1 .march {
+    font-size: 10px;
+  }
+  .notes .notes1 .amet {
+    font-size: 11px;
+  }
+  .notes .notes1 .imagediv {
+    margin-top: 4%;
+  }
+  .notes .notes1 .imagediv .aboutpng .imageword {
+    font-size: 12px;
+    margin-bottom: -10%;
+  }
+  .notes .notes1 .imagediv .aboutpng .starss {
+    font-size: 10px;
+  }
+  .more {
+    padding: 4px;
+    font-size: 8px;
   }
 }
 
@@ -653,6 +784,21 @@ body {
   }
   .listing .listings .col .captions .work125 {
     font-size: 8px;
+  }
+  .listing .numberev {
+    font-size: 13px;
+  }
+  .who .whoheader .boss {
+    font-size: 10px;
+  }
+  .who .whoheader .worker {
+    font-size: 10px;
+  }
+  .notes2 {
+    margin-top: 13%;
+  }
+  .more {
+    font-size: 6px;
   }
   .footersection .headings {
     font-size: 15px;

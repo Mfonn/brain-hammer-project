@@ -225,7 +225,7 @@ body, html {
 }
 
 .logo {
-  width: 69%;
+  width: 66%;
 }
 
 .logo1 {
@@ -535,7 +535,7 @@ body, html {
 }
 
 .footersection .footer-column {
-  width: 25%;
+  width: 27%;
   padding: 0 10px;
 }
 
@@ -590,6 +590,7 @@ body, html {
   border-radius: 7px;
   width: 154px;
   padding: 10px;
+  float: left;
 }
 
 .footersection .subscribe {
@@ -604,6 +605,8 @@ body, html {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   cursor: pointer;
+  float: left;
+  margin-left: 9px;
 }
 
 .footersection .subscribe:hover {

@@ -240,7 +240,7 @@
 
 
   .logo {
-      width: 69%;
+      width: 66%;
   }
 
 
@@ -718,7 +718,7 @@
     }
 
     .footer-column {
-        width: 25%;
+        width: 27%;
         padding: 0 10px;
     }
 
@@ -788,6 +788,7 @@
         border-radius: 7px;
         width: 154px;
         padding: 10px;
+        float: left;
     }
 
     .subscribe {
@@ -804,6 +805,9 @@
         backdrop-filter: blur(2px);
 
         cursor: pointer;
+        float: left;
+
+        margin-left: 9px;
     }
 
     .subscribe:hover {
