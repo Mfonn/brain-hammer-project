@@ -437,7 +437,7 @@ body {
   z-index: 999;
   top: 8vh;
   width: 60%;
-  margin-left: 40%;
+  margin-left: 39%;
   height: 90vh;
   background-color: #ffffff;
 }
@@ -501,6 +501,14 @@ body {
   color: #666666;
 }
 
+.chat-popup .chatbox .header1 .headerwords .fa-edit:hover {
+  color: #386DF5;
+}
+
+.chat-popup .chatbox .header1 .headerwords .dist {
+  margin-left: 3%;
+}
+
 .chat-popup .chatbox .header1 .awards {
   color: #386DF5;
   width: 13%;
@@ -508,10 +516,59 @@ body {
   border: 1px solid #386DF5;
   border-radius: 5px;
   float: right;
-  font-size: 11px;
+  font-size: 9px;
   margin-right: 7px;
   margin-top: 20px;
   padding: 5px 10px 5px 10px;
+}
+
+.chat-popup .chatbox .header1 .pay {
+  margin-top: -47px;
+}
+
+.chat-popup .chatbox .newheader {
+  height: 18%;
+}
+
+.chat-popup .chatbox .header2 .headerwords {
+  /* Style the list */
+  /* Display list items side by side */
+  /* Add a slash symbol (/) before/behind each list item */
+  /* Add a color to all links inside the list */
+  /* Add a color on mouse-over */
+}
+
+.chat-popup .chatbox .header2 .headerwords ul.breadcrumb {
+  padding: 8px 0px;
+  list-style: none;
+  margin: 0;
+}
+
+.chat-popup .chatbox .header2 .headerwords ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+.chat-popup .chatbox .header2 .headerwords ul.breadcrumb li + li:before {
+  padding: 9px;
+  width: 20px;
+  color: black;
+  content: "\2012";
+  display: inline-block;
+}
+
+.chat-popup .chatbox .header2 .headerwords ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+.chat-popup .chatbox .header2 .headerwords ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+.chat-popup .chatbox .header2 .headerwords .three {
+  margin-top: 1%;
 }
 
 .chat-popup .chatbox .chatbody {
@@ -566,8 +623,21 @@ body {
   margin-right: 10px;
 }
 
+.chat-popup .chatbox .chatbody .remitted {
+  color: #065F46;
+  background-color: #ECFDF5;
+}
+
+.chat-popup .chatbox .chatbody .remitted .colored {
+  color: #34D399;
+}
+
 .chat-popup .chatbox .chatbody .message3 {
   margin-left: 2%;
+}
+
+.chat-popup .chatbox .chatbody .message4 {
+  margin-top: 11%;
 }
 
 .chat-popup .chatbox .chatfooter {
@@ -737,6 +807,111 @@ body {
   margin-top: 10px;
 }
 
+.chat-popup .modify {
+  display: none;
+  position: absolute;
+  width: 45%;
+  margin-left: 15%;
+  margin-top: 1%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #9CA3AF;
+  background-color: #ffffff;
+}
+
+.chat-popup .modify .cars {
+  display: block;
+  font-size: 14px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.chat-popup .modify .select {
+  width: 90%;
+  margin: 1%;
+  margin-top: 2%;
+  border: 1px solid #D1D5DB;
+  background-color: #ffffff;
+  color: #6B7280;
+  border-radius: 2px;
+}
+
+.chat-popup .modify .todo {
+  display: block;
+  float: right;
+  margin-top: 2%;
+  margin-right: 10%;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: #386DF5;
+}
+
+.chat-popup .modify .cancel2 {
+  top: 6%;
+  position: absolute;
+  margin-left: 77%;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  color: #989CA3;
+}
+
+.chat-popup .paying {
+  display: none;
+  position: absolute;
+  width: 45%;
+  margin-left: 15%;
+  margin-top: 1%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #9CA3AF;
+  background-color: #ffffff;
+}
+
+.chat-popup .paying .confirm {
+  display: block;
+  font-size: 14px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.chat-popup .paying .input {
+  width: 90%;
+  margin: 1%;
+  margin-top: 2%;
+  border: 1px solid #D1D5DB;
+  background-color: #ffffff;
+  color: #6B7280;
+  border-radius: 2px;
+  padding: 6px;
+}
+
+.chat-popup .paying .todo {
+  display: block;
+  float: right;
+  margin-top: 2%;
+  margin-right: 10%;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: #386DF5;
+}
+
+.chat-popup .paying .cancel2 {
+  top: 6%;
+  position: absolute;
+  margin-left: 77%;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  color: #989CA3;
+}
+
 @media only screen and (min-width: 1200px) {
   .footersection .latest {
     font-size: 15px;
@@ -815,8 +990,20 @@ body {
     font-size: 9px;
   }
   .chat-popup .chatbox .header1 .awards {
-    font-size: 8px;
+    font-size: 6px;
     padding: 5px 3px 5px 3px;
+  }
+  .chat-popup .chatbox .header2 .fa-check-circle {
+    font-size: 13px;
+  }
+  .chat-popup .chatbox .header2 .three {
+    width: 10%;
+  }
+  .chat-popup .chatbox .header2 .headerwords ul.breadcrumb {
+    padding: 0px 0px;
+  }
+  .chat-popup .chatbox .header2 .headerwords ul.breadcrumb li + li:before {
+    padding: 7px;
   }
   .chat-popup .chatbox .chatbody .message1 .one {
     padding: 10px;
@@ -824,6 +1011,37 @@ body {
   }
   .chat-popup .chatbox .chatbody .message1 .two {
     font-size: 10px;
+  }
+  .chat-popup .chatbox .chatbody .message4 {
+    margin-top: 16%;
+  }
+  .chat-popup .modify {
+    margin-left: 12%;
+  }
+  .chat-popup .modify .cars {
+    font-size: 10px;
+  }
+  .chat-popup .modify .cancel2 {
+    font-size: 12px;
+  }
+  .chat-popup .modify .select {
+    font-size: 10px;
+    margin: 0%;
+  }
+  .chat-popup .modify .todo {
+    margin-top: 4%;
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+  .chat-popup .paying .confirm {
+    font-size: 9px;
+  }
+  .chat-popup .paying .input {
+    padding: 4px;
+  }
+  .chat-popup .paying .todo {
+    padding: 6px 10px;
+    font-size: 9px;
   }
 }
 
@@ -990,6 +1208,13 @@ body {
   .chat-popup .cancel {
     font-size: 13px;
   }
+  .chat-popup .modify {
+    font-size: 12px;
+    margin-left: 9%;
+  }
+  .chat-popup .modify .select {
+    font-size: 11px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -1036,6 +1261,9 @@ body {
     font-size: 6px;
     padding: 6px 1px 5px 3px;
   }
+  .chat-popup .chatbox .header1 .release {
+    font-size: 5px;
+  }
   .chat-popup .chatbox .header1 .headerwords .wanta {
     margin-left: 3px;
   }
@@ -1044,6 +1272,9 @@ body {
   }
   .chat-popup .chatbox .header1 .headerwords .wanta .timecount {
     font-size: 8px;
+  }
+  .chat-popup .chatbox .header2 .fa-check-circle {
+    font-size: 11px;
   }
   .chat-popup .chatbox .chatbody .message1 .one {
     padding: 8px;
@@ -1087,13 +1318,35 @@ body {
     font-size: 7px;
   }
   .chat-popup .recommend .mainbody .abouthim .name {
-    font-size: 10px;
+    font-size: 9px;
   }
   .chat-popup .recommend .mainbody .abouthim2 {
     margin-top: 10px;
   }
   .chat-popup .recommend .mainbody .image1 {
     width: 24px;
+  }
+  .chat-popup .modify {
+    width: 51%;
+    margin-left: 1%;
+  }
+  .chat-popup .modify .todo {
+    font-size: 8px;
+  }
+  .chat-popup .modify .cars {
+    margin-bottom: 2%;
+  }
+  .chat-popup .modify .select {
+    font-size: 10px;
+  }
+  .chat-popup .paying .confirm {
+    font-size: 7px;
+  }
+  .chat-popup .paying .todo {
+    font-size: 7px;
+  }
+  .chat-popup .paying .cancel2 {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=proposals.css.map */

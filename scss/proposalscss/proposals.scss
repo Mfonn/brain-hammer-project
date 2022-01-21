@@ -522,7 +522,7 @@ body {
     z-index: 999;
     top: 8vh;
     width: 60%;
-    margin-left: 40%;
+    margin-left: 39%;
     height: 90vh;
     background-color: #ffffff;
 
@@ -585,6 +585,14 @@ body {
                     font-size: 12px;
                     color: #666666;
                 }
+
+                .fa-edit:hover {
+                    color: #386DF5;
+                }
+
+                .dist {
+                    margin-left: 3%;
+                }
             }
 
             .awards {
@@ -594,11 +602,61 @@ body {
                 border: 1px solid #386DF5;
                 border-radius: 5px;
                 float: right;
-                font-size: 11px;
+                font-size: 9px;
                 margin-right: 7px;
                 margin-top: 20px;
                 padding: 5px 10px 5px 10px;
 
+            }
+
+            .pay {
+                margin-top: -47px;
+            }
+        }
+
+        .newheader {
+            height: 18%;
+        }
+
+        .header2 {
+            .headerwords {
+                    /* Style the list */
+                    ul.breadcrumb {
+                        padding: 8px 0px;
+                        list-style: none;
+                        margin: 0;
+                    }
+                    
+                    /* Display list items side by side */
+                    ul.breadcrumb li {
+                        display: inline;
+                        font-size: 18px;
+                    }
+                    
+                    /* Add a slash symbol (/) before/behind each list item */
+                    ul.breadcrumb li+li:before {
+                        padding: 9px;
+                        width: 20px;
+                        color: black;
+                        content: "\2012";
+                        display: inline-block;
+                    }
+                    
+                    /* Add a color to all links inside the list */
+                    ul.breadcrumb li a {
+                        color: #0275d8;
+                        text-decoration: none;
+                    }
+                    
+                    /* Add a color on mouse-over */
+                    ul.breadcrumb li a:hover {
+                        color: #01447e;
+                        text-decoration: underline;
+                    }
+
+                    .three {
+                        margin-top: 1%;
+                    }
             }
         }
 
@@ -653,8 +711,21 @@ body {
                 margin-right: 10px;
             }
 
+            .remitted {
+                color: #065F46;
+                background-color: #ECFDF5;
+
+                .colored {
+                    color: #34D399;
+                }
+            }
+
             .message3 {
                 margin-left: 2%;
+            }
+
+            .message4 {
+                margin-top: 11%;
             }
         }
 
@@ -817,6 +888,126 @@ body {
 
         }
     }
+
+
+    // for the popup edit price box 
+     .modify {
+        display: none;
+        position: absolute;
+
+        width: 45%;
+        margin-left: 15%;
+        margin-top: 1%;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #9CA3AF;
+
+        background-color: #ffffff;
+        
+        .cars {
+            display: block;
+            font-size: 14px;
+            color: #374151;
+            font-weight: 600;
+            
+        }
+
+        .select {
+            width: 90%;
+            margin: 1%;
+            margin-top: 2%;
+            border: 1px solid #D1D5DB;
+            background-color: #ffffff;
+            color: #6B7280;
+            border-radius: 2px;
+        }
+
+        .todo {
+            display: block;
+            float: right;
+            margin-top: 2%;
+            margin-right: 10%;
+            color: #ffffff;
+            border: none;
+            padding: 8px 12px;
+            font-size: 12px;
+            border-radius: 4px;
+            background-color: #386DF5;
+        }
+
+        .cancel2 {
+            top: 6%;
+            position: absolute;
+            margin-left: 77%;
+            border: none;
+            background-color: transparent;
+            font-size: 14px;
+            color: #989CA3;
+        }
+    
+      }
+
+
+     // for the popup price box 
+     .paying {
+            display: none;
+            position: absolute;
+    
+            width: 45%;
+            margin-left: 15%;
+            margin-top: 1%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #9CA3AF;
+    
+            background-color: #ffffff;
+            
+            .confirm {
+                display: block;
+                font-size: 14px;
+                color: #374151;
+                font-weight: 600;
+                
+            }
+    
+            .input {
+                width: 90%;
+                margin: 1%;
+                margin-top: 2%;
+                border: 1px solid #D1D5DB;
+                background-color: #ffffff;
+                color: #6B7280;
+                border-radius: 2px;
+                padding: 6px;
+            }
+    
+            .todo {
+                display: block;
+                float: right;
+                margin-top: 2%;
+                margin-right: 10%;
+                color: #ffffff;
+                border: none;
+                padding: 8px 12px;
+                font-size: 12px;
+                border-radius: 4px;
+                background-color: #386DF5;
+            }
+    
+            .cancel2 {
+                top: 6%;
+                position: absolute;
+                margin-left: 77%;
+                border: none;
+                background-color: transparent;
+                font-size: 14px;
+                color: #989CA3;
+            }
+        
+          }
+
+
+      
 }
 
 
@@ -959,8 +1150,28 @@ body {
                 }
 
                 .awards {
-                    font-size: 8px;
+                    font-size: 6px;
                     padding: 5px 3px 5px 3px;
+                }
+            }
+
+            .header2 {
+                .fa-check-circle {
+                    font-size: 13px;
+                }
+
+                .three {
+                    width: 10%;
+                }
+
+                .headerwords {
+                    ul.breadcrumb {
+                        padding: 0px 0px;
+                    }
+
+                    ul.breadcrumb li+li:before {
+                        padding: 7px;
+                    }
                 }
             }
 
@@ -975,6 +1186,50 @@ body {
                         font-size: 10px;
                     }
                 }
+
+                .message4 {
+                    margin-top: 16%;
+                }
+            }
+        }
+
+
+        .modify {
+
+             margin-left: 12%;
+
+            .cars {
+                font-size: 10px;
+            }
+
+            .cancel2 {
+                font-size: 12px;
+            }
+
+            .select {
+                font-size: 10px;
+                margin: 0%;
+            }
+
+            .todo {
+                margin-top: 4%;
+                padding: 6px 10px;
+                font-size: 10px;
+            }
+        }
+
+        .paying {
+            .confirm {
+                font-size: 9px;
+            }
+
+            .input {
+                padding: 4px;
+            }
+
+            .todo {
+                padding: 6px 10px;
+                font-size: 9px;
             }
         }
     }
@@ -1220,6 +1475,17 @@ body {
         .cancel {
             font-size: 13px;
         }
+
+        .modify {
+            font-size: 12px;
+            margin-left: 9%;
+
+            .select {
+                font-size: 11px;
+            }
+        }
+
+
     }
 }
 
@@ -1301,6 +1567,10 @@ body {
                      padding: 6px 1px 5px 3px;
                  }
 
+                 .release {
+                    font-size: 5px;
+                 }
+
                  .headerwords {
                      .wanta {
                         margin-left: 3px;
@@ -1316,6 +1586,12 @@ body {
                  }
 
                 
+             }
+
+             .header2 {
+                 .fa-check-circle {
+                    font-size: 11px;
+                 }
              }
 
              .chatbody {
@@ -1381,7 +1657,7 @@ body {
                     }
 
                     .name {
-                        font-size: 10px;
+                        font-size: 9px;
                     }
                 }
 
@@ -1394,6 +1670,38 @@ body {
                 }
             }
         }   
+
+        .modify {
+            width: 51%;
+            margin-left: 1%;
+            
+            .todo {
+                font-size: 8px;
+            }
+
+            .cars {
+                margin-bottom: 2%;
+            }
+
+            .select {
+                font-size: 10px;
+            }
+        }
+
+        .paying {
+
+            .confirm {
+                font-size: 7px;
+            }
+
+            .todo {
+                font-size: 7px;
+            }
+
+            .cancel2 {
+                font-size: 10px;
+            }
+        }
         
     }
 
