@@ -365,8 +365,7 @@ body {
 
 .maincontent .second {
   color: #E5E7EB;
-  width: 108%;
-  margin-left: -29px;
+  width: 100%;
   margin-bottom: 6%;
 }
 
@@ -609,9 +608,6 @@ body {
     font-size: 10px;
     padding: 7px;
   }
-  .middlesection .maincontent .second {
-    width: 115%;
-  }
 }
 
 @media screen and (max-width: 400px) {
@@ -656,9 +652,6 @@ body {
   }
   .middlesection .topminiheader .hiretalent2, .middlesection .topminiheader .findwork2 {
     font-size: 12px;
-  }
-  .middlesection .maincontent .second {
-    width: 125%;
   }
   .middlesection .maincontent .photo {
     width: 84%;

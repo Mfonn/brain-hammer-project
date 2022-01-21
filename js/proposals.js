@@ -2,7 +2,7 @@ function openForm() {
     document.getElementById("myForm").style.display = "block";
   }
   
-  function closeForm() {
+  function closeFormm() {
     document.getElementById("myForm").style.display = "none";
   }    
 
@@ -13,6 +13,11 @@ function openForm() {
   function myOption() {
     document.getElementById("myModify").style.display = "block";
   }
+
+  function closeForm() {
+    document.getElementById("myModify").style.display = "none";
+  }    
+
 
 
   // for the popup payment box 

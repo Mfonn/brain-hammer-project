@@ -632,6 +632,16 @@ body {
   color: #34D399;
 }
 
+.chat-popup .chatbox .chatbody .remitted .colored2 {
+  color: #F87171;
+  margin-right: 2%;
+}
+
+.chat-popup .chatbox .chatbody .error {
+  background-color: #FEF2F2;
+  color: #991B1B;
+}
+
 .chat-popup .chatbox .chatbody .message3 {
   margin-left: 2%;
 }
@@ -824,6 +834,7 @@ body {
   font-size: 14px;
   color: #374151;
   font-weight: 600;
+  margin-bottom: 3%;
 }
 
 .chat-popup .modify .select {
@@ -839,8 +850,8 @@ body {
 .chat-popup .modify .todo {
   display: block;
   float: right;
-  margin-top: 2%;
-  margin-right: 10%;
+  margin-top: 7%;
+  margin-right: 14%;
   color: #ffffff;
   border: none;
   padding: 8px 12px;
@@ -857,6 +868,39 @@ body {
   background-color: transparent;
   font-size: 14px;
   color: #989CA3;
+}
+
+.chat-popup .modify .amountt {
+  margin-bottom: 2%;
+  border-radius: 3px;
+  border: 1px solid #808080;
+  display: block;
+  width: 85%;
+  height: 27px;
+}
+
+.chat-popup .modify .buttons {
+  display: block;
+  width: 100%;
+  margin-bottom: 7%;
+  padding-right: 14%;
+}
+
+.chat-popup .modify .buttons .plus {
+  float: right;
+  padding: 6px 16px;
+  border: 1px solid #386DF5;
+  border-radius: 4px;
+  background-color: #ffffffff;
+}
+
+.chat-popup .modify .buttons .minus {
+  float: right;
+  padding: 6px 16px;
+  margin-left: 3%;
+  border: 1px solid #386DF5;
+  border-radius: 4px;
+  background-color: #ffffffff;
 }
 
 .chat-popup .paying {
@@ -892,8 +936,8 @@ body {
 .chat-popup .paying .todo {
   display: block;
   float: right;
-  margin-top: 2%;
-  margin-right: 10%;
+  margin-top: 7%;
+  margin-right: 14%;
   color: #ffffff;
   border: none;
   padding: 8px 12px;
@@ -1020,6 +1064,7 @@ body {
   }
   .chat-popup .modify .cars {
     font-size: 10px;
+    margin-bottom: 1%;
   }
   .chat-popup .modify .cancel2 {
     font-size: 12px;
@@ -1029,9 +1074,16 @@ body {
     margin: 0%;
   }
   .chat-popup .modify .todo {
-    margin-top: 4%;
+    margin-top: 7%;
     padding: 6px 10px;
     font-size: 10px;
+  }
+  .chat-popup .modify .amountt {
+    font-size: 10px;
+    height: 20px;
+  }
+  .chat-popup .modify .buttons .plus, .chat-popup .modify .buttons .minus {
+    padding: 4px 12px;
   }
   .chat-popup .paying .confirm {
     font-size: 9px;
@@ -1215,6 +1267,9 @@ body {
   .chat-popup .modify .select {
     font-size: 11px;
   }
+  .chat-popup .modify .buttons {
+    margin-bottom: 9%;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -1338,6 +1393,9 @@ body {
   }
   .chat-popup .modify .select {
     font-size: 10px;
+  }
+  .chat-popup .modify .buttons .plus, .chat-popup .modify .buttons .minus {
+    padding: 4px 12px;
   }
   .chat-popup .paying .confirm {
     font-size: 7px;

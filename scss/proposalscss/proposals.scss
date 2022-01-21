@@ -718,6 +718,16 @@ body {
                 .colored {
                     color: #34D399;
                 }
+
+                .colored2 {
+                    color: #F87171;
+                    margin-right: 2%;
+                }
+            }
+
+            .error {
+                background-color: #FEF2F2;
+                color:#991B1B;
             }
 
             .message3 {
@@ -909,6 +919,7 @@ body {
             font-size: 14px;
             color: #374151;
             font-weight: 600;
+            margin-bottom: 3%;
             
         }
 
@@ -925,8 +936,8 @@ body {
         .todo {
             display: block;
             float: right;
-            margin-top: 2%;
-            margin-right: 10%;
+            margin-top: 7%;
+            margin-right: 14%;
             color: #ffffff;
             border: none;
             padding: 8px 12px;
@@ -943,6 +954,40 @@ body {
             background-color: transparent;
             font-size: 14px;
             color: #989CA3;
+        }
+
+        .amountt {
+            margin-bottom: 2%;
+            border-radius: 3px;
+            border: 1px solid #808080;
+            display: block;
+            width: 85%;
+            height: 27px;
+        }
+
+
+        .buttons {
+            display: block;
+            width: 100%;
+            margin-bottom: 7%;
+            padding-right: 14%;
+
+            .plus {
+                float: right;
+                padding: 6px 16px;
+                border: 1px solid #386DF5;
+                border-radius: 4px;
+                background-color: #ffffffff;
+            }
+
+            .minus {
+                float: right;
+                padding: 6px 16px;
+                margin-left: 3%;
+                border: 1px solid #386DF5;
+                border-radius: 4px;
+                background-color: #ffffffff;
+            }
         }
     
       }
@@ -980,12 +1025,14 @@ body {
                 border-radius: 2px;
                 padding: 6px;
             }
+
+
     
             .todo {
                 display: block;
                 float: right;
-                margin-top: 2%;
-                margin-right: 10%;
+                margin-top: 7%;
+                margin-right: 14%;
                 color: #ffffff;
                 border: none;
                 padding: 8px 12px;
@@ -1200,6 +1247,7 @@ body {
 
             .cars {
                 font-size: 10px;
+                margin-bottom: 1%;
             }
 
             .cancel2 {
@@ -1212,9 +1260,20 @@ body {
             }
 
             .todo {
-                margin-top: 4%;
+                margin-top: 7%;
                 padding: 6px 10px;
                 font-size: 10px;
+            }
+
+            .amountt {
+                font-size: 10px;
+                height: 20px;
+            }
+
+            .buttons {
+                .plus, .minus {
+                    padding: 4px 12px;
+                }
             }
         }
 
@@ -1483,6 +1542,10 @@ body {
             .select {
                 font-size: 11px;
             }
+
+            .buttons {
+                margin-bottom: 9%;
+            }
         }
 
 
@@ -1685,6 +1748,12 @@ body {
 
             .select {
                 font-size: 10px;
+            }
+
+            .buttons {
+                .plus, .minus {
+                    padding: 4px 12px;
+                }
             }
         }
 
