@@ -12,16 +12,21 @@ body, html {
 
 .bg-image {
   /* The image used */
-  background-image: url("/assets/images/manwithmower.png");
   /* Full height */
   height: 100vh;
-  /* Center and scale the image nicely */
+}
+
+.bg-image .overlay {
+  -webkit-filter: blur(1.5px) brightness(45%);
+          filter: blur(1.5px) brightness(45%);
+  background-image: url("/assets/images/manwithmower.png");
+  height: 110vh;
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* to blur the image */
-  -webkit-filter: blur(1.5px) brightness(45%);
-          filter: blur(1.5px) brightness(45%);
 }
 
 /* For the page */
@@ -30,15 +35,10 @@ body, html {
   color: white;
   font-weight: bold;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   z-index: 2;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 90vh;
+  padding-bottom: 5%;
   /* for the signup, signin, post ad buttons */
   /* for the elements on the topsection */
   /* for the lower section of the top page */
@@ -48,9 +48,12 @@ body, html {
 .page-container .buttons {
   background-color: #386DF5;
   border: transparent;
+  float: right;
   margin-top: 32px;
   margin-right: 6px;
   font-size: 14px !important;
+  padding: 15px;
+  color: #ffffff;
 }
 
 .page-container .buttons:hover {
@@ -195,11 +198,11 @@ body, html {
 /* for thr navigation bar */
 .topnav {
   overflow: hidden;
+  height: 15vh;
 }
 
 /* Style the links inside the navigation bar */
 .topnav .topheader {
-  float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 8px 14px;
@@ -207,6 +210,8 @@ body, html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  margin: 0;
 }
 
 /* Change the color of links on hover */
@@ -226,10 +231,6 @@ body, html {
   display: none;
 }
 
-.logo {
-  width: 66%;
-}
-
 .logo1 {
   margin-left: 25px;
   margin-top: 28px;
@@ -244,7 +245,14 @@ body, html {
   font-style: normal;
   font-weight: bold;
   line-height: 25px;
+  text-align: left;
   color: #FFFFFF;
+  width: 30%;
+}
+
+.postclass {
+  height: 20vh;
+  width: 60%;
 }
 
 /* for the elements on the topsection */
@@ -456,7 +464,6 @@ body, html {
   height: fit-content;
   margin-top: 13%;
   border-radius: 5px;
-  /* for the signup, signin, post ad buttons */
 }
 
 .modal .modal-content form {
@@ -566,47 +573,6 @@ body, html {
 .modal .modal-content .signupbutton:hover {
   background-color: #386DF5;
   color: #ffffff;
-}
-
-.modal .modal-content .buttons {
-  background-color: #386DF5;
-  border: transparent;
-  margin-top: 32px;
-  margin-right: 6px;
-  font-size: 15px !important;
-}
-
-.modal .modal-content .buttons:hover {
-  background-color: #092a7c;
-}
-
-.modal .modal-content .signup {
-  background-color: transparent;
-}
-
-.modal .modal-content .signin {
-  background-color: transparent;
-}
-
-/* for the signup, signin, post ad buttons */
-.buttons {
-  background-color: #386DF5;
-  border: transparent;
-  margin-top: 32px;
-  margin-right: 6px;
-  font-size: 15px !important;
-}
-
-.buttons:hover {
-  background-color: #092a7c;
-}
-
-.signup {
-  background-color: transparent;
-}
-
-.signin {
-  background-color: transparent;
 }
 
 /* for the footer section */
@@ -752,9 +718,6 @@ body, html {
 }
 
 @media only screen and (min-width: 1200px) {
-  .page-container .logo {
-    width: 66%;
-  }
   .page-container .topnav .topheader {
     padding: 20px 20px;
   }
@@ -881,9 +844,6 @@ body, html {
 }
 
 @media only screen and (max-width: 600px) {
-  .page-container .logo {
-    width: 55%;
-  }
   .page-container .logo1 {
     margin-left: 5px;
     margin-top: 27px;
@@ -992,9 +952,6 @@ body, html {
 }
 
 @media only screen and (max-width: 400px) {
-  .logo {
-    width: 48%;
-  }
   .logo1 {
     margin-top: 22px;
     width: 24px;
@@ -1007,8 +964,13 @@ body, html {
     padding-top: 0;
   }
   .page-container .buttons {
-    font-size: 8px !important;
+    font-size: 7px !important;
     margin-right: 0px;
+    padding: 10px;
+  }
+  .page-container .postclass {
+    width: 77%;
+    margin-top: -11px;
   }
   .page-container .header {
     margin-top: 23%;

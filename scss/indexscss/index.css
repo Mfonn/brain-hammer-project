@@ -5,21 +5,28 @@ body, html {
 }
 
 .topsection {
-  height: 85vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .bg-image {
   /* The image used */
-  background-image: url("/assets/images/priscilla-du-preez-JCZ2pE-Szpw-unsplash.jpg");
   /* Full height */
   height: 100vh;
-  /* Center and scale the image nicely */
+}
+
+.bg-image .overlay {
+  -webkit-filter: blur(1.5px) brightness(45%);
+          filter: blur(1.5px) brightness(45%);
+  background-image: url("/assets/images/image1.jpg");
+  height: 110vh;
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* to blur the image */
-  -webkit-filter: blur(1.5px) brightness(45%);
-          filter: blur(1.5px) brightness(45%);
 }
 
 /* For the page */
@@ -28,15 +35,10 @@ body, html {
   color: white;
   font-weight: bold;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   z-index: 2;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 90vh;
+  padding-bottom: 5%;
   /* for the signup, signin, post ad buttons */
   /* for the elements on the topsection */
   /* for the lower section of the top page */
@@ -46,9 +48,12 @@ body, html {
 .page-container .buttons {
   background-color: #386DF5;
   border: transparent;
+  float: right;
   margin-top: 32px;
   margin-right: 6px;
   font-size: 14px !important;
+  padding: 15px;
+  color: #ffffff;
 }
 
 .page-container .buttons:hover {
@@ -193,11 +198,11 @@ body, html {
 /* for thr navigation bar */
 .topnav {
   overflow: hidden;
+  height: 15vh;
 }
 
 /* Style the links inside the navigation bar */
 .topnav .topheader {
-  float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 8px 14px;
@@ -205,6 +210,8 @@ body, html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  margin: 0;
 }
 
 /* Change the color of links on hover */
@@ -224,10 +231,6 @@ body, html {
   display: none;
 }
 
-.logo {
-  width: 66%;
-}
-
 .logo1 {
   margin-left: 25px;
   margin-top: 28px;
@@ -242,7 +245,14 @@ body, html {
   font-style: normal;
   font-weight: bold;
   line-height: 25px;
+  text-align: left;
   color: #FFFFFF;
+  width: 30%;
+}
+
+.postclass {
+  height: 20vh;
+  width: 60%;
 }
 
 /* for the elements on the topsection */
@@ -349,7 +359,6 @@ body, html {
   height: fit-content;
   margin-top: 13%;
   border-radius: 5px;
-  /* for the signup, signin, post ad buttons */
 }
 
 .modal .modal-content form {
@@ -461,193 +470,7 @@ body, html {
   color: #ffffff;
 }
 
-.modal .modal-content .buttons {
-  background-color: #386DF5;
-  border: transparent;
-  margin-top: 32px;
-  margin-right: 6px;
-  font-size: 15px !important;
-}
-
-.modal .modal-content .buttons:hover {
-  background-color: #092a7c;
-}
-
-.modal .modal-content .signup {
-  background-color: transparent;
-}
-
-.modal .modal-content .signin {
-  background-color: transparent;
-}
-
-/* for the signup, signin, post ad buttons */
-.buttons {
-  background-color: #386DF5;
-  border: transparent;
-  margin-top: 32px;
-  margin-right: 6px;
-  font-size: 15px !important;
-}
-
-.buttons:hover {
-  background-color: #092a7c;
-}
-
-.signup {
-  background-color: transparent;
-}
-
-.signin {
-  background-color: transparent;
-}
-
-/* for the footer section */
-.footersection {
-  background-color: #202426;
-  padding: 69px 80px 28px 11px;
-  color: #ffffff;
-}
-
-.footersection .container {
-  margin: auto;
-  margin-left: 6%;
-}
-
-.footersection .list {
-  list-style: none;
-  position: inherit;
-  padding: 0px;
-}
-
-.footersection .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.footersection .footer-col {
-  width: 15%;
-  padding: 0 10px;
-  margin-bottom: 20px;
-}
-
-.footersection .footer-column {
-  width: 27%;
-  padding: 0 10px;
-}
-
-.footersection .headings {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 20px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #9CA3AF;
-  position: relative;
-  cursor: pointer;
-}
-
-.footersection li {
-  display: block;
-}
-
-.footersection ul {
-  float: none;
-}
-
-.footersection .links {
-  text-decoration: none;
-  position: relative;
-}
-
-.footersection .links a {
-  text-decoration: none;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #D1D5DB;
-}
-
-.footersection .latest {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 21px;
-  margin-bottom: 15px;
-  color: #D1D5DB;
-}
-
-.footersection .enter {
-  height: 33px;
-  border-radius: 7px;
-  width: 154px;
-  padding: 10px;
-  float: left;
-}
-
-.footersection .subscribe {
-  font-size: 12px;
-  padding: 9px 9px;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
-  border-radius: 4px;
-  border: none;
-  background-color: #002ea3;
-  color: #ffffff;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  cursor: pointer;
-  float: left;
-  margin-left: 9px;
-}
-
-.footersection .subscribe:hover {
-  background-color: #092a7c;
-}
-
-.footersection hr {
-  color: #4B5563;
-  width: 92%;
-  margin-left: 1%;
-  margin-right: 7.5%;
-}
-
-.footersection .copyright {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 9px;
-  margin-left: 1%;
-  line-height: 24px;
-  margin-top: 25px;
-  color: #9CA3AF;
-  display: inline-block;
-}
-
-.footersection .social-links {
-  float: right;
-  margin-right: 10%;
-  margin-top: 25px;
-}
-
-.footersection .social-links img {
-  width: 25px;
-  height: 25px;
-  padding: 5px;
-}
-
 @media only screen and (min-width: 1200px) {
-  .page-container .logo {
-    width: 66%;
-  }
   .page-container .topnav .topheader {
     padding: 20px 20px;
   }
@@ -738,9 +561,6 @@ body, html {
 }
 
 @media only screen and (max-width: 600px) {
-  .page-container .logo {
-    width: 55%;
-  }
   .page-container .logo1 {
     margin-left: 5px;
     margin-top: 27px;
@@ -849,9 +669,6 @@ body, html {
 }
 
 @media only screen and (max-width: 400px) {
-  .logo {
-    width: 48%;
-  }
   .logo1 {
     margin-top: 22px;
     width: 24px;
@@ -864,8 +681,13 @@ body, html {
     padding-top: 0;
   }
   .page-container .buttons {
-    font-size: 8px !important;
+    font-size: 7px !important;
     margin-right: 0px;
+    padding: 10px;
+  }
+  .page-container .postclass {
+    width: 77%;
+    margin-top: -11px;
   }
   .page-container .header {
     margin-top: 23%;

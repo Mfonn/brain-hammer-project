@@ -12,19 +12,25 @@
 
     .bg-image {
                 /* The image used */
-                background-image: url("/assets/images/manwithmower.png");
-      
                 /* Full height */
                 height: 100vh;
               
-                /* Center and scale the image nicely */
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-        
-                        /* to blur the image */
-                filter: blur(1.5px) brightness(45%);
+                .overlay {
+                    filter: blur(1.5px) brightness(45%);
+                    background-image: url("/assets/images/manwithmower.png");
+                    height: 110vh;
+                    background-color: transparent;
+                    width: 100%;
+                    position: absolute;
+
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+      }
+              
     }
+
+
   
   /* For the page */
   .page-container {
@@ -32,21 +38,23 @@
     color: white;
     font-weight: bold;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 2;
     width: 100%;
-    height: fit-content;
+    height: 90vh;
+    padding-bottom: 5%;
 
       /* for the signup, signin, post ad buttons */
             .buttons {
                 background-color:  #386DF5;
                 border: transparent;
+                float:right;
                 
                 margin-top: 32px;
                 margin-right: 6px;
                 font-size: 14px !important;
+                padding: 15px;
+
+                color: #ffffff;
             }
 
             .buttons:hover {
@@ -208,16 +216,18 @@
   /* for thr navigation bar */
   .topnav {
     overflow: hidden;
+    height: 15vh;
   }
   
   /* Style the links inside the navigation bar */
   .topnav .topheader {
-    float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 8px 14px;
     text-decoration: none;
     display: flex;
+    width: 100%;
+    margin: 0;
   }
   
   /* Change the color of links on hover */
@@ -239,10 +249,6 @@
 
 
 
-  .logo {
-      width: 66%;
-  }
-
 
   .logo1 {
     margin-left: 25px;
@@ -252,16 +258,20 @@
   }
 
   .workinghammer {
-      font-size: 20px;
-      margin-top: 32px;
+    font-size: 20px;
+    margin-top: 32px;
+    font-family: Arvo;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: left;
+    color: #FFFFFF;
+    width: 30%;
+  }
 
-      font-family: Arvo;
-        font-style: normal;
-        font-weight: bold;
-        line-height: 25px;
-
-
-        color: #FFFFFF;
+  .postclass {
+    height: 20vh;
+    width: 60%;
   }
 
 
@@ -619,35 +629,7 @@
                  background-color: #386DF5;
                  color: #ffffff;
              }
-
-
-
-           
-
-        /* for the signup, signin, post ad buttons */
-        .buttons {
-            background-color:  #386DF5;
-            border: transparent;
-    
-            margin-top: 32px;
-            margin-right: 6px;
-            font-size: 15px !important;
             }
-    
-            .buttons:hover {
-            background-color: #092a7c;
-            }
-    
-            .signup {
-            background-color: transparent;
-            }
-    
-            .signin {
-            background-color: transparent;
-            }
-            
-            
-        }
 
 
 
@@ -658,28 +640,6 @@
 
 
 
-
-  /* for the signup, signin, post ad buttons */
-.buttons {
-    background-color:  #386DF5;
-    border: transparent;
-    
-    margin-top: 32px;
-    margin-right: 6px;
-    font-size: 15px !important;
-}
-
-.buttons:hover {
-    background-color: #092a7c;
-}
-
-.signup {
-    background-color: transparent;
-}
-
-.signin {
-    background-color: transparent;
-}
 
 
 
@@ -862,10 +822,6 @@
 
 @media only screen and (min-width: 1200px) {
     .page-container {
-
-        .logo {
-            width: 66%;
-        }
 
         .topnav .topheader {
             padding: 20px 20px;
@@ -1070,9 +1026,6 @@
 
 @media only screen and (max-width: 600px) {
     .page-container {
-        .logo {
-            width: 55%;
-        }
     
         .logo1 {
             margin-left: 5px;
@@ -1208,9 +1161,6 @@
 
 
 @media only screen and (max-width: 400px) {
-    .logo {
-        width: 48%;
-    }
 
     .logo1 {
         margin-top: 22px;
@@ -1226,10 +1176,17 @@
         padding-top: 0;
 
         .buttons {
-            font-size: 8px !important;
+            font-size: 7px !important;
             margin-right: 0px;
+
+            padding: 10px;
         }
 
+        .postclass {
+            width: 77%;
+            margin-top: -11px;
+        
+        }
 
 
 

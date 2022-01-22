@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomePage</title>
+    <title>IndexPage</title>
     <link rel="stylesheet" href="./scss/indexscss/index.css">
     <link rel="stylesheet" href="./scss/indexscss/index.scss">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,21 +13,26 @@
 <body>
 
     <div class="topsection">
-        <div class="bg-image"></div>
-
+        <div class="bg-image">
+            
+            <div class="overlay"></div>
 
         <div class="page-container">
             <div class="topnav" id="myTopnav">
-                <div class="logo topheader">
-                    <img class= "logo1" src="/assets/images/logo.png"> 
-                    <h6 class="workinghammer"> Working Hammer</h6>
-                </div>
+                <div class="topheader">
+                    <img class= " logo logo1" src="/assets/images/logo.png"> 
+                    <h6 class=" logo workinghammer"> Working Hammer</h6>
                 
+                    <div class="postclass">
+                        <button class= "buttons postad" >Post ad</button>
+                    
+                        <button id= "myBtnn" class= "buttons signin" >Sign In</button>
+                        <button id= "myBtn" class= "buttons signup" >Sign Up</button>
     
-    
-                <button id= "myBtn" class= "topheader buttons signup" >Sign Up</button>
-                <button id= "myBtnn" class= "topheader buttons signin" >Sign In</button>
-                <button class= "topheader buttons postad" >Post ad</button>
+                    </div>
+                  
+                    </div>
+                
               </div>
         
     
@@ -53,20 +58,16 @@
     
         </div>
         </div>
-
-        <div class="mapsection full" id="map">
-            <div class="mapouter">
-                <div class="gmap_canvas">
-                    <iframe id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d719091.4247868968!2d-76.36069900118085!3d45.24878608060937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sng!4v1641123194104!5m2!1sen!2sng" width="100%" height="15vh" style="border:0;" allowfullscreen="" loading="lazy">
-                    </iframe>
-                </div>
-                </div>
         </div>
+
+
     
         
     </div>
 
     
+
+
 
 
     <div id="myModal" class="modal">
