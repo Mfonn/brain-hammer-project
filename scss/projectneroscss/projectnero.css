@@ -637,7 +637,7 @@ body {
   display: none;
   position: fixed;
   z-index: 999;
-  top: 8vh;
+  top: 1vh;
   width: 60%;
   margin-left: 39%;
   height: 90vh;

@@ -432,11 +432,16 @@ body {
         
             color: #D1D5DB;
         }
+
+        .enter {
+            height: 20%;
+            width: 100%;
+        }
     
         .enter {
             height: 33px;
             border-radius: 7px;
-            width: 154px;
+            width: 48%;
             padding: 10px;
             float: left;
         }
@@ -780,6 +785,17 @@ body {
             
             }
          }
+    }
+
+    .footersection {
+        .subscribe {
+            font-size: 9px;
+            padding: 8px 8px;
+        }
+
+        .enter {
+            width: 60%;
+        }
     }
 
 }

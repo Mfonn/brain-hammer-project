@@ -361,9 +361,14 @@ body {
 }
 
 .footersection .enter {
+  height: 20%;
+  width: 100%;
+}
+
+.footersection .enter {
   height: 33px;
   border-radius: 7px;
-  width: 154px;
+  width: 48%;
   padding: 10px;
   float: left;
 }
@@ -584,6 +589,13 @@ body {
   }
   .mainsection .banktable td .edit {
     font-size: 8px;
+  }
+  .footersection .subscribe {
+    font-size: 9px;
+    padding: 8px 8px;
+  }
+  .footersection .enter {
+    width: 60%;
   }
 }
 

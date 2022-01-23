@@ -445,10 +445,15 @@ body {
   color: #D1D5DB;
 }
 
+.footersection .end {
+  height: 20%;
+  width: 100%;
+}
+
 .footersection .enter {
   height: 33px;
   border-radius: 7px;
-  width: 154px;
+  width: 48%;
   padding: 10px;
   float: left;
 }
@@ -642,6 +647,13 @@ body {
   }
   .middlesection .maincolumn .row .column2 .amountgroup .amount {
     width: 93px;
+  }
+  .footersection .subscribe {
+    font-size: 9px;
+    padding: 8px 8px;
+  }
+  .footersection .enter {
+    width: 60%;
   }
 }
 
