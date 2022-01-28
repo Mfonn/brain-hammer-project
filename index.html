@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IndexPage</title>
-    <link rel="stylesheet" href="./scss/indexscss/index.css">
-    <link rel="stylesheet" href="./scss/indexscss/index.scss">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="./scss/hompepagecss/homepage.css">
+    <link rel="stylesheet" href="./scss/homepagecss/homepage.scss">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./js/index.js"></script>
+    <script src="./js/homepage.js"></script>
 </head>
 <body>
 
@@ -24,8 +24,8 @@
                     <h6 class=" logo workinghammer"> Working Hammer</h6>
                 
                     <div class="postclass">
-                        <button class= "buttons postad" >Post ad</button>
-                    
+                        <a href="posted.html"><button class= "buttons postad" >Post ad</button></a>
+                        
                         <button id= "myBtnn" class= "buttons signin" >Sign In</button>
                         <button id= "myBtn" class= "buttons signup" >Sign Up</button>
     
@@ -65,8 +65,144 @@
         
     </div>
 
-    
+ 
 
+
+        <div class="mapsection full" id="map">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d719091.4247868968!2d-76.36069900118085!3d45.24878608060937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sng!4v1641123194104!5m2!1sen!2sng" width="100%" height="800px" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                </div>
+        </div>
+
+        <div class="gridsection">
+            <h3 class="published">Just published</h3>
+
+            <!-- CSS Grid Container -->
+            <div class="grid">
+                <div class="col image1">
+                    <img src="/assets/images/image1.png" class="images">
+                    <h5 class="task">Want a cutter to cut a tree</h5>
+                    <p class="price">$100.00/h</p>
+                    <p class="date">Mar 16, 2020 - 2 min read</p>
+                    <p class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span> 125 </p>
+                </div>
+
+                <div class="col image2">
+                    <img src="/assets/images/image2.png" class="images">
+                    <h5 class="task">Help me fix the wire</h5>
+                    <p class="price">$120.00/h</p>
+                    <p class="date">Mar 16, 2020 - 5 min read</p>
+                    <p class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span> 125 </p>
+                </div>
+
+                <div class="col image3">
+                    <img src="/assets/images/image3.png" class="images">
+                    <h5 class="task">Clean the lawn regularly</h5>
+                    <p class="price">$100.00/h</p>
+                    <p class="date">Mar 16, 2020 - 8 min read</p>
+                    <p class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span> 125 </p>
+                </div>
+
+                <div class="col image4">
+                    <img src="/assets/images/image4.png" class="images">
+                    <h5 class="task">Want a cutter to cut a tree</h5>
+                    <p class="price">$100.00/h</p>
+                    <p class="date">Mar 16, 2020 - 2 min read</p>
+                    <p class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span> 125 </p>
+                </div>
+
+                <div class="col image5">
+                    <img src="/assets/images/image5.png" class="images">
+                    <h5 class="task">Want a cutter to cut a tree</h5>
+                    <p class="price">$120.00/h</p>
+                    <p class="date">Mar 16, 2020 - 5 min read</p>
+                    <p class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span> 125 </p>
+                </div>
+
+                <div class="col image6">
+                    <img src="/assets/images/image6.png" class="images">
+                    <h5 class="task">Want a cutter to cut a tree</h5>
+                    <p class="price">$100.00/h</p>
+                    <p class="date">Mar 16, 2020 - 8 min read</p>
+                    <p class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span> 125 </p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="footersection">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4 class="headings">SOLUTIONS</h4>
+                        <ul class="list">
+                            <li class="links"><a href="#">Marketing</a></li>
+                            <li class="links"><a href="#">Analytics</a></li>
+                            <li class="links"><a href="#">Commerce</a></li>
+                            <li class="links"><a href="#">Insights</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4 class="headings">SUPPORT</h4>
+                        <ul class="list">
+                            <li class="links"><a href="#">Pricing</a></li>
+                            <li class="links"><a href="#">Documentation</a></li>
+                            <li class="links"><a href="#">Guides</a></li>
+                            <li class="links"><a href="#">API Status</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4 class="headings">COMPANY</h4>
+                        <ul class="list">
+                            <li class="links"><a href="#">About</a></li>
+                            <li class="links"><a href="#">Blog</a></li>
+                            <li class="links"><a href="#">Jobs</a></li>
+                            <li class="links"><a href="#">Press</a></li>
+                            <li class="links"><a href="#">Partners</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4 class="headings">LEGAL</h4>
+                        <ul class="list">
+                            <li class="links"><a href="#">Claim</a></li>
+                            <li class="links"><a href="#">Privacy</a></li>
+                            <li class="links"><a href="#">Terms</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="headings">SUBSCRIBE TO OUR NEWSLETTER</h4>
+                        <p class="latest">The latest news, articles, and resources, sent to <br>
+                             your inbox weekly.</p>
+                        <div class="end">
+                            <input class="enter" placeholder="Enter your email">
+                            <button class="subscribe">Subscribe</button>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+            <hr>
+
+            <p class="copyright">c 2020 Workhummer, Inc. All rights reserved.</p>
+            <p class="social-links">
+                <a href="#"><img src="/assets/images/facebook.png"></a>
+                <a href="#"><img src="/assets/images/instagram.png"></a>
+                <a href="#"><img src="/assets/images/twitter.png"></a>
+                <a href="#"><img src="/assets/images/github.png"></a>
+                <a href="#"><img src="/assets/images/browser.png"></a>
+
+            </p>
+        </div>
+
+    </div>
 
 
 
