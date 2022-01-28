@@ -4,6 +4,11 @@ body, html {
   margin: 0;
 }
 
+.a:-webkit-any-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .topsection {
   height: -webkit-fit-content;
   height: -moz-fit-content;

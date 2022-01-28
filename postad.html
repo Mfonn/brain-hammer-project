@@ -25,8 +25,8 @@
 
         <div id="myTopnav" class="myTopnav">
             <img src="./assets/images/Avatar.png" alt="Avatar" class="avatar">
-            <img src="./assets/images/Message.png" alt="chatbot" class="notification">
-            </a>
+            <i class="fas fa-comment-dots notification" onclick="openForm()"></i> 
+            <a href="posted.html"><button class= "buttons postad" >Post ad</button></a>
     
         </div>
 
@@ -35,13 +35,13 @@
 
     <div class="middlesection">
         <div class="navbar">
-            <a href="#"><i class="fa fa-fw fa-home"></i> <i class="fas fa-chevron-right"></i></a>
+            <a href="homepage.html"><i class="fa fa-fw fa-home"></i> <i class="fas fa-chevron-right"></i></a>
             <a href="#"></i> Post an Advert </a>
           </div>
 
           <div class="topminiheader">
             <p class="postad2">Post Ad</p>
-            <p class="hiretalent2">Hire Talent</p>
+            <a href="findwork.html"><p class="hiretalent2">Hire Talent</p></a>
             <p class="findwork2 active">Find Work</p>
         </div>
 
@@ -131,6 +131,291 @@
  
         </div>
         </div>
+
+
+
+
+<!-- for the chat bot -->
+
+
+<div class="chat-popup" id="myForm">
+    <form action="" class="form-container"></form>
+       <button type="button" class="btn cancel" onclick="closeFormm()"><i class="fas fa-times"></i></button>
+
+      <div class="chatbox">
+         <div class="header1">
+            <img class="forest" src="assets/images/forest2.png">
+
+            <div class="headerwords">
+                <h4 class="wanta">Want a cutter to cut a tree cut a tree</h4>
+                <p class="money">$50.00 </p>
+                <p class="timecount"  onclick="myOption()">/hour 
+                    <i class="far fa-edit"></i></p>
+
+            </div>
+
+            <!--for the popup edit price box
+
+            <div id="myModify" class="modify">
+                <label for="cars" class="cars">modify the price</label>
+                <button type="button" class="btn cancel2 " onclick="closeForm()"><i class="fas fa-times"></i></button>
+
+
+                <select name="cars" id="cars" class="select">
+                <option value="volvo">$50.00 /hour</option>
+                </select>
+
+                <button class="todo">Award</button>
+            </div>
+        -->
+
+
+        <!--for the alternative pop up edit price box-->
+        <div id="myModify" class="modify">
+            <label for="cars" class="cars">modify the price</label>
+            <button type="button" class="btn cancel2 " onclick="closeForm()"><i class="fas fa-times"></i></button>
+
+
+            <input name="amount" id="amount" class="input amountt" placeholder="$60.00">
+
+            <input name="amount" id="amount" class="input amountt" placeholder="$60.00">
+            
+
+            <div class="buttons">
+                <button class="minus">-</button>
+                <button class="plus">+</button>
+            </div>
+
+          
+            <br>
+            <button class="todo">Award</button>
+        </div>
+            
+            
+
+
+                <!-- for the alternative award button
+                 <button class="awards">Award</button> -->
+
+                 <button class="awards" onclick="myPayment()">Pay</button>
+
+            <!--for the popup payment box-->
+
+            <div id="myPayment" class="paying">
+                <label for="cars" class="confirm">Confirm payment password</label>
+                <button type="button" class="btn cancel2 " onclick="myClose()"><i class="fas fa-times"></i></button>
+
+
+                <input name="password" id="password" class="input" placeholder="••••••••••••">
+               
+                <button class="todo">Confirm</button>
+            </div> 
+
+
+
+
+        </div> 
+
+        <!--for the second type of header
+        <div class="header1 header2">
+            <img class="forest" src="./assets/images/forest2.png">
+
+            <div class="headerwords">
+                <h4 class="wanta">Want a cutter to cut a tree cut a tree</h4>
+                <ul class="breadcrumb">
+                    <li><a href="#"><i class="fas fa-check-circle"></i></a></li>
+                    <li><a href="#"><i class="fas fa-check-circle"></i></a></li>
+                    <li><a href="#"><img class="three" src="./assets/images/three.png"></a></li>
+                  </ul>
+                
+            </div>
+
+            <button class="awards release">Release</button>
+        </div>
+    -->
+
+        <div class="chatbody">
+            <div class="message1">
+                <img class="pop1" src="./assets/images/mizeach.png">
+                <p class="one">Hello</p>
+               
+                
+            </div>
+
+
+            <div class="message1 message2">
+                <img class="pop1" src="./assets/images/mizeach.png">
+                <p class="one">Can you cut down trees?</p>
+                
+                
+            </div>
+
+
+            <div class="message1 message2">
+                <img class="pop1" src="./assets/images/mizeach.png">
+                <p class="one">😁😁😁</p>
+                
+                
+            </div>
+
+            <div class="message1 message2 message3">
+                <img class="pop2" src="./assets/images/ricardo.png">
+                <p class="two">I'm a level 3 lumberjack, no problem cutting down trees for you</p>
+                
+                
+            </div>
+
+
+            <!-- <div class="message1 message2 message3 message4">
+                <img class="pop2" src="./assets/images/ricardo.png">
+                <p class="two remitted"><i class="fas fa-check-circle colored"></i>I have remitted money.</p>
+                
+                
+            </div> -->
+
+            <div class="message1 message2 message3 message4">
+                <img class="pop2" src="./assets/images/ricardo.png">
+                <p class="two remitted error"><i class="fas fa-times colored2"></i>There were 1 errors with your submission</p>
+                
+                
+            </div>
+        </div>
+
+        <div class="chatfooter">
+            <input for="message" class="enter" placeholder="Enter your message">
+
+            <div class="footer2">
+                <div class="emojis">
+                    <i class="fas fa-smile"></i>
+                    <i class="far fa-image"></i>
+                    <i class="fas fa-comment-alt"></i>
+
+                </div>
+
+                <button class="send">Send</button>
+            </div>
+        </div>
+       </div>
+        
+
+
+
+        <!-- For the second type of chatbox
+
+       <div class="chatbox chatbox2">
+                
+                <div class="header1 newheader">
+                    <img class="forest" src="./assets/images/forest2.png">
+
+                    <div class="headerwords">
+                        <h4 class="wanta">Want a cutter to cut a tree cut a tree</h4>
+                        <p class="money">$50.00 </p>
+                        <p class="timecount">/hour</p>
+                        <p class="timecount dist">1004m</p>
+                    </div>
+            
+                </div>
+
+                <div class="header1 newheader">
+                    <img class="forest" src="./assets/images/woodcutter.png">
+
+                    <div class="headerwords">
+                        <h4 class="wanta">Want a cutter to cut a tree cut a tree</h4>
+                        <p class="money">$50.00 </p>
+                        <p class="timecount">/hour</p>
+                        <p class="timecount dist">1004m</p>
+                    </div>
+            
+                </div>
+
+                <div class="header1 newheader">
+                    <img class="forest" src="./assets/images/whiteflower.png">
+
+                    <div class="headerwords">
+                        <h4 class="wanta">Want a cutter to cut a tree cut a tree</h4>
+                        <p class="money">$50.00 </p>
+                        <p class="timecount">/hour</p>
+                        <p class="timecount dist">1004m</p>
+                    </div>
+            
+                </div>
+
+                <div class="header1 newheader">
+                    <img class="forest" src="./assets/images/forest2.png">
+
+                    <div class="headerwords">
+                        <h4 class="wanta">Want a cutter to cut a tree cut a tree</h4>
+                        <p class="money">$50.00 </p>
+                        <p class="timecount">/hour</p>
+                        <p class="timecount dist">1004m</p>
+                    </div>
+            
+                </div>
+
+       </div>
+
+    -->
+
+       <div class="recommend">
+
+        <div class="bellheader">
+            <div class="group">
+                <img class="bell orange" src="./assets/images/yellownoti.png">
+                <img class="bell whitebell" src="./assets/images/bell.png">
+                <img class="bell ellipse" src="./assets/images/ellipse.png">
+                <p class="bell number">2</p> 
+            </div>
+            
+            <h4 class="notifi">Notification</h4> 
+            <p class="aboutbell"> 5 jobs to recommend to you</p>
+        </div>
+
+        <div class="mainbody">
+            <img class="image1" src="./assets/images/mizeach2.png">
+            <div class="abouthim">
+             <p class="name">Mizeach</p>
+            <p class="what">I am a level 3 lumbe...</p>
+            <p class="when">Just now</p>
+            </div>
+
+            <img class="image1 image2" src="./assets/images/mizeach3.png">
+            <div class="abouthim abouthim2">
+             <p class="name">Mizeach</p>
+            <p class="what">I am a level 3 lumbe...</p>
+            <p class="when">1 days ago</p>
+            </div>
+
+            <img class="image1 image2" src="./assets/images/mizeach3.png">
+            <div class="abouthim abouthim3">
+             <p class="name">Esther Howard</p>
+            <p class="what">hello</p>
+            <p class="when">1 days ago</p>
+            </div>
+
+            <img class="image1 image2" src="./assets/images/ralph.png">
+            <div class="abouthim abouthim3">
+             <p class="name">Ralph Edwards</p>
+            <p class="what">I'm a level 3 lumbe...</p>
+            <p class="when">2 days ago</p>
+            </div>
+
+            <img class="image1 image2" src="./assets/images/esther2.png">
+            <div class="abouthim abouthim3">
+             <p class="name">Esther Howard</p>
+            <p class="what">I'm a level 3 lumbe...</p>
+            <p class="when">2 days ago</p>
+            </div>
+
+            
+            
+        </div>
+
+       </div>
+
+     
+    </form>
+  </div>
+
 
 </body>
 </html>

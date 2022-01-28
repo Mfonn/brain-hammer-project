@@ -6,6 +6,12 @@
     }
 
 
+    .a:-webkit-any-link  {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+
     .topsection {
         height: fit-content;
     }
@@ -1177,6 +1183,8 @@
         display: none;
     }
 
+
+
     .page-container {
         padding-top: 0;
 
@@ -1190,6 +1198,8 @@
         .postclass {
             width: 77%;
             margin-top: -11px;
+
+
         
         }
 
