@@ -9,8 +9,12 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="./scss/findworkscss/findwork.css">
+    <link rel="stylesheet" href="./scss/avatarscss/avatar.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="./js/findwork.js"></script>
+    <script src="./js/avatar.js"></script>
+
 </head>
 <body> 
     <div class="headersection" id="myTopnav">
@@ -32,8 +36,20 @@
             <input class="search2 whiteheader" style="font-family: FontAwesome;" placeholder='&#xf002' />
             <button class="postad">Post ad</button> 
             <i class="far fa-bell notification"></i>
-            <img src="./assets/images/Avatar.png" alt="Avatar" class="avatar">
-            </a>
+                <div class="dropdown2">
+                <img src="./assets/images/Avatar.png" alt="Avatar" onclick="myDropdown()" class="avatar dropbtn">
+                <div id="myDropdown2" class="dropdown-content2 nomessage">
+                    <a href="#" class="links" >Notifications</a>
+                    <a href="#" class="links" >Login</a>
+                    <a href="#" class="links" >SignUp</a>
+                    <a href="#" class="links" >SignIn</a>
+                    <a href="#" class="links" >Edit</a>
+                    <a href="#" class="links" >Profile</a>
+                    <a href="#" class="links" >Home</a>
+                    <a href="#" class="links" >Transactions</a>
+                    <a href="#" class="links" >Logout</a>
+                  </div>
+                </div>
     
         </div>
 

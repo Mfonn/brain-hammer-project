@@ -9,8 +9,12 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="./scss/proposalscss/proposals.css">
+    <link rel="stylesheet" href="./scss/avatarscss/avatar.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="./js/proposals.js"></script>
+    <script src="./js/avatar.js"></script>
+
 </head>
 <body>
     <div class="headersection" id="myTopnav">
@@ -23,7 +27,20 @@
 
 
         <div id="myTopnav" class="myTopnav">
-            <img src="./assets/images/Avatar.png" alt="Avatar" class="avatar">
+            <div class="dropdown2">
+                <img src="./assets/images/Avatar.png" alt="Avatar" onclick="myDropdown()" class="avatar dropbtn">
+                <div id="myDropdown2" class="dropdown-content2">
+                    <a href="#" class="links" >Notifications</a>
+                    <a href="#" class="links" >Login</a>
+                    <a href="#" class="links" >SignUp</a>
+                    <a href="#" class="links" >SignIn</a>
+                    <a href="#" class="links" >Edit</a>
+                    <a href="#" class="links" >Profile</a>
+                    <a href="#" class="links" >Home</a>
+                    <a href="#" class="links" >Transactions</a>
+                    <a href="#" class="links" >Logout</a>
+                  </div>
+            </div>
             <i class="fas fa-comment-dots notification" onclick="openForm()"></i> 
             <a href="postad.html"><button class= "buttons postad" >Post ad</button></a>
             </a>

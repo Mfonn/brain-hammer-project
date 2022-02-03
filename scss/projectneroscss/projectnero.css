@@ -13,6 +13,11 @@ body {
   margin: 0;
 }
 
+.a:-webkit-any-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .headersection {
   background-color: #ffffff;
   overflow: hidden;
@@ -184,12 +189,11 @@ body {
   height: 300px;
 }
 
-.middlesection .column1 .bigimage .left {
-  background: url("/assets/images/woodcutter.png");
+.middlesection .column1 .bigimage .left img {
   background-size: cover;
   background-position: center;
-  height: 300px;
-  width: 72%;
+  height: 289px;
+  width: 68%;
   float: left;
 }
 
@@ -1376,9 +1380,6 @@ body {
 
 @media screen and (max-width: 600px) {
   /* for navigation bar */
-  .headersection a:not(:first-child) {
-    display: none;
-  }
   .headersection a.icon {
     float: right;
     display: block;
@@ -1475,6 +1476,9 @@ body {
   }
   .middlesection .column1 .aboutimage {
     font-size: 9px;
+  }
+  .middlesection .column1 .bigimage .left img {
+    width: 67%;
   }
   .middlesection .row::after {
     content: "";

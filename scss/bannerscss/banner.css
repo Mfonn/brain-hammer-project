@@ -585,9 +585,6 @@ body {
 
 @media screen and (max-width: 600px) {
   /* for navigation bar */
-  .headersection a:not(:first-child) {
-    display: none;
-  }
   .headersection a.icon {
     float: right;
     display: block;

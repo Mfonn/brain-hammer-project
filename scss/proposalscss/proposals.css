@@ -13,6 +13,11 @@ body {
   margin: 0;
 }
 
+.a:-webkit-any-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .headersection {
   background-color: #ffffff;
   overflow: hidden;
@@ -1104,9 +1109,6 @@ body {
 
 @media screen and (max-width: 600px) {
   /* for navigation bar */
-  .headersection a:not(:first-child) {
-    display: none;
-  }
   .headersection a.icon {
     float: right;
     display: block;

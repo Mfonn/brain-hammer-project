@@ -219,13 +219,13 @@ body {
             .bigimage {
                 height: 300px;
 
-                .left {
-                    background: url('/assets/images/woodcutter.png');
+                .left img{
+                    
                     background-size: cover;
                     background-position: center;
 
-                    height: 300px;
-                    width: 72%;
+                    height: 289px;
+                    width: 68%;
 
                     float: left;
                 }
@@ -1638,7 +1638,6 @@ body {
 @media screen and (max-width: 600px) {
 
     /* for navigation bar */
-    .headersection a:not(:first-child) {display: none;}
     .headersection a.icon {
       float: right;
       display: block;
@@ -1765,6 +1764,14 @@ body {
 
             .aboutimage {
                 font-size: 9px;
+            }
+
+            .bigimage {
+
+                .left img {
+                    width: 67%;
+            }
+    
             }
         }
 
