@@ -1,0 +1,59 @@
+<template>
+  <div class="page" data-name="verify">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left">
+          <a href="#" class="button button-fill text-color-theme bg-color-white button-44 back">
+            <i class="bi bi-arrow-left"></i>
+          </a>
+        </div>
+        <div class="title">
+          <h5>OTP Verification</h5>
+        </div>
+        <div class="right"></div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="block h-100 no-margin">
+        <div class="row h-100">
+          <div
+            class="col-85 medium-50 large-40 margin-left-auto margin-right-auto align-self-center text-align-center padding-vertical">
+            <h1 class="margin-bottom-half text-color-theme ">Verify OTP</h1>
+            <p class="margin-bottom text-muted">Verify OTP sent to your provided email address and phone number</p>
+            <br/>
+            <form class="was-validated needs-validation" novalidate>
+              <div class="list form-list no-margin margin-bottom">
+                <ul>
+                  <li class="item-content item-input item-input-with-value is-valid">
+                    <div class="item-inner">
+                      <div class="item-title item-floating-label">Enter OTP</div>
+                      <div class="item-input-wrap"><input type="password" name="otp" class="input-with-value" value="Maxart" /><span
+                          class="input-clear-button"></span></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a href="/thankyou2/" class="button button-fill button-large button-raised color-theme">
+                Verify
+              </a>
+            </form> 
+
+          </div>    
+          <div class="col-100 text-align-center margin-top-auto">
+            <div class="row justify-content-center footer-info">
+              <div class="col-100 text-align-center">
+                  <span class="progressstimer">
+                      <img src="img/progress.png" alt="" />
+                      <span class="timer" id="timer">3:00</span>
+                  </span>
+                  <br/>
+                  <p class=""><span class="text-muted">Didn't received yet?</span> <a href="">Resend OTP</a>
+                  </p>
+              </div>
+          </div>
+          </div>     
+        </div>
+      </div>     
+    </div>
+  </div>
+</template>

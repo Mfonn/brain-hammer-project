@@ -1,0 +1,95 @@
+<!-- select Amount -->
+<div class="row">
+    <div class="col-12 text-center mb-4">
+        <input type="text" class="trasparent-input text-center" value="100.00" placeholder="Enter Amount">
+        <div class="text-center"><span class="text-muted">Amount in USD</span>
+            <button class="btn btn-link btn-sm text-muted px-1 dropdown-toggle" type="button" id="ln1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end shadow border-0 w-110" aria-labelledby="ln1">
+                <li><a class="dropdown-item active" href="#">USD</a></li>
+                <li><a class="dropdown-item" href="#">AUD</a></li>
+                <li><a class="dropdown-item" href="#">BTC</a></li>
+                <li><a class="dropdown-item" href="#">ETH</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- group user -->
+<div class="row">
+    <div class="col-12">
+
+        <div class="form-group form-floating is-valid mb-1">
+            <input type="text" class="form-control " id="receivefrom" placeholder="Receive From"
+                value="Maxartkiller">
+            <label class="form-control-label" for="receivefrom">Receive From</label>
+            <button type="button" class="text-color-theme tooltip-btn">
+                <i class="bi bi-person-badge"></i>
+            </button>
+        </div>
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="form-check avatar">
+                            <input class="form-check-input" type="checkbox" id="contact1" checked />
+                            <label for="contact1" class="avatar avatar-44 shadow-sm rounded-10">
+                                <img src="assets/img/user1.jpg" alt="" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                        <p class="mb-1 text-color-theme">Maxartkiller</p>
+                        <p class="text-muted size-12">+4789680000000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header border-0">
+                <p>Selected Contacts</p>
+            </div>
+            <div class="card-body pt-0">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="avatar-group">
+                            <div class="avatar avatar-44 rounded-circle shadow-sm">
+                                <img src="assets/img/user2.jpg" alt="" />
+                            </div>
+                            <div class="avatar avatar-44 rounded-circle shadow-sm">
+                                <img src="assets/img/user3.jpg" alt="" />
+                            </div>
+                            <div class="avatar avatar-44 rounded-circle shadow-sm">
+                                <img src="assets/img/user4.jpg" alt="" />
+                            </div>
+                            <div class="avatar avatar-44 rounded-circle shadow-sm">
+                                <img src="assets/img/user1.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                        <p class="text-muted small">+15<br>More</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group form-floating is-valid mb-3">
+            <input type="text" class="form-control " id="Subject" placeholder="Subject" value="Need Help">
+            <label class="form-control-label" for="Subject">Subject</label>
+        </div>
+        <div class="form-group form-floating is-valid mb-4">
+            <textarea class="form-control " id="description" placeholder="Description">Need help 3 months medical emergency 
+            </textarea>
+            <label class="form-control-label" for="description">Description</label>
+        </div>
+    </div>
+</div>
+
+<!-- send requet button -->
+<div class="row mb-4">
+    <div class="col-12 ">
+        <button routerLink="/thankyou4" class="btn btn-default btn-lg shadow-sm w-100">
+            Send Request
+        </button>
+    </div>
+</div>

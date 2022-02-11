@@ -1,0 +1,19 @@
+<!-- Begin page -->
+<main #mainPage>
+
+    <!-- Header -->
+    <app-headerback #HeaderEl class="header position-fixed"></app-headerback>
+    <!-- Header ends -->
+
+    <!-- main page content -->
+    <div class="main-container container" #mainContainer>
+        <router-outlet></router-outlet>
+    </div>
+    <!-- main page content ends -->
+
+    <!-- fluid footer at bottom of page -->
+    <app-footerinfo #FooterEl class="container-fluid d-block"></app-footerinfo>
+     <!-- fluid footer at bottom of page ends -->
+
+</main>
+<!-- Page ends-->

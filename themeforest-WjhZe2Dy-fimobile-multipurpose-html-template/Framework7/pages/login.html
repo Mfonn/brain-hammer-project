@@ -1,0 +1,79 @@
+<template>
+  <div class="page " data-name="login">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left"></div>
+        <div class="title">
+          <div class="logo-small">
+            <img src="img/logo.png" alt="" />
+            <h5>FiMobile</h5>
+          </div>
+        </div>
+        <div class="right"></div>
+      </div>
+    </div>
+
+    <div class="page-content ">
+      <div class="block h-100 no-margin">
+        <div class="row h-100">
+          <div
+            class="col-85 medium-50 large-40 margin-left-auto margin-right-auto align-self-center text-align-center padding-vertical">
+            <h1 class="margin-bottom text-color-theme ">Sign in</h1>
+            <br/>
+            <form class="was-validated needs-validation" novalidate>
+              <div class="list form-list no-margin margin-bottom">
+                <ul>
+                  <li class="item-content item-input item-input-with-value is-valid">
+                    <div class="item-inner">
+                      <div class="item-title item-floating-label">Email or Phone</div>
+                      <div class="item-input-wrap"><input type="text" name="email" class="input-with-value" value="Maxartkiller" /><span
+                          class="input-clear-button"></span></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="list form-list no-margin margin-bottom">
+                <ul>
+                  <li class="item-content item-input item-input-with-value is-invalid">
+                    <div class="item-inner">
+                      <div class="item-title item-floating-label">Password</div>
+                      <div class="item-input-wrap"><input type="password" name="Password" class="input-with-value"  value="Maxartkiller"/><span
+                          class="input-clear-button"></span>
+                        </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <p class="margin-bottom text-align-center">
+                <a href="/forgotpassword/" class="">
+                  Forgot your password?
+                </a>
+              </p>
+
+              <a href="/home/" class="button button-fill button-large button-raised margin-bottom color-theme">
+                Sign in
+              </a>
+            </form>
+            <p class="margin-bottom-half text-muted">Don't have account?</p>
+            <a href="/register/" target="_self" class="link">
+              Sign up <i class="bi bi-arrow-right"></i>
+            </a>
+
+          </div>
+          <div class="col-100 text-align-center margin-top-auto">
+            <div class="row justify-content-center footer-info">
+              <div class="col">
+                <p class="text-muted display-inline">Or you can continue with </p>
+              
+                <a href="#" class="padding-half"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="padding-half"><i class="bi bi-google"></i></a>
+                <a href="#" class="padding-half"><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

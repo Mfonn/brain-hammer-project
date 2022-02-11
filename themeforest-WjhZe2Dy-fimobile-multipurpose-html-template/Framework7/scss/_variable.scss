@@ -1,0 +1,195 @@
+$blue: #3c63e2;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #f73563;
+$orange: #fd7e14;
+$yellow: #ffbd17;
+$green: #3ac79b;
+$teal: #0ab2be;
+$cyan: #0dcaf0;
+
+:root {
+  --fimobile-green: $green;
+  --fimobile-red: $red;
+  --fimobile-yellow: $yellow;
+  --fimobile-blue: $blue;
+  --f7-grid-gap: 30px;
+  --fimobile-rounded: 15px;
+  --fimobile-padding: 15px;
+  --bs-gutter-x: var(--fimobile-padding); //bootstrap column padding
+  --fimobile-input-rounded: 10px;
+  --fimobile-input-color: #ffffff;
+  --fimobile-input-text: #000000;
+  --fimobile-theme-text: #ffffff;
+  --f7-panel-width: 280px;
+  --fimobile-footer: #ffffff;
+  --fimobile-footer-text: #999999;
+  --fimobile-footer-text-active: var(--f7-theme-color);
+
+  /* card color */
+  --fimobile-card-color: rgba(255, 255, 255, 0.85);
+  --fimobile-card-text: #000000;
+  /* radial gradient colors */
+  --fimobile-theme-color-grad-1: #57bdff;
+  --fimobile-theme-color-grad-2: #4f77fb;
+  --fimobile-theme-color-grad-3: #6528cf;
+  /* page color */
+  --fimobile-page-bg-1: #f1f3f8;
+  --fimobile-page-bg-2: rgb(229, 236, 254);
+  --f7-bars-translucent-opacity: 0;
+  --fimobile-border-color: #dadff6;
+}
+
+.color-theme-red {
+  /* radial gradient colors */
+  --fimobile-theme-color-grad-1: #ffc107;
+  --fimobile-theme-color-grad-2: #e91547;
+  --fimobile-theme-color-grad-3: #77001c;
+
+  /* page color */
+  --fimobile-page-bg-1: lighten($yellow, 43%);
+  --fimobile-page-bg-2: lighten($red, 40%);
+  --fimobile-border-color: rgba(darken($red, 25%), 0.1);
+}
+
+.color-theme-green {
+  /* radial gradient colors */
+  --fimobile-theme-color-grad-1: #a9e682;
+  --fimobile-theme-color-grad-2: #1fbb8a;
+  --fimobile-theme-color-grad-3: #0072c3;
+  /* page color */
+  --fimobile-page-bg-1: lighten($yellow, 45%);
+  --fimobile-page-bg-2: lighten($green, 45%);
+  --fimobile-border-color: rgba(darken($green, 25%), 0.15);
+}
+
+.color-theme-blue {
+  --f7-theme-color: $blue;
+  /* radial gradient colors */
+  --fimobile-theme-color-grad-1: #0897e9;
+  --fimobile-theme-color-grad-2: #5100d4;
+  --fimobile-theme-color-grad-3: #270069;
+  /* page color */
+  --fimobile-page-bg-1: #f1f3f8;
+  --fimobile-page-bg-2: #e5ecfe;
+  --fimobile-border-color: #dadff6;
+}
+
+.color-theme-pink {
+  /* radial gradient colors */
+  --fimobile-theme-color-grad-1: #f38ac4;
+  --fimobile-theme-color-grad-2: #d11e78;
+  --fimobile-theme-color-grad-3: #300284;
+  /* page color */
+  --fimobile-page-bg-1: lighten($yellow, 43%);
+  --fimobile-page-bg-2: lighten($pink, 45%);
+  --fimobile-border-color: rgba(darken($pink, 25%), 0.15);
+}
+.color-theme-yellow {
+  /* radial gradient colors */
+  --fimobile-theme-color-grad-1: #ffdb6f;
+  --fimobile-theme-color-grad-2: #f0ac00;
+  --fimobile-theme-color-grad-3: #f03000;
+  /* page color */
+  --fimobile-page-bg-1: lighten($blue, 42%);
+  --fimobile-page-bg-2: lighten($yellow, 42%);
+  --fimobile-border-color: rgba(darken($yellow, 25%), 0.15);
+}
+.color-theme-orange {
+  /* radial gradient colors */
+  --fimobile-theme-color-grad-1: #ffc107;
+  --fimobile-theme-color-grad-2: #ec6c02;
+  --fimobile-theme-color-grad-3: #c70042;
+  /* page color */
+  --fimobile-page-bg-1: lighten($yellow, 43%);
+  --fimobile-page-bg-2: lighten($orange, 42%);
+  --fimobile-border-color: rgba(darken($orange, 25%), 0.15);
+}
+.color-theme-purple {
+  /* radial gradient colors */
+  --fimobile-theme-color-grad-1: #e908d8;
+  --fimobile-theme-color-grad-2: #5a2ab3;
+  --fimobile-theme-color-grad-3: #300284;
+  /* page color */
+  --fimobile-page-bg-1: lighten($cyan, 45%);
+  --fimobile-page-bg-2: lighten($purple, 45%);
+  --fimobile-border-color: rgba(darken($purple, 25%), 0.15);
+}
+.color-theme-deeppurple {
+  /* radial gradient colors */
+  --fimobile-theme-color-grad-1: #0897e9;
+  --fimobile-theme-color-grad-2: #5100d4;
+  --fimobile-theme-color-grad-3: #270069;
+  /* page color */
+  --fimobile-page-bg-1: lighten($red, 40%);
+  --fimobile-page-bg-2: lighten($indigo, 45%);
+  --fimobile-border-color: rgba(darken($indigo, 25%), 0.15);
+}
+.color-theme-lightblue {
+  /* radial gradient colors */
+  --fimobile-theme-color-grad-1: #9df5dc;
+  --fimobile-theme-color-grad-2: #00b5da;
+  --fimobile-theme-color-grad-3: #673ab7;
+  /* page color */
+  --fimobile-page-bg-1: lighten($red, 40%);
+  --fimobile-page-bg-2: lighten($cyan, 45%);
+  --fimobile-border-color: rgba(darken($cyan, 25%), 0.15);
+}
+.color-theme-teal {
+  /* radial gradient colors */
+  --fimobile-theme-color-grad-1: #a2fffa;
+  --fimobile-theme-color-grad-2: #00a2ad;
+  --fimobile-theme-color-grad-3: #3f51b5;
+  /* page color */
+  --fimobile-page-bg-1: lighten($red, 39%);
+  --fimobile-page-bg-2: lighten($teal, 55%);
+  --fimobile-border-color: rgba(darken($teal, 25%), 0.15);
+}
+.color-theme-lime {
+  /* radial gradient colors */
+  --fimobile-theme-color-grad-1: #a9e682;
+  --fimobile-theme-color-grad-2: #1fbb8a;
+  --fimobile-theme-color-grad-3: #0072c3;
+  /* page color */
+  --fimobile-page-bg-1: #fbfdfa;
+  --fimobile-page-bg-2: #ebfdf1;
+  --fimobile-border-color: #ebf6da;
+}
+.color-theme-deeporange {
+  /* radial gradient colors */
+  --fimobile-theme-color-grad-1: #ffa807;
+  --fimobile-theme-color-grad-2: #ec6c02;
+  --fimobile-theme-color-grad-3: #960101;
+  /* page color */
+  --fimobile-page-bg-1: #f8f4f1;
+  --fimobile-page-bg-2: rgb(254, 241, 229);
+  --fimobile-border-color: #f6e2da;
+}
+.color-theme-gray {
+  /* radial gradient colors */
+  --fimobile-theme-color-grad-1: #a0b6c5;
+  --fimobile-theme-color-grad-2: #646b81;
+  --fimobile-theme-color-grad-3: #3c3c44;
+  /* page color */
+  --fimobile-page-bg-1: #eeeff1;
+  --fimobile-page-bg-2: rgb(212, 212, 212);
+  --fimobile-border-color: #d6d6d6;
+}
+.color-theme-black {
+  /* radial gradient colors */
+  --fimobile-theme-color-grad-1: #b6b6b6;
+  --fimobile-theme-color-grad-2: #5c5c5c;
+  --fimobile-theme-color-grad-3: #000000;
+  /* page color */
+  --fimobile-page-bg-1: #f0f0f0;
+  --fimobile-page-bg-2: rgb(212, 212, 212);
+  --fimobile-border-color: #d6d6d6;
+}
+
+@media screen and (max-width: 340px) {
+  :root {
+    --fimobile-padding: 10px;
+    --fimobile-rounded: 12px;
+  }
+}

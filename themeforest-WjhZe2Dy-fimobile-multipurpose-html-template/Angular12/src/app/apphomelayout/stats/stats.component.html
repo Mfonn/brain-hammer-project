@@ -1,0 +1,425 @@
+<!-- chart js areachart-->
+<div class="row">
+    <div class="col-12 col-md-6">
+        <div class="card mb-4">
+            <div class="card-header border-0">
+                <!-- calendar -->
+                <div class="row">
+                    <div class="col position-relative align-self-center">
+                        <h6 class="mb-1">Expense</h6>
+                        <input type="text" placeholder="Select date range" readonly="readonly"
+                            id="daterange" class="calendar-daterange text-muted small"  daterangepicker [options]="options" (selected)="selectedDate($event, daterange)" />
+                        
+                    </div>
+                    <div class="col-auto align-self-center">
+                        <button class="btn btn-light btn-44 daterange-btn"  onclick="document.getElementById('daterange').click()">
+                            <i class="bi bi-calendar-range size-22"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body px-2">
+                <app-barchart></app-barchart>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="row">
+            <div class="col-6 col-md-12">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="avatar avatar-40 alert-success text-success rounded-circle">
+                                    <i class="bi bi-arrow-down-left-circle"></i>
+                                </div>
+                            </div>
+                            <div class="col px-0 align-self-center">
+                                <p class="text-muted size-12 mb-0">Income</p>
+                                <p>1544</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-12">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="avatar avatar-40 alert-danger text-danger rounded-circle">
+                                    <i class="bi bi-arrow-up-right-circle"></i>
+                                </div>
+                            </div>
+                            <div class="col px-0 align-self-center">
+                                <p class="text-muted size-12 mb-0">Expense</p>
+                                <p>1424</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-12">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="avatar avatar-40 alert-primary text-primary rounded-circle">
+                                    <i class="bi bi-arrow-down-left-circle"></i>
+                                </div>
+                            </div>
+                            <div class="col px-0 align-self-center">
+                                <p class="text-muted size-12 mb-0">Invested</p>
+                                <p>1600</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-12">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="avatar avatar-40 alert-warning text-warning rounded-circle">
+                                    <i class="bi bi-arrow-up-right-circle"></i>
+                                </div>
+                            </div>
+                            <div class="col px-0 align-self-center">
+                                <p class="text-muted size-12 mb-0">Coins</p>
+                                <p>1254</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Saving targets -->
+<div class="row mb-3">
+    <div class="col">
+        <h6 class="title">Top Categories</h6>
+    </div>
+    <div class="col-auto">
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-md-6 align-self-center">
+        <div class="chartdoughnut mb-4">
+            <div class="datadisplay text-center shadow">
+                <h1 class="fw-normal">15.56k</h1>
+                <p class="text-muted">Expense</p>
+            </div>
+            <app-doughnut-chart></app-doughnut-chart>
+        </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="circle-small">
+                            <circle-progress class="d-inline-block me-1 vm" [percent]="55" [radius]="18"
+                            [outerStrokeWidth]="4" [innerStrokeWidth]="4" [space]="-4" [outerStrokeColor]="'#ffbd17'"
+                            [innerStrokeColor]="'rgba(255, 189, 23, 0.2)'" [animation]="true" [animationDuration]="300"
+                            [showTitle]="false" [showSubtitle]="false" [titleFontSize]="'15'" [backgroundPadding]="0"></circle-progress>
+
+                            <div class="avatar avatar-30 alert-warning text-warning rounded-circle">
+                                <i class="bi bi-basket"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto align-self-center ps-0">
+                        <p class="small mb-1 text-muted">Grocery</p>
+                        <p>55<span class="small">%</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="smallchart">
+                <app-smallcharfour></app-smallcharfour>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="circle-small">
+                            <circle-progress class="d-inline-block me-1 vm" [percent]="55" [radius]="18"
+                            [outerStrokeWidth]="4" [innerStrokeWidth]="4" [space]="-4" [outerStrokeColor]="'#f73563'"
+                            [innerStrokeColor]="'rgba(247, 53, 99, 0.2)'" [animation]="true" [animationDuration]="300"
+                            [showTitle]="false" [showSubtitle]="false" [titleFontSize]="'15'" [backgroundPadding]="0"></circle-progress>
+                            <div class="avatar avatar-30 alert-danger text-danger rounded-circle">
+                                <i class="bi bi-house"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto align-self-center ps-0">
+                        <p class="small mb-1 text-muted">Rent</p>
+                        <p>10<span class="small">%</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="smallchart">
+                <app-smallcharthree></app-smallcharthree>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-md-3">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="circle-small">
+                            <circle-progress class="d-inline-block me-1 vm" [percent]="55" [radius]="18"
+                            [outerStrokeWidth]="4" [innerStrokeWidth]="4" [space]="-4" [outerStrokeColor]="'#3ac79b'"
+                            [innerStrokeColor]="'rgba(58, 199, 155, 0.2)'" [animation]="true" [animationDuration]="300"
+                            [showTitle]="false" [showSubtitle]="false" [titleFontSize]="'15'" [backgroundPadding]="0"></circle-progress>
+                            <div class="avatar avatar-30 alert-success text-success rounded-circle">
+                                <i class="bi bi-truck"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto align-self-center ps-0">
+                        <p class="small mb-1 text-muted">Travel</p>
+                        <p>25<span class="small">%</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="smallchart">
+                <app-smallchartone></app-smallchartone>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="circle-small">
+                            <circle-progress class="d-inline-block me-1 vm" [percent]="55" [radius]="18"
+                            [outerStrokeWidth]="4" [innerStrokeWidth]="4" [space]="-4" [outerStrokeColor]="'#3c63e2'"
+                            [innerStrokeColor]="'rgba(60, 99, 226, 0.2)'" [animation]="true" [animationDuration]="300"
+                            [showTitle]="false" [showSubtitle]="false" [titleFontSize]="'15'" [backgroundPadding]="0"></circle-progress>
+                            <div class="avatar avatar-30 alert-primary text-primary rounded-circle">
+                                <i class="bi bi-gear"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto align-self-center ps-0">
+                        <p class="small mb-1 text-muted">Other</p>
+                        <p>10<span class="small">%</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="smallchart">
+                <app-smallchartwo></app-smallchartwo>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- offers banner-->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card bg-danger text-white text-center">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col align-self-center">
+                        <h1>15% OFF</h1>
+                        <p class="size-12 text-muted">
+                            On every bill pay, launch offer get 5% Extra
+                        </p>
+                        <div class="tag border-dashed border-opac">
+                            BILLPAY15OFF
+                        </div>
+                    </div>
+                    <div class="col-6 align-self-center ps-0">
+                        <img src="assets/img/offergraphics-red.png" alt="" class="mw-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- summary blocks -->
+<div class="row">
+    <div class="col-12 px-0">
+        <swiper class="summayswiper" [slidesPerView]="'auto'" [spaceBetween]="0" [pagination]="false">
+                <ng-template swiperSlide>
+                    <div class="card shadow-sm mb-4 alert-primary">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-40 bg-primary text-white rounded-circle">
+                                        <i class="bi bi-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="col px-0">
+                                    <h6 class="mb-0">+155</h6>
+                                    <p class="text-muted small">Hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <div class="card shadow-sm mb-4 alert-warning">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-40 bg-warning text-white rounded-circle">
+                                        <i class="bi bi-cpu"></i>
+                                    </div>
+                                </div>
+                                <div class="col px-0">
+                                    <h6 class="mb-0">+365</h6>
+                                    <p class="text-muted small">Processing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <div class="card shadow-sm mb-4 alert-success">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-40 bg-success text-white rounded-circle">
+                                        <i class="bi bi-folder"></i>
+                                    </div>
+                                </div>
+                                <div class="col px-0">
+                                    <h6 class="mb-0">+658</h6>
+                                    <p class="text-muted small">Pojects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <div class="card shadow-sm mb-4 alert-danger">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-40 bg-danger text-white rounded-circle">
+                                        <i class="bi bi-bar-chart"></i>
+                                    </div>
+                                </div>
+                                <div class="col px-0">
+                                    <h6 class="mb-0">+248</h6>
+                                    <p class="text-muted small">Complete</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+        </swiper>
+    </div>
+</div>
+
+<!-- extra expense  -->
+<div class="row mb-3">
+    <div class="col">
+        <h6 class="title">Extra Expenses</h6>
+    </div>
+    <div class="col-auto align-self-center">
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-md-6">
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="avatar avatar-40 alert-success text-success rounded-circle">
+                            <i class="bi bi-controller size-20"></i>
+                        </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                        <p class="mb-0">804.91 $</p>
+                        <p class="text-muted size-12">Gaming Console</p>
+                        <p class="small text-muted">Long days lockdown inspires to buy some gaming console
+                            to play.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="avatar avatar-40 alert-danger text-danger rounded-circle">
+                            <i class="bi bi-heart-fill"></i>
+                        </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                        <p class="mb-0">1424.91 $</p>
+                        <p class="text-muted size-12">Medical Treatment</p>
+                        <p class="small text-muted">Due to long illness and food infection medical treatment
+                            undergone 3 days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Blogs -->
+<div class="row mb-3">
+    <div class="col">
+        <h6 class="title">News and Upcomming</h6>
+    </div>
+    <div class="col-auto align-self-center">
+        <a href="blog.html" class="small">Read more</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-md-6 col-lg-4">
+        <a href="blog-details.html" class="card mb-3">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="h-190 shadow-sm rounded-10 coverimg mb-3" style="background-image: url('assets/img/news.jpg');">
+                            <img src="assets/img/news.jpg" alt="" class="d-none">
+                        </div>
+                    </div>
+                    <div class="col align-self-center">
+                        <p class="text-color-theme mb-1">Do share and Earn a lot</p>
+                        <p class="text-muted small">Get $10 instant as reward while your friend or invited
+                            member join FiMobile</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <a href="blog-details.html" class="card mb-3">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="h-190 shadow-sm rounded-10 coverimg mb-3"   style="background-image: url('assets/img/news1.jpg');">
+                            <img src="assets/img/news1.jpg" alt=""  class="d-none">
+                        </div>
+                    </div>
+                    <div class="col align-self-center">
+                        <p class="text-color-theme mb-1">Walmart news latest picks</p>
+                        <p class="text-muted small">Get $10 instant as reward while your friend or invited
+                            member join FiMobile</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

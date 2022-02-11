@@ -1,0 +1,79 @@
+/*
+ FiMobile customize css starts here 
+ * FiMobile v2 (https://maxartkiller.com/)
+ * Copyright 2021 Maxartkiller 
+
+==================================
+Table of content 
+==================================
+
+1. variables
+2. body
+3. avatar
+4. fonts and texts
+5. sidebar
+6. utility
+7. navbar
+8. form
+9. Chart and Graph
+10. darkmode
+11. footer
+12. carousel
+13. loader
+14. lists
+15. calendar
+
+
+
+*/
+
+/* 1. variables */
+@import "variable";
+
+/* 2. body */
+@import "body";
+
+/* 2. text */
+@import "text";
+
+/* 3. avatar */
+@import "avatar";
+
+/* 4. fonts and texts*/
+@import "fonts";
+
+/* 5. sidebar*/
+@import "sidebar";
+
+/* 6. utility*/
+@import "utility";
+
+/* 7. navbar*/
+@import "navbar";
+
+/* 8. navbar*/
+@import "form";
+
+/* 9. Chart and Graph*/
+@import "chartandgraph";
+
+/* 10. dark mode*/
+@import "darkmode";
+
+/* 11. footer */
+@import "footer";
+
+/* 12. carousel */
+@import "swipercarousel";
+
+/* 13. loader */
+@import "loader";
+
+/* 14. list */
+@import "lists";
+
+/* 15. calendar */
+@import "calendar";
+
+/* 16. logo */
+@import "logo";
