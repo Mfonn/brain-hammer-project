@@ -325,151 +325,6 @@ body, html {
   margin: 0;
 }
 
-/* for the signup button and pop up modal */
-.modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 999;
-  /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
-  /* Modal Content/Box */
-}
-
-.modal .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 37%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-top: 13%;
-  border-radius: 5px;
-}
-
-.modal .modal-content form {
-  padding: 5% 10%;
-}
-
-.modal .modal-content .sign-in-with {
-  margin-top: 27px;
-  margin-bottom: 2px;
-  font-size: 12px;
-  color: #111827;
-}
-
-.modal .modal-content .bluehammer {
-  width: 24px;
-}
-
-.modal .modal-content h2 {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.modal .modal-content .icons {
-  color: #6B7280;
-  background-color: #ffffff;
-  padding: 3px 35px 3px 35px;
-  border: 1px solid #D1D5DB;
-  border-radius: 3px;
-}
-
-.modal .modal-content h3 {
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid #D1D5DB;
-  line-height: 0.1em;
-  margin: 10px 0 20px;
-  color: #D1D5DB;
-  margin-top: 17px;
-}
-
-.modal .modal-content h3 span {
-  background: #fff;
-  padding: 0 10px;
-  color: #808080;
-  font-size: 10px;
-}
-
-.modal .modal-content label {
-  font-size: 10px;
-  color: #808080;
-  font-weight: 200;
-}
-
-.modal .modal-content .input {
-  margin: 2px 0px 0px 0px;
-  width: 93%;
-  height: 28px;
-  border-radius: 1px #D1D5DB;
-}
-
-.modal .modal-content .emailbox {
-  margin-bottom: 4px;
-}
-
-.modal .modal-content .namelabel {
-  margin-top: 4px;
-}
-
-.modal .modal-content .remember {
-  display: inline-block;
-  margin: 18px 10px 0px 0px;
-  width: 7%;
-}
-
-.modal .modal-content .forgot {
-  text-decoration: none;
-  color: #386DF5;
-  margin-left: 31%;
-}
-
-.modal .modal-content .signinbutton {
-  display: block;
-  border-radius: 38px;
-  color: #ffffff;
-  margin: 8px;
-  padding: 10px 110px;
-  background-color: #254caf;
-  cursor: pointer;
-  border: none;
-}
-
-.modal .modal-content .signinbutton:hover {
-  background-color: #254CAF;
-}
-
-.modal .modal-content .signupbutton {
-  display: block;
-  border-radius: 38px;
-  color: #386DF5;
-  margin: 8px;
-  padding: 10px 110px;
-  background-color: #ffffff;
-  cursor: pointer;
-  border: none;
-}
-
-.modal .modal-content .signupbutton:hover {
-  background-color: #386DF5;
-  color: #ffffff;
-}
-
 @media only screen and (min-width: 1200px) {
   .page-container .topnav .topheader {
     padding: 20px 20px;
@@ -526,37 +381,6 @@ body, html {
     margin-top: 122px;
     margin-left: 13%;
     padding: 34px;
-  }
-  .modal .modal-content .bluehammer {
-    width: 20px;
-  }
-  .modal .modal-content h2 {
-    font-size: 16px;
-    margin-top: 9px;
-  }
-  .modal .modal-content .sign-in-with {
-    margin-top: 24px;
-    font-size: 10px;
-  }
-  .modal .modal-content .icons {
-    padding: 3px 20px 3px 20px;
-  }
-  .modal .modal-content h3 span {
-    font-size: 9px;
-  }
-  .modal .modal-content label {
-    font-size: 9px;
-  }
-  .modal .modal-content .input {
-    width: 89%;
-    height: 17px;
-  }
-  .modal .modal-content .forgot {
-    margin-left: 13%;
-  }
-  .modal .modal-content .signinbutton, .modal .modal-content .signupbutton {
-    font-size: 10px;
-    padding: 12px 65px;
   }
 }
 
@@ -625,46 +449,6 @@ body, html {
   }
   .page-container ::placeholder {
     font-size: 8px;
-  }
-  .modal .modal-content {
-    padding: 10px;
-  }
-  .modal .modal-content .bluehammer {
-    width: 16px;
-  }
-  .modal .modal-content h2 {
-    font-size: 12px;
-    margin-top: 8px;
-  }
-  .modal .modal-content .sign-in-with {
-    margin-top: 20px;
-    font-size: 8px;
-  }
-  .modal .modal-content .icons {
-    padding: 2px 14px 2px 14px;
-    font-size: 9px;
-  }
-  .modal .modal-content h3 span {
-    font-size: 8px;
-  }
-  .modal .modal-content label {
-    font-size: 8px;
-  }
-  .modal .modal-content .input {
-    width: 89%;
-    height: 13px;
-  }
-  .modal .modal-content .forgot {
-    margin-left: 7%;
-    font-size: 7px;
-  }
-  .modal .modal-content .remember {
-    font-size: 7px;
-    margin: 8px 2px 0px 0px;
-  }
-  .modal .modal-content .signinbutton, .modal .modal-content .signupbutton {
-    font-size: 8px;
-    padding: 10px 38px;
   }
 }
 
@@ -751,38 +535,6 @@ body, html {
   }
   .page-container .searchbox .searchitems h6 {
     font-size: 8px;
-  }
-  .modal .modal-content {
-    width: 46%;
-    margin-top: 39%;
-  }
-  .modal .modal-content .bluehammer {
-    width: 14px;
-  }
-  .modal .modal-content h2 {
-    font-size: 9px;
-    margin-top: 7px;
-  }
-  .modal .modal-content .sign-in-with {
-    margin-top: 12px;
-    font-size: 7px;
-  }
-  .modal .modal-content .icons {
-    padding: 1px 9px 1px 9px;
-    font-size: 7px;
-  }
-  .modal .modal-content h3 span {
-    font-size: 6px;
-  }
-  .modal .modal-content label {
-    font-size: 7px;
-  }
-  .modal .modal-content .input {
-    height: 8px;
-  }
-  .modal .modal-content .signinbutton, .modal .modal-content .signupbutton {
-    font-size: 7px;
-    padding: 8px 33px;
   }
 }
 /*# sourceMappingURL=index.css.map */

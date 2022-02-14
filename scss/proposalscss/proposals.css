@@ -18,158 +18,30 @@ body {
   color: #ffffff;
 }
 
-.headersection {
-  background-color: #ffffff;
-  overflow: hidden;
-  padding: 12 10 12 10px;
-}
-
-/* Style the links inside the navigation bar */
-.logo1 {
-  position: absolute;
-  width: 28px;
-  left: 106px;
-  top: 28px;
-}
-
-.logo {
-  left: 50px;
-}
-
-.workinghammer {
-  color: #000000;
-  font-size: 19px;
-  font-family: Inter;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 24px;
-  letter-spacing: 0em;
-  margin: 0;
-  margin-top: 18px;
-  margin-left: 12px;
-}
-
-.headersection .whiteheader {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 125px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.headersection .icon {
-  display: none;
-}
-
-.myTopnav {
-  margin-top: 59px;
-  margin-right: 20px;
-}
-
-/* for post ad, notifications and avatar */
-.postad {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 3px;
-  color: #ffffff;
-  background-color: #386DF5;
-  border: none;
-  float: right;
-  margin-right: 131px;
-  margin-top: -41px;
-}
-
-.postad:hover {
-  background-color: #092a7c;
-}
-
-.notification {
-  color: #808080;
-  float: right;
-  margin-top: -32px;
-  margin-right: 89px;
-}
-
-.notification:hover {
-  cursor: pointer;
-  color: #6B7280;
-}
-
-.avatar {
-  vertical-align: middle;
-  float: right;
-  margin-top: -41px;
-  margin-right: 31px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-
-/* for the middlesection */
-.middlesection {
-  background-color: #E5E5E5;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding-left: 109px;
-  padding-right: 50px;
-  /* Style the navigation bar */
-  /* Navbar links */
-  /* Navbar links on mouse-over */
-  /* Create two columns that floats next to each other */
-}
-
-.middlesection .navbar {
-  width: 100%;
-  overflow: auto;
-  padding-top: 5px;
-}
-
-.middlesection .navbar a {
-  float: left;
-  text-align: center;
-  padding: 12px;
-  color: #A9A9A9;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.middlesection .navbar a:hover {
-  background-color: #000;
-}
-
-.middlesection .fa-chevron-right:before {
-  margin-left: 25px;
-}
-
-.middlesection .column {
+/* Create two columns that floats next to each other */
+.column {
   float: left;
   width: 50%;
   padding: 10px;
   background-color: #ffffff;
 }
 
-.middlesection .background {
+.background {
   background-color: #ffffff;
 }
 
-.middlesection .row {
+.row {
   padding-top: 20px;
   padding-bottom: 50px;
 }
 
-.middlesection .row .topminiheader {
+.row .topminiheader {
   background-color: #ffffff;
   margin-top: -39px;
   border-bottom: solid 1px #808080;
 }
 
-.middlesection .row .topminiheader .want {
+.row .topminiheader .want {
   font-size: 25px;
   padding: 10px;
   padding-left: 25px;
@@ -178,35 +50,35 @@ body {
   font-weight: 600;
 }
 
-.middlesection .row .topminiheader .details {
+.row .topminiheader .details {
   display: inline-block;
   margin-left: 31px;
   margin-right: 33px;
   color: #6B7280;
 }
 
-.middlesection .row .topminiheader .proposal {
+.row .topminiheader .proposal {
   display: inline-block;
   color: #6B7280;
 }
 
-.middlesection .row .topminiheader .active {
+.row .topminiheader .active {
   color: #386DF5;
   text-decoration: underline;
   text-underline-offset: 0.9em;
 }
 
-.middlesection .row .topminiheader .display:hover {
+.row .topminiheader .display:hover {
   color: #092a7c;
 }
 
-.middlesection .row .topminiheader .proposal:hover {
+.row .topminiheader .proposal:hover {
   color: #386DF5;
   text-decoration: underline;
   text-underline-offset: 0.9em;
 }
 
-.middlesection .row .proposalsavailable {
+.row .proposalsavailable {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -217,7 +89,7 @@ body {
   padding-bottom: 97px;
 }
 
-.middlesection .row .proposalsavailable .worker1 {
+.row .proposalsavailable .worker1 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -230,51 +102,51 @@ body {
   border: solid 1px #eeeeee;
 }
 
-.middlesection .row .proposalsavailable .avatar1 {
+.row .proposalsavailable .avatar1 {
   margin-left: 25px;
   margin-top: 10px;
   width: 37px;
 }
 
-.middlesection .row .proposalsavailable .name1 {
+.row .proposalsavailable .name1 {
   display: inline-block;
   width: 85px;
   font-size: 20px;
   font-weight: 600;
 }
 
-.middlesection .row .proposalsavailable .work125 {
+.row .proposalsavailable .work125 {
   display: inline-block;
   color: #5D6370;
   text-decoration: underline;
   font-size: 13px;
 }
 
-.middlesection .row .proposalsavailable .ninenine {
+.row .proposalsavailable .ninenine {
   display: inline-block;
   color: #5D6370;
   text-decoration: underline;
   font-size: 18px;
 }
 
-.middlesection .row .proposalsavailable .greentick1 {
+.row .proposalsavailable .greentick1 {
   display: inline-block;
   margin-left: 12px;
 }
 
-.middlesection .row .proposalsavailable .about1 {
+.row .proposalsavailable .about1 {
   width: 80%;
   margin-left: 32px;
   margin-top: 6px;
 }
 
-.middlesection .row .proposalsavailable .close1 {
+.row .proposalsavailable .close1 {
   margin-left: 29px;
   margin-top: 45px;
   color: #cccccc;
 }
 
-.middlesection .row .proposalsavailable .worker2 {
+.row .proposalsavailable .worker2 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -287,706 +159,13 @@ body {
   border: solid 1px #eeeeee;
 }
 
-.middlesection .row .proposalsavailable .fa-star {
+.row .proposalsavailable .fa-star {
   color: #FF9E0C;
   display: inline-block;
   font-size: 14px;
 }
 
-/* for the footer section */
-.footersection {
-  background-color: #202426;
-  padding: 69px 80px 28px 11px;
-  color: #ffffff;
-}
-
-.footersection .container {
-  margin: auto;
-  margin-left: 6%;
-}
-
-.footersection .list {
-  list-style: none;
-  position: inherit;
-  padding: 0px;
-}
-
-.footersection .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.footersection .footer-col {
-  width: 15%;
-  padding: 0 10px;
-  margin-bottom: 20px;
-}
-
-.footersection .footer-column {
-  width: 27%;
-  padding: 0 10px;
-}
-
-.footersection .headings {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 20px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #9CA3AF;
-  position: relative;
-  cursor: pointer;
-}
-
-.footersection li {
-  display: block;
-}
-
-.footersection ul {
-  float: none;
-}
-
-.footersection .links {
-  text-decoration: none;
-  position: relative;
-}
-
-.footersection .links a {
-  text-decoration: none;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #D1D5DB;
-}
-
-.footersection .latest {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 21px;
-  margin-bottom: 15px;
-  color: #D1D5DB;
-}
-
-.footersection .end {
-  height: 20%;
-  width: 100%;
-}
-
-.footersection .enter {
-  height: 33px;
-  border-radius: 7px;
-  width: 48%;
-  padding: 10px;
-  float: left;
-}
-
-.footersection .subscribe {
-  font-size: 12px;
-  padding: 9px 9px;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
-  border-radius: 4px;
-  border: none;
-  background-color: #002ea3;
-  color: #ffffff;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  cursor: pointer;
-  float: left;
-  margin-left: 9px;
-}
-
-.footersection .subscribe:hover {
-  background-color: #092a7c;
-}
-
-.footersection hr {
-  color: #4B5563;
-  width: 92%;
-  margin-left: 1%;
-  margin-right: 7.5%;
-}
-
-.footersection .copyright {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 9px;
-  margin-left: 1%;
-  line-height: 24px;
-  margin-top: 25px;
-  color: #9CA3AF;
-  display: inline-block;
-}
-
-.footersection .social-links {
-  float: right;
-  margin-right: 10%;
-  margin-top: 25px;
-}
-
-.footersection .social-links img {
-  width: 25px;
-  height: 25px;
-  padding: 5px;
-}
-
-/* for the chatbot */
-.chat-popup {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  top: 1vh;
-  width: 60%;
-  margin-left: 39%;
-  height: 90vh;
-  background-color: #ffffff;
-}
-
-.chat-popup .cancel {
-  top: 3%;
-  position: absolute;
-  margin-left: 95%;
-  border: none;
-  background-color: transparent;
-  font-size: 17px;
-}
-
-.chat-popup .chatbox {
-  width: 65%;
-  height: inherit;
-  float: left;
-  border: 1px solid #EEEEEE;
-}
-
-.chat-popup .chatbox .header1 {
-  height: 15%;
-  background-color: #ffffff;
-  border-bottom: 1px solid #EEEEEE;
-}
-
-.chat-popup .chatbox .header1 .forest {
-  width: 18%;
-  margin-top: 19px;
-  margin-left: 14px;
-  float: left;
-}
-
-.chat-popup .chatbox .header1 .headerwords {
-  width: 60%;
-  display: inline-block;
-  white-space: nowrap;
-  margin-top: -3px;
-  margin-left: 9px;
-}
-
-.chat-popup .chatbox .header1 .headerwords .wanta {
-  font-size: 13px;
-  margin: 0;
-  margin-top: 20px;
-}
-
-.chat-popup .chatbox .header1 .headerwords .money {
-  margin: 0;
-  color: #333333;
-  font-weight: 600;
-  margin-top: 2px;
-  display: inline-block;
-  font-size: 14px;
-}
-
-.chat-popup .chatbox .header1 .headerwords .timecount {
-  margin: 0;
-  display: inline-block;
-  font-size: 12px;
-  color: #666666;
-}
-
-.chat-popup .chatbox .header1 .headerwords .fa-edit:hover {
-  color: #386DF5;
-}
-
-.chat-popup .chatbox .header1 .headerwords .dist {
-  margin-left: 3%;
-}
-
-.chat-popup .chatbox .header1 .awards {
-  color: #386DF5;
-  width: 13%;
-  background-color: #ffffff;
-  border: 1px solid #386DF5;
-  border-radius: 5px;
-  float: right;
-  font-size: 9px;
-  margin-right: 7px;
-  margin-top: 20px;
-  padding: 5px 10px 5px 10px;
-}
-
-.chat-popup .chatbox .header1 .pay {
-  margin-top: -47px;
-}
-
-.chat-popup .chatbox .newheader {
-  height: 18%;
-}
-
-.chat-popup .chatbox .header2 .headerwords {
-  /* Style the list */
-  /* Display list items side by side */
-  /* Add a slash symbol (/) before/behind each list item */
-  /* Add a color to all links inside the list */
-  /* Add a color on mouse-over */
-}
-
-.chat-popup .chatbox .header2 .headerwords ul.breadcrumb {
-  padding: 8px 0px;
-  list-style: none;
-  margin: 0;
-}
-
-.chat-popup .chatbox .header2 .headerwords ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-
-.chat-popup .chatbox .header2 .headerwords ul.breadcrumb li + li:before {
-  padding: 9px;
-  width: 20px;
-  color: black;
-  content: "\2012";
-  display: inline-block;
-}
-
-.chat-popup .chatbox .header2 .headerwords ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-
-.chat-popup .chatbox .header2 .headerwords ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
-
-.chat-popup .chatbox .header2 .headerwords .three {
-  margin-top: 1%;
-}
-
-.chat-popup .chatbox .chatbody {
-  height: 60%;
-  background-color: #ffffff;
-}
-
-.chat-popup .chatbox .chatbody .message1 {
-  margin-top: 7%;
-  width: 100%;
-  height: 10%;
-}
-
-.chat-popup .chatbox .chatbody .message1 .pop1 {
-  display: inline-block;
-  float: right;
-  width: 9%;
-}
-
-.chat-popup .chatbox .chatbody .message1 .one {
-  display: inline-block;
-  color: #ffffff;
-  background-color: #386DF5;
-  padding: 12px;
-  font-size: 13px;
-  border-radius: 5px;
-  float: right;
-  margin-right: 10px;
-}
-
-.chat-popup .chatbox .chatbody .message2 {
-  margin-top: 10%;
-}
-
-.chat-popup .chatbox .chatbody .pop2 {
-  border-radius: 20px;
-  float: left;
-  display: inline-block;
-  width: 9%;
-}
-
-.chat-popup .chatbox .chatbody .two {
-  display: inline-block;
-  color: #000000;
-  background-color: #ffffff;
-  padding: 12px;
-  width: 60%;
-  font-size: 13px;
-  margin-top: 0;
-  border-radius: 5px;
-  float: left;
-  margin-right: 10px;
-}
-
-.chat-popup .chatbox .chatbody .remitted {
-  color: #065F46;
-  background-color: #ECFDF5;
-}
-
-.chat-popup .chatbox .chatbody .remitted .colored {
-  color: #34D399;
-}
-
-.chat-popup .chatbox .chatbody .remitted .colored2 {
-  color: #F87171;
-  margin-right: 2%;
-}
-
-.chat-popup .chatbox .chatbody .error {
-  background-color: #FEF2F2;
-  color: #991B1B;
-}
-
-.chat-popup .chatbox .chatbody .message3 {
-  margin-left: 2%;
-}
-
-.chat-popup .chatbox .chatbody .message4 {
-  margin-top: 11%;
-}
-
-.chat-popup .chatbox .chatfooter {
-  height: 25vh;
-  background-color: #FBFBFB;
-  border: 1px solid #EEEEEE;
-  padding-bottom: 10%;
-}
-
-.chat-popup .chatbox .chatfooter .enter {
-  height: 75%;
-  width: 100%;
-  border: none;
-  background-color: #FBFBFB;
-  padding: 9px;
-  padding-top: 0px;
-}
-
-.chat-popup .chatbox .chatfooter ::-webkit-input-placeholder {
-  margin-top: -10px;
-  font-size: 14px;
-}
-
-.chat-popup .chatbox .chatfooter :-ms-input-placeholder {
-  margin-top: -10px;
-  font-size: 14px;
-}
-
-.chat-popup .chatbox .chatfooter ::-ms-input-placeholder {
-  margin-top: -10px;
-  font-size: 14px;
-}
-
-.chat-popup .chatbox .chatfooter ::placeholder {
-  margin-top: -10px;
-  font-size: 14px;
-}
-
-.chat-popup .chatbox .chatfooter .footer2 .send {
-  float: right;
-  color: #ffffff;
-  background-color: #386DF5;
-  border: none;
-  padding: 8px 19px 8px 19px;
-  border-radius: 4px;
-  margin-right: 5px;
-}
-
-.chat-popup .chatbox .chatfooter .footer2 .emojis {
-  display: inline-block;
-  color: #9CA3AF;
-  padding: 10px;
-}
-
-.chat-popup .chatbox .chatfooter .footer2 .emojis .fa-comment-alt:before, .chat-popup .chatbox .chatfooter .footer2 .emojis .fa-image:before {
-  margin-left: 10px;
-}
-
-.chat-popup .recommend {
-  width: 35%;
-  height: inherit;
-  float: right;
-  border: 1px solid #EEEEEE;
-}
-
-.chat-popup .recommend .group {
-  margin-top: 0%;
-  margin-left: 1%;
-  position: absolute;
-}
-
-.chat-popup .recommend .group .bell {
-  margin-top: 2%;
-  margin-left: -5.2%;
-  position: absolute;
-  width: 33px;
-}
-
-.chat-popup .recommend .group .whitebell {
-  margin-top: 9px;
-  margin-left: 10px;
-  width: 14px;
-}
-
-.chat-popup .recommend .group .ellipse {
-  width: 10px;
-  margin-left: 22px;
-}
-
-.chat-popup .recommend .group .number {
-  color: #ffffff;
-  margin-left: 25px;
-  font-size: 8px;
-  font-weight: 800;
-}
-
-.chat-popup .recommend .bellheader {
-  margin-top: 38px;
-  margin-bottom: 10px;
-}
-
-.chat-popup .recommend .notifi {
-  display: inline-block;
-  margin-left: 45px;
-  margin-top: 1px;
-  color: #333333;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.chat-popup .recommend .aboutbell {
-  color: #999999;
-  font-size: 9px;
-  display: inline-block;
-  margin-left: 46px;
-  margin-top: -4px;
-}
-
-.chat-popup .recommend .mainbody {
-  padding: 10px;
-  height: 90vh;
-  background-color: #ffffff;
-}
-
-.chat-popup .recommend .mainbody .image1 {
-  width: 24%;
-  display: inline-block;
-}
-
-.chat-popup .recommend .mainbody .image2 {
-  margin-top: 10px;
-}
-
-.chat-popup .recommend .mainbody .abouthim {
-  width: 70%;
-  display: -ms-inline-grid;
-  display: inline-grid;
-  float: right;
-}
-
-.chat-popup .recommend .mainbody .abouthim .name {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.chat-popup .recommend .mainbody .abouthim .what {
-  display: inline-block;
-  margin: 0;
-  font-size: 12px;
-  color: #999999;
-}
-
-.chat-popup .recommend .mainbody .abouthim .when {
-  display: inline-block;
-  margin: 0;
-  color: #999999;
-  font-size: 10px;
-}
-
-.chat-popup .recommend .mainbody .abouthim2 {
-  margin-top: 10px;
-}
-
-.chat-popup .recommend .mainbody .abouthim3 {
-  margin-top: 10px;
-}
-
-.chat-popup .modify {
-  display: none;
-  position: absolute;
-  width: 45%;
-  margin-left: 15%;
-  margin-top: 1%;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #9CA3AF;
-  background-color: #ffffff;
-}
-
-.chat-popup .modify .cars {
-  display: block;
-  font-size: 14px;
-  color: #374151;
-  font-weight: 600;
-  margin-bottom: 3%;
-}
-
-.chat-popup .modify .select {
-  width: 90%;
-  margin: 1%;
-  margin-top: 2%;
-  border: 1px solid #D1D5DB;
-  background-color: #ffffff;
-  color: #6B7280;
-  border-radius: 2px;
-}
-
-.chat-popup .modify .todo {
-  display: block;
-  float: right;
-  margin-top: 7%;
-  margin-right: 14%;
-  color: #ffffff;
-  border: none;
-  padding: 8px 12px;
-  font-size: 12px;
-  border-radius: 4px;
-  background-color: #386DF5;
-}
-
-.chat-popup .modify .cancel2 {
-  top: 6%;
-  position: absolute;
-  margin-left: 77%;
-  border: none;
-  background-color: transparent;
-  font-size: 14px;
-  color: #989CA3;
-}
-
-.chat-popup .modify .amountt {
-  margin-bottom: 2%;
-  border-radius: 3px;
-  border: 1px solid #808080;
-  display: block;
-  width: 85%;
-  height: 27px;
-}
-
-.chat-popup .modify .buttons {
-  display: block;
-  width: 100%;
-  margin-bottom: 7%;
-  padding-right: 14%;
-}
-
-.chat-popup .modify .buttons .plus {
-  float: right;
-  padding: 6px 16px;
-  border: 1px solid #386DF5;
-  border-radius: 4px;
-  background-color: #ffffffff;
-}
-
-.chat-popup .modify .buttons .minus {
-  float: right;
-  padding: 6px 16px;
-  margin-left: 3%;
-  border: 1px solid #386DF5;
-  border-radius: 4px;
-  background-color: #ffffffff;
-}
-
-.chat-popup .paying {
-  display: none;
-  position: absolute;
-  width: 45%;
-  margin-left: 15%;
-  margin-top: 1%;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #9CA3AF;
-  background-color: #ffffff;
-}
-
-.chat-popup .paying .confirm {
-  display: block;
-  font-size: 14px;
-  color: #374151;
-  font-weight: 600;
-}
-
-.chat-popup .paying .input {
-  width: 90%;
-  margin: 1%;
-  margin-top: 2%;
-  border: 1px solid #D1D5DB;
-  background-color: #ffffff;
-  color: #6B7280;
-  border-radius: 2px;
-  padding: 6px;
-}
-
-.chat-popup .paying .todo {
-  display: block;
-  float: right;
-  margin-top: 7%;
-  margin-right: 14%;
-  color: #ffffff;
-  border: none;
-  padding: 8px 12px;
-  font-size: 12px;
-  border-radius: 4px;
-  background-color: #386DF5;
-}
-
-.chat-popup .paying .cancel2 {
-  top: 6%;
-  position: absolute;
-  margin-left: 77%;
-  border: none;
-  background-color: transparent;
-  font-size: 14px;
-  color: #989CA3;
-}
-
-@media only screen and (min-width: 1200px) {
-  .footersection .latest {
-    font-size: 15px;
-  }
-  .footersection .footer-column {
-    width: 30%;
-  }
-}
-
 @media only screen and (max-width: 900px) {
-  .headersection .workinghammer {
-    font-size: 15px;
-  }
-  .headersection .logo1 {
-    width: 22px;
-    left: 76px;
-    top: 32px;
-  }
-  .headersection .whiteheader {
-    padding: 14px 88px;
-  }
   .middlesection {
     padding-left: 82px;
   }
@@ -996,191 +175,9 @@ body {
   .middlesection .navbar a {
     font-size: 13px;
   }
-  .footersection .footer-col {
-    width: 45%;
-    padding: 0 23px;
-  }
-  .footersection .footer-column {
-    width: 91%;
-    margin-bottom: 30px;
-  }
-  .footersection .social-links img {
-    width: 10px;
-    height: 10px;
-    padding: 0px;
-  }
-  .chat-popup .recommend .notifi {
-    font-size: 12px;
-  }
-  .chat-popup .recommend .mainbody .image1 {
-    width: 29px;
-  }
-  .chat-popup .recommend .mainbody .abouthim .when {
-    font-size: 8px;
-  }
-  .chat-popup .recommend .mainbody .abouthim .what {
-    font-size: 8px;
-  }
-  .chat-popup .recommend .mainbody .abouthim .name {
-    font-size: 10px;
-  }
-  .chat-popup .recommend .mainbody .abouthim2 {
-    margin-top: 8px;
-  }
-  .chat-popup .chatbox .header1 {
-    height: 12%;
-  }
-  .chat-popup .chatbox .header1 .forest {
-    width: 15%;
-    margin-left: 8px;
-  }
-  .chat-popup .chatbox .header1 .headerwords .wanta {
-    font-size: 9px;
-  }
-  .chat-popup .chatbox .header1 .headerwords .money {
-    font-size: 10px;
-  }
-  .chat-popup .chatbox .header1 .headerwords .timecount {
-    font-size: 9px;
-  }
-  .chat-popup .chatbox .header1 .awards {
-    font-size: 6px;
-    padding: 5px 3px 5px 3px;
-  }
-  .chat-popup .chatbox .header2 .fa-check-circle {
-    font-size: 13px;
-  }
-  .chat-popup .chatbox .header2 .three {
-    width: 10%;
-  }
-  .chat-popup .chatbox .header2 .headerwords ul.breadcrumb {
-    padding: 0px 0px;
-  }
-  .chat-popup .chatbox .header2 .headerwords ul.breadcrumb li + li:before {
-    padding: 7px;
-  }
-  .chat-popup .chatbox .chatbody .message1 .one {
-    padding: 10px;
-    font-size: 10px;
-  }
-  .chat-popup .chatbox .chatbody .message1 .two {
-    font-size: 10px;
-  }
-  .chat-popup .chatbox .chatbody .message4 {
-    margin-top: 16%;
-  }
-  .chat-popup .modify {
-    margin-left: 12%;
-  }
-  .chat-popup .modify .cars {
-    font-size: 10px;
-    margin-bottom: 1%;
-  }
-  .chat-popup .modify .cancel2 {
-    font-size: 12px;
-  }
-  .chat-popup .modify .select {
-    font-size: 10px;
-    margin: 0%;
-  }
-  .chat-popup .modify .todo {
-    margin-top: 7%;
-    padding: 6px 10px;
-    font-size: 10px;
-  }
-  .chat-popup .modify .amountt {
-    font-size: 10px;
-    height: 20px;
-  }
-  .chat-popup .modify .buttons .plus, .chat-popup .modify .buttons .minus {
-    padding: 4px 12px;
-  }
-  .chat-popup .paying .confirm {
-    font-size: 9px;
-  }
-  .chat-popup .paying .input {
-    padding: 4px;
-  }
-  .chat-popup .paying .todo {
-    padding: 6px 10px;
-    font-size: 9px;
-  }
 }
 
 @media screen and (max-width: 600px) {
-  /* for navigation bar */
-  .headersection a.icon {
-    float: right;
-    display: block;
-  }
-  .headersection.responsive {
-    position: relative;
-  }
-  .headersection.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .headersection.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .headersection {
-    padding-bottom: 20px;
-  }
-  .headersection .whiteheader {
-    padding-bottom: 0px;
-    top: 10px;
-  }
-  .postad {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 4px;
-    color: #ffffff;
-    background-color: #386DF5;
-    font-size: 6px;
-    border: none;
-    float: right;
-    margin-right: 15px;
-    margin-top: 14px;
-  }
-  .notification {
-    margin-top: 19px;
-    margin-right: 15px;
-    width: 15px;
-  }
-  .avatar {
-    margin-top: 13px;
-    margin-right: 31px;
-    width: 20px;
-    height: 20px;
-  }
-  .myTopnav {
-    margin-top: 6px;
-    margin-right: 0;
-  }
-  .headersection .logo1 {
-    width: 17px;
-    left: 53px;
-    top: 27px;
-  }
-  .headersection .workinghammer {
-    margin-left: 0;
-    font-size: 12px !important;
-  }
-  .headersection .whiteheader {
-    padding: 5px 71px;
-  }
-  .workavailable {
-    font-size: 8px;
-  }
-  .Ottawa {
-    font-size: 18px;
-    margin-left: 21px;
-  }
   .middlesection {
     padding-left: 56px;
   }
@@ -1222,77 +219,9 @@ body {
     margin-left: 17px;
     margin-top: 12px;
   }
-  .chat-popup {
-    width: 90%;
-    margin-left: 10%;
-  }
-  .chat-popup .chatbox {
-    width: 60%;
-  }
-  .chat-popup .chatbox .header1 .forest {
-    width: 11%;
-  }
-  .chat-popup .chatbox .header1 .awards {
-    font-size: 7px;
-  }
-  .chat-popup .chatbox .header1 .headerwords .wanta {
-    font-size: 8px;
-  }
-  .chat-popup .chatbox .chatfooter .footer2 .send {
-    padding: 4px 13px 4px 13px;
-    font-size: 9px;
-    margin-top: 10px;
-  }
-  .chat-popup .chatbox .chatfooter .footer2 .emojis .fa-comment-alt:before, .chat-popup .chatbox .chatfooter .footer2 .emojis .fa-image:before, .chat-popup .chatbox .chatfooter .footer2 .emojis .fa-smile:before {
-    font-size: 12px;
-  }
-  .chat-popup .recommend {
-    width: 40%;
-  }
-  .chat-popup .recommend .mainbody .abouthim .when {
-    font-size: 9px;
-  }
-  .chat-popup .recommend .mainbody .abouthim .what {
-    font-size: 9px;
-  }
-  .chat-popup .recommend .mainbody .abouthim .name {
-    font-size: 12px;
-  }
-  .chat-popup .recommend .mainbody .abouthim2 {
-    margin-top: -36px;
-  }
-  .chat-popup .recommend .mainbody .abouthim3 {
-    margin-top: 7px;
-  }
-  .chat-popup .cancel {
-    font-size: 13px;
-  }
-  .chat-popup .modify {
-    font-size: 12px;
-    margin-left: 9%;
-  }
-  .chat-popup .modify .select {
-    font-size: 11px;
-  }
-  .chat-popup .modify .buttons {
-    margin-bottom: 9%;
-  }
-  .footersection .subscribe {
-    font-size: 9px;
-    padding: 8px 8px;
-  }
-  .footersection .enter {
-    width: 60%;
-  }
 }
 
 @media screen and (max-width: 400px) {
-  .headersection .whiteheader {
-    padding: 5px 44px;
-  }
-  .headersection .logo1 {
-    left: 25px;
-  }
   .middlesection {
     padding-left: 38px;
   }
@@ -1304,121 +233,6 @@ body {
   }
   .middlesection .fa-chevron-right:before {
     margin-left: 2px;
-  }
-  .footersection .headings {
-    font-size: 15px;
-  }
-  .footersection .links a {
-    font-size: 12px;
-  }
-  .footersection .footer-col {
-    width: 47%;
-    padding: 0 23px;
-  }
-  .footersection .latest {
-    font-size: 10px;
-  }
-  .footersection .copyright {
-    font-size: 6px;
-  }
-  .chat-popup .chatbox .header1 .forest {
-    display: none;
-  }
-  .chat-popup .chatbox .header1 .awards {
-    margin-right: 3px;
-    margin-top: 17px;
-    font-size: 6px;
-    padding: 6px 1px 5px 3px;
-  }
-  .chat-popup .chatbox .header1 .release {
-    font-size: 5px;
-  }
-  .chat-popup .chatbox .header1 .headerwords .wanta {
-    margin-left: 3px;
-  }
-  .chat-popup .chatbox .header1 .headerwords .wanta .money {
-    font-size: 9px;
-  }
-  .chat-popup .chatbox .header1 .headerwords .wanta .timecount {
-    font-size: 8px;
-  }
-  .chat-popup .chatbox .header2 .fa-check-circle {
-    font-size: 11px;
-  }
-  .chat-popup .chatbox .chatbody .message1 .one {
-    padding: 8px;
-    font-size: 8px;
-    margin-top: 0px;
-    margin-right: 5px;
-  }
-  .chat-popup .chatbox .chatbody .message1 .two {
-    margin-top: -10px;
-    width: 70%;
-    font-size: 7px;
-  }
-  .chat-popup .recommend .notifi {
-    font-size: 8px;
-    margin-left: 37px;
-  }
-  .chat-popup .recommend .aboutbell {
-    margin-left: 36px;
-    margin-top: 10px;
-    font-size: 6px;
-  }
-  .chat-popup .recommend .group .number {
-    font-size: 7px;
-    margin-left: 22px;
-  }
-  .chat-popup .recommend .group .ellipse {
-    margin-left: 19px;
-  }
-  .chat-popup .recommend .group .whitebell {
-    margin-top: 7px;
-    margin-left: 8px;
-    width: 12px;
-  }
-  .chat-popup .recommend .group .orange {
-    width: 27px;
-  }
-  .chat-popup .recommend .mainbody .abouthim .when {
-    font-size: 6px;
-  }
-  .chat-popup .recommend .mainbody .abouthim .what {
-    font-size: 7px;
-  }
-  .chat-popup .recommend .mainbody .abouthim .name {
-    font-size: 9px;
-  }
-  .chat-popup .recommend .mainbody .abouthim2 {
-    margin-top: 10px;
-  }
-  .chat-popup .recommend .mainbody .image1 {
-    width: 24px;
-  }
-  .chat-popup .modify {
-    width: 51%;
-    margin-left: 1%;
-  }
-  .chat-popup .modify .todo {
-    font-size: 8px;
-  }
-  .chat-popup .modify .cars {
-    margin-bottom: 2%;
-  }
-  .chat-popup .modify .select {
-    font-size: 10px;
-  }
-  .chat-popup .modify .buttons .plus, .chat-popup .modify .buttons .minus {
-    padding: 4px 12px;
-  }
-  .chat-popup .paying .confirm {
-    font-size: 7px;
-  }
-  .chat-popup .paying .todo {
-    font-size: 7px;
-  }
-  .chat-popup .paying .cancel2 {
-    font-size: 10px;
   }
 }
 /*# sourceMappingURL=proposals.css.map */

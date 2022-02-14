@@ -1,0 +1,69 @@
+/* for the middlesection */
+.middlesection {
+  background-color: #E5E5E5;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-left: 109px;
+  padding-right: 50px;
+  /* Style the navigation bar */
+  /* Navbar links */
+  /* Navbar links on mouse-over */
+}
+
+.middlesection .navbar {
+  width: 100%;
+  overflow: auto;
+  padding-top: 5px;
+}
+
+.middlesection .navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: #A9A9A9;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.middlesection .navbar a:hover {
+  background-color: #000;
+}
+
+.middlesection .fa-chevron-right:before {
+  margin-left: 25px;
+}
+
+@media only screen and (max-width: 900px) {
+  .middlesection {
+    padding-left: 82px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .middlesection {
+    padding-left: 56px;
+  }
+  .middlesection .navbar a {
+    font-size: 11px;
+  }
+  .middlesection .fa-chevron-right:before {
+    margin-left: 9px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .middlesection {
+    padding-left: 38px;
+  }
+  .middlesection .gridbox {
+    margin-left: 47px;
+  }
+  .middlesection .navbar a {
+    font-size: 11px;
+  }
+  .middlesection .fa-chevron-right:before {
+    margin-left: 2px;
+  }
+}
+/*# sourceMappingURL=middle.css.map */

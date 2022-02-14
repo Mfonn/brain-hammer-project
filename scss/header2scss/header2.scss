@@ -1,0 +1,185 @@
+.headersection {
+ 
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 12 10 12 10px;
+
+}
+  /* Style the links inside the navigation bar */
+  .logo1 {
+    position: absolute;
+    width: 28px;
+    left: 106px;
+    top: 28px;
+}
+
+.logo {
+    left: 50px;
+}
+
+.workinghammer {
+    color: #000000;
+    font-size: 19px;
+    font-family: Inter;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0em;
+    margin: 0;
+    margin-top: 18px;
+    margin-left: 12px;
+}
+
+
+  .headersection .whiteheader {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 125px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+
+
+
+
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .headersection .icon {
+    display: none;
+  }
+
+
+  .myTopnav {
+    margin-top: 59px;
+    margin-right: 20px;
+}
+
+
+    /* for notifications and avatar */
+
+
+
+    .notification {
+        color: #808080;
+        float: right;
+        margin-top: -32px;
+        margin-right: 89px;
+    }
+
+
+    .avatar {
+        
+        vertical-align: middle;
+        float: right;
+        margin-top: -41px;
+        margin-right: 31px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+
+      }
+
+
+@media only screen and (max-width: 900px) {
+
+  .headersection {
+    .workinghammer {
+        font-size: 15px;
+    }
+
+    .logo1 {
+        width: 22px;
+        left: 76px;
+        top: 32px;
+    }
+
+    .whiteheader {
+        padding: 14px 88px;
+    }
+
+   
+}
+}
+
+@media only screen and (max-width: 600px) {
+  
+    .headersection {
+        padding-bottom: 20px;
+    }
+
+    .headersection .whiteheader {
+        padding-bottom: 0px;
+        top: 10px;
+    }
+
+
+    .notification {
+        margin-top: 19px;
+        margin-right: 15px;
+        width: 15px;
+    }
+
+    .avatar {
+        margin-top: 13px;
+        margin-right: 31px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .myTopnav {
+        margin-top: 6px;
+        margin-right: 0;
+    }
+
+
+    .headersection .logo1 {
+        width: 17px;
+        left: 53px;
+        top: 27px;
+    }
+
+    .headersection .workinghammer {
+        margin-left: 0;
+        font-size: 12px !important;
+    }
+
+    .headersection .whiteheader{
+
+        padding: 5px 71px;
+    }
+
+      
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
+    .headersection {
+      .avatar {
+          margin-top: 16px;
+          width: 16px;
+          height: 16px;
+      }
+  
+      .notification {
+          margin-right: 9px;
+          margin-top: 19px;
+  
+          width: 12px;
+      }
+  
+      .whiteheader {
+          padding: 5px 58px;
+      }
+  
+      .logo1 {
+          left: 39px;
+      }
+  }
+
+
+}

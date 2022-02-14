@@ -1,0 +1,88 @@
+
+    /* for the middlesection */
+    .middlesection {
+        background-color: #E5E5E5;
+        height: fit-content;
+
+        padding-left: 109px;
+        padding-right: 50px;
+
+        /* Style the navigation bar */
+    .navbar {
+        width: 100%;
+        overflow: auto;
+        padding-top: 5px;
+    }
+    
+    /* Navbar links */
+    .navbar a {
+        float: left;
+        text-align: center;
+        padding: 12px;
+        color: #A9A9A9;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    
+    /* Navbar links on mouse-over */
+    .navbar a:hover {
+        background-color: #000;
+    }
+
+    .fa-chevron-right:before {
+        margin-left: 25px;
+    }
+
+ }
+
+
+
+
+
+ @media only screen and (max-width: 900px) {
+   
+    .middlesection {
+        padding-left: 82px;
+    }
+ }
+
+
+
+
+
+ @media screen and (max-width: 600px) {
+
+    .middlesection {
+        padding-left: 56px;
+
+        .navbar a {
+            font-size: 11px;
+        }
+
+        .fa-chevron-right:before {
+            margin-left: 9px;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+     .middlesection {
+        padding-left: 38px;
+
+        .gridbox {
+            margin-left: 47px;
+        }
+
+        .navbar a {
+            font-size: 11px;
+        }
+
+        .fa-chevron-right:before {
+            margin-left: 2px;
+        }
+
+    }
+}

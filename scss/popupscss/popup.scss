@@ -1,0 +1,307 @@
+/* for the signup button and pop up modal */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 999; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+
+        /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+
+        width: 37%;
+        height: fit-content;
+        
+        margin-top: 13%;
+        border-radius: 5px;
+
+
+        form {
+            padding: 5% 10%;
+          }
+        
+       .sign-in-with {
+            margin-top: 27px;
+            margin-bottom: 2px;
+
+            font-size: 12px;
+            color: #111827;
+          }
+
+        .bluehammer {
+            width: 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .icons {
+                color: #6B7280;
+                background-color: #ffffff;
+                
+                padding: 3px 35px 3px 35px;
+
+                border: 1px solid #D1D5DB;
+                border-radius: 3px;
+        }
+
+        h3 {
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #D1D5DB;
+            line-height: 0.1em;
+            margin: 10px 0 20px;
+            color: #D1D5DB;
+            margin-top: 17px;
+         } 
+         
+         h3 span { 
+             background:#fff; 
+             padding:0 10px; 
+             color: #808080;
+             font-size: 10px;
+         }
+
+
+         label {
+            font-size: 10px;
+            color: #808080;
+            font-weight: 200;
+        }
+       
+        .input {
+            margin: 2px 0px 0px 0px;
+            width: 93%;
+            height: 28px;
+            border-radius: 1px #D1D5DB;
+        }
+       
+        .emailbox {
+            margin-bottom: 4px;
+        }
+       
+        .namelabel {
+            margin-top: 4px;
+        }
+
+        .remember {
+            display: inline-block;
+            margin: 18px 10px 0px 0px;
+            width: 7%;
+         }
+        
+         .forgot {
+             text-decoration: none;
+             color: #386DF5;
+             margin-left: 31%;
+         }
+        
+         .signinbutton {
+            display: block;
+            border-radius: 38px;
+            color: #ffffff;
+            margin: 8px;
+            padding: 10px 110px;
+            background-color: #254caf;
+            cursor: pointer;
+            border: none;
+         }
+        
+         .signinbutton:hover {
+             background-color: #254CAF;
+         }
+        
+         .signupbutton {
+            display: block;
+            border-radius: 38px;
+            color: #386DF5;
+            margin: 8px;
+            padding: 10px 110px;
+            background-color: #ffffff;
+            cursor: pointer;
+            border: none;
+         }
+        
+         .signupbutton:hover {
+             background-color: #386DF5;
+             color: #ffffff;
+         }
+        }
+
+
+
+
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+.modal {
+    .modal-content {
+        .bluehammer {
+            width: 20px;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin-top: 9px;
+        }
+
+        .sign-in-with {
+            margin-top: 24px;
+            font-size: 10px;
+        }
+
+        .icons {
+            padding: 3px 20px 3px 20px;
+        }
+
+        h3 span {
+            font-size: 9px;
+        }
+
+        label {
+            font-size: 9px;
+        }
+
+        .input {
+            width: 89%;
+            height: 17px;
+        }
+
+        .forgot {
+            margin-left: 13%;
+        }
+
+        .signinbutton, .signupbutton {
+            font-size: 10px;
+            padding: 12px 65px;
+        }
+    }
+
+
+}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.modal {
+    .modal-content {
+        padding: 10px;
+
+        .bluehammer {
+            width: 16px;
+        }
+
+        h2 {
+            font-size: 12px;
+            margin-top: 8px;
+        }
+
+        .sign-in-with {
+            margin-top: 20px;
+            font-size: 8px;
+        }
+
+        .icons {
+            padding: 2px 14px 2px 14px;
+            font-size: 9px;
+        }
+
+        h3 span {
+            font-size: 8px;
+        }
+
+        label {
+            font-size: 8px;
+        }
+
+        .input {
+            width: 89%;
+            height: 13px;
+        }
+
+        .forgot {
+            margin-left: 7%;
+            font-size: 7px;
+        }
+
+        .remember {
+            font-size: 7px;
+            margin: 8px 2px 0px 0px;
+        }
+
+        .signinbutton, .signupbutton {
+            font-size: 8px;
+            padding: 10px 38px;
+        }
+    }
+}
+}
+
+
+@media only screen and (max-width: 400px) {
+
+
+.modal {
+    .modal-content {
+        width: 46%;
+        margin-top: 39%;
+
+        .bluehammer {
+            width: 14px;
+        }
+
+        h2 {
+            font-size: 9px;
+            margin-top: 7px;
+        }
+
+        .sign-in-with {
+            margin-top: 12px;
+            font-size: 7px;
+        }
+        .icons {
+            padding: 1px 9px 1px 9px;
+            font-size: 7px;
+        }
+
+        h3 span {
+            font-size: 6px;
+        }
+
+        label {
+            font-size: 7px;
+        }
+
+        .input {
+            height: 8px;
+        }
+
+        .signinbutton, .signupbutton {
+            font-size: 7px;
+            padding: 8px 33px;
+        }
+    }
+}
+}
