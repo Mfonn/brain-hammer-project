@@ -1,0 +1,465 @@
+<div class="page page-wallet" data-name="wallet">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner">
+      <div class="left">
+        <button class="button button-fill text-color-theme bg-color-white button-44 panel-open" data-panel="left">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+      <div class="title">
+        <div class="logo-small">
+          <img src="img/logo.png" alt="" />
+          <h5>FiMobile</h5>
+        </div>
+      </div>
+      <div class="right">
+        <a href="/profile/" class="button button-fill text-color-theme bg-color-white button-44">
+          <i class="bi bi-bell"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="page-content ">
+
+    <!-- wallet balance -->
+    <div class="row">
+      <div class="col-100">
+        <div class="card shadow-sm margin-bottom">
+          <div class="card-content card-content-padding">
+            <div class="row">
+              <div class="col-auto">
+                <figure class="avatar avatar-44 rounded-10">
+                  <img src="img/user1.jpg" alt="">
+                </figure>
+              </div>
+              <div class="col no-padding-horizontal align-self-center">
+                <p class="no-margin-bottom text-color-theme">Maxartkiller</p>
+                <p class="text-muted size-12">New York City, US</p>
+              </div>
+              <div class="col-auto no-padding-horizontal">
+                <a href="/addmoney/" class="button button-fill button-44 bg-color-white text-color-theme elevation-2">
+                  <i class="bi bi-plus-circle"></i>
+                </a>
+              </div>
+              <div class="col-auto">
+                <a href="/withdraw/" class="button button-fill button-44 color-theme text-color-white elevation-2">
+                  <i class="bi bi-arrow-down-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card theme-bg text-color-white border-0 text-align-center">
+            <div class="card-content card-content-padding">
+              <h1 class="display-1 margin-vertical-half">100.00</h1>
+              <p class="text-muted margin-bottom-half">Wallet Balance in USD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- summary -->
+    <div class="row margin-bottom">
+      <div class="col-50 medium-33">
+        <div class="card shadow-sm margin-bottom-half">
+          <div class="card-content card-content-padding">
+            <div class="row">
+              <div class="col-auto no-padding-horizontal">
+                <div class="avatar avatar-40 bg-color-yellow text-color-white shadow-sm rounded-10-right">
+                  <i class="bi bi-star"></i>
+                </div>
+              </div>
+              <div class="col">
+                <p class="text-muted size-12 no-margin-bottom">Bonus Points</p>
+                <p>48546 pts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-50 medium-33">
+        <div class="card shadow-sm margin-bottom-half">
+          <div class="card-content card-content-padding">
+            <div class="row">
+              <div class="col-auto no-padding-horizontal">
+                <div class="avatar avatar-40 bg-color-green text-color-white shadow-sm rounded-10-right">
+                  <i class="bi bi-cash-stack"></i>
+                </div>
+              </div>
+              <div class="col">
+                <p class="text-muted size-12 no-margin-bottom">Cashback</p>
+                <p>15 USD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tabs structure -->
+    <div class="row">
+      <div class="col-12">
+        <div class="toolbar tabbar margin-bottom template">
+          <div class="toolbar-inner">
+            <a href="#tab-1" class="tab-link tab-link-active">Cards</a>
+            <a href="#tab-2" class="tab-link">Currency</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <div id="tab-1" class="tab tab-active">
+        <!-- swiper credit cards -->
+        <div class="row margin-bottom">
+          <div class="col-100 no-padding-horizontal">
+            <div class="swiper-container cardswiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card dark-bg">
+                    <div class="card-content card-content-padding">
+                      <div class="row margin-bottom">
+                        <div class="col-auto align-self-center">
+                          <img src="img/masterocard.png" alt="">
+                        </div>
+                        <div class="col align-self-center text-end">
+                          <p class="small">
+                            <span class="text-uppercase size-10">Validity</span><br>
+                            <span class="text-muted">06/25</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-100">
+                          <h4 class="fw-normal margin-bottom-half">
+                            56040.00
+                            <span class="small text-muted">USD</span>
+                          </h4>
+                          <p class="no-margin-bottom text-muted size-12">10141 0021 0001 0154</p>
+                          <p class="text-muted size-12">Debit Card</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card theme-radial-gradient border-0">
+                    <div class="card-content card-content-padding">
+                      <div class="row margin-bottom">
+                        <div class="col-auto align-self-center">
+                          <i class="bi bi-wallet2"></i> Wallet
+                        </div>
+                        <div class="col align-self-center text-end">
+                          <p class="small">
+                            <span class="text-uppercase size-10">Validity</span><br>
+                            <span class="text-muted">Unlimited</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-100">
+                          <h4 class="fw-normal margin-bottom-half">
+                            100.00
+                            <span class="small text-muted">USD</span>
+                          </h4>
+                          <p class="no-margin-bottom text-muted size-12">10141 0021 0001 0154</p>
+                          <p class="text-muted size-12">Debit Card</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-content card-content-padding">
+                      <div class="row margin-bottom">
+                        <div class="col-auto align-self-center">
+                          <img src="img/masterocard.png" alt="">
+                        </div>
+                        <div class="col align-self-center text-end">
+                          <p class="small">
+                            <span class="text-uppercase size-10">Validity</span><br>
+                            <span class="text-muted">09/24</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-100">
+                          <h4 class="fw-normal margin-bottom-half">
+                            150540.00
+                            <span class="small text-muted">USD</span>
+                          </h4>
+                          <p class="no-margin-bottom text-muted size-12">10141 0021 0001 0154</p>
+                          <p class="text-muted size-12">Debit Card</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transactions -->
+        <div class="row margin-bottom">
+          <div class="col">
+            <h5 class="title">Transactions</h5>
+          </div>
+          <div class="col-auto">
+            <a href="" class="small">Add Card</a>
+          </div>
+        </div>
+        <div class="row margin-bottom">
+          <div class="col-100 no-padding-horizontal">
+            <div class="list no-margin">
+              <ul>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar avatar-50 shadow rounded-10 ">
+                        <img src="img/company4.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                      <p class="text-color-theme no-margin-bottom">Zomato</p>
+                      <p class="text-muted size-12">Food</p>
+                    </div>
+                    <div class="col align-self-center text-end">
+                      <p class="no-margin-bottom">-25.00</p>
+                      <p class="text-muted size-12">Debit Card 4545</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar avatar-50 shadow rounded-10">
+                        <img src="img/company5.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                      <p class="text-color-theme no-margin-bottom">Uber</p>
+                      <p class="text-muted size-12">Travel</p>
+                    </div>
+                    <div class="col align-self-center text-end">
+                      <p class="no-margin-bottom">-26.00</p>
+                      <p class="text-muted size-12">Debit Card 4545</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar avatar-50 shadow rounded-10">
+                        <img src="img/company1.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                      <p class="text-color-theme no-margin-bottom">Starbucks</p>
+                      <p class="text-muted size-12">Food</p>
+                    </div>
+                    <div class="col align-self-center text-end">
+                      <p class="no-margin-bottom">-18.00</p>
+                      <p class="text-muted size-12">Cash</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar avatar-50 shadow rounded-10">
+                        <img src="img/company3.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                      <p class="text-color-theme no-margin-bottom">Walmart</p>
+                      <p class="text-muted size-12">Clothing</p>
+                    </div>
+                    <div class="col align-self-center text-end">
+                      <p class="no-margin-bottom">-105.00</p>
+                      <p class="text-muted size-12">Wallet</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tab-2" class="tab">
+        <div class="row">
+          <div class="col-100 medium-50 align-self-center">
+            <div class="chartdoughnut margin-bottom">
+              <div class="datadisplay text-align-center elevation-3">
+                <h1 class="font-weight-normal">15.56k</h1>
+                <p class="text-muted">Expense</p>
+              </div>
+              <canvas id="doughnutchart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transactions -->
+        <div class="row margin-bottom">
+          <div class="col">
+            <h5 class="title">Currencies</h5>
+          </div>
+          <div class="col-auto">
+            <a href="" class="small">Add Currency</a>
+          </div>
+        </div>
+        <div class="row margin-bottom">
+          <div class="col-100 no-padding-horizontal">
+            <div class="list no-margin">
+              <ul>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar avatar-50 shadow rounded-10 bg-color-yellow text-color-white">
+                        <span class="vertical-align-middle display-inline-block">$</span>
+                      </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                      <p class="text-color-theme no-margin-bottom">US Dollar</p>
+                      <p class="text-muted size-12">USD</p>
+                    </div>
+                    <div class="col align-self-center text-end">
+                      <p class="no-margin-bottom fw-bold">25485.00</p>
+                      <p class="text-muted size-12 text-success">2.4 EUR (0.15%)</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar avatar-50 shadow rounded-10 bg-color-green text-color-white">
+                        <span class="vm d-inline-block">O</span>
+                      </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                      <p class="text-color-theme no-margin-bottom">Other</p>
+                      <p class="text-muted size-12">DGC, DRC, FIT</p>
+                    </div>
+                    <div class="col align-self-center text-end">
+                      <p class="no-margin-bottom fw-bold">1001.36</p>
+                      <p class="text-muted size-12 text-success">1.65 USD (0.10%)</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar avatar-50 shadow rounded-10">
+                        <img src="img/company6.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                      <p class="text-color-theme no-margin-bottom">BitCoin</p>
+                      <p class="text-muted size-12">BTC</p>
+                    </div>
+                    <div class="col align-self-center text-end">
+                      <p class="no-margin-bottom fw-bold">150.00</p>
+                      <p class="text-muted size-12 text-danger">1.65 USD (0.08%)</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="avatar avatar-50 shadow rounded-10">
+                        <img src="img/company7.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                      <p class="text-color-theme no-margin-bottom">Etherium</p>
+                      <p class="text-muted size-12">ETH</p>
+                    </div>
+                    <div class="col align-self-center text-end">
+                      <p class="no-margin-bottom fw-bold">146.00</p>
+                      <p class="text-muted size-12 text-success">2.65 USD (0.16%)</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+          <a class="nav-link" href="/home/">
+            <span>
+              <i class="nav-icon bi bi-house"></i>
+              <span class="nav-text">Home</span>
+            </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/stats/">
+            <span>
+              <i class="nav-icon bi bi-laptop"></i>
+              <span class="nav-text">Statistics</span>
+            </span>
+          </a>
+        </li>
+        <li class="nav-item centerbutton">
+          <div class="nav-link">
+            <span class="theme-radial-gradient">
+              <i class="close bi bi-x"></i>
+              <img src="img/centerbutton.svg" class="nav-icon" alt="" />
+            </span>
+            <div class="nav-menu-popover justify-content-between">
+              <a href="/pay/" class="">
+                <i class="bi bi-credit-card size-32"></i><span>Pay</span>
+              </a>
+
+              <a href="/sendmoney/" class="">
+                <i class="bi bi-arrow-up-right-circle size-32"></i><span>Send</span>
+              </a>
+
+              <a href="/bills/" class="">
+                <i class="bi bi-receipt size-32"></i><span>Bills</span>
+              </a>
+
+              <a href="/receivemoney/" class="">
+                <i class="bi bi-arrow-down-left-circle size-32"></i><span>Receive</span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/rewards/">
+            <span>
+              <i class="nav-icon bi bi-gift"></i>
+              <span class="nav-text">Rewards</span>
+            </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/wallet/">
+            <span>
+              <i class="nav-icon bi bi-wallet2"></i>
+              <span class="nav-text">Wallet</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Footer ends-->
+</div>

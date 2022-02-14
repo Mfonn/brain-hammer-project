@@ -1,0 +1,301 @@
+<!-- banner -->
+<div class="row mb-4">
+    <div class="col-12 text-center">
+        <img src="assets/img/infographic-send.png" alt="">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 text-center mb-4">
+        <h1 class="mb-3 text-color-theme">Send Money</h1>
+        <p class="text-muted">Now you can send money to FiMobile user as well as your mobile contact list
+            member. Contact has to go through sort process.</p>
+    </div>
+</div>
+
+<!-- group user -->
+<div class="row mb-3">
+    <div class="col-12">
+
+        <div class="form-group form-floating is-valid mb-1">
+            <input type="text" class="form-control " id="contact" placeholder="Contact"
+                value="Maxartkiller">
+            <label class="form-control-label" for="contact">Contact</label>
+            <button type="button" class="text-color-theme tooltip-btn">
+                <i class="bi bi-person-badge"></i>
+            </button>
+        </div>
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="form-check avatar">
+                            <input class="form-check-input" type="checkbox" id="contact1" />
+                            <label for="contact1" class="avatar avatar-44 shadow-sm rounded-10">
+                                <img src="assets/img/user1.jpg" alt="" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                        <p class="mb-1 text-color-theme">Maxartkiller</p>
+                        <p class="text-muted size-12">+4789680000000</p>
+                    </div>
+                    <div class="col-auto">
+                        <button  routerLink="/sendmoney2" class="btn btn-default btn-44 shadow-sm">
+                            <i class="bi bi-arrow-up-right-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header border-0">
+                <p>Selected Contacts</p>
+            </div>
+            <div class="card-body pt-0">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="avatar-group">
+                            <div class="avatar avatar-44 rounded-circle shadow-sm">
+                                <img src="assets/img/user2.jpg" alt="" />
+                            </div>
+                            <div class="avatar avatar-44 rounded-circle shadow-sm">
+                                <img src="assets/img/user3.jpg" alt="" />
+                            </div>
+                            <div class="avatar avatar-44 rounded-circle shadow-sm">
+                                <img src="assets/img/user4.jpg" alt="" />
+                            </div>
+                            <div class="avatar avatar-44 rounded-circle shadow-sm">
+                                <img src="assets/img/user1.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                        <p class="text-muted small">+15<br>More</p>
+                    </div>
+                    <div class="col-auto">
+                        <button  routerLink="/sendmoney1" class="btn btn-default btn-44 shadow-sm">
+                            <i class="bi bi-arrow-up-right-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- connection -->
+<div class="row mb-3">
+    <div class="col">
+        <h6 class="title">Recently Connected</h6>
+    </div>
+</div>
+<div class="row mb-3">
+    <div class="col-12 px-0">
+        <!-- swiper users connections -->
+        <swiper class="connectionwiper" [slidesPerView]="'auto'" [spaceBetween]="0" [pagination]="false">
+                <ng-template swiperSlide>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="form-check avatar mb-2">
+                                <input class="form-check-input" type="checkbox" id="contact3" />
+                                <label for="contact3" class="avatar avatar-50 shadow-sm rounded-10">
+                                    <img src="assets/img/user4.jpg" alt="" />
+                                </label>
+                            </div>
+                            <p class="text-color-theme size-12 small">Nicolas</p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="form-check avatar mb-2">
+                                <input class="form-check-input" type="checkbox" id="contact4" checked />
+                                <label for="contact4" class="avatar avatar-50 shadow-sm rounded-10">
+                                    <img src="assets/img/user2.jpg" alt="" />
+                                </label>
+                            </div>
+                            <p class="text-color-theme size-12 small">Shelvey</p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="form-check avatar mb-2">
+                                <input class="form-check-input" type="checkbox" id="contact5" />
+                                <label for="contact5" class="avatar avatar-50 shadow-sm rounded-10">
+                                    <img src="assets/img/user3.jpg" alt="" />
+                                </label>
+                            </div>
+                            <p class="text-color-theme size-12 small">Amenda</p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="form-check avatar mb-2">
+                                <input class="form-check-input" type="checkbox" id="contact6" checked />
+                                <label for="contact6" class="avatar avatar-50 shadow-sm rounded-10">
+                                    <img src="assets/img/user1.jpg" alt="" />
+                                </label>
+                            </div>
+                            <p class="text-color-theme size-12 small">RXL15</p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="form-check avatar mb-2">
+                                <input class="form-check-input" type="checkbox" id="contact7" checked />
+                                <label for="contact7" class="avatar avatar-50 shadow-sm rounded-10">
+                                    <img src="assets/img/user4.jpg" alt="" />
+                                </label>
+                            </div>
+                            <p class="text-color-theme size-12 small">Nicolas</p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="form-check avatar mb-2">
+                                <input class="form-check-input" type="checkbox" id="contact8" />
+                                <label for="contact8" class="avatar avatar-50 shadow-sm rounded-10">
+                                    <img src="assets/img/user2.jpg" alt="" />
+                                </label>
+                            </div>
+                            <p class="text-color-theme size-12 small">Shelvey</p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="form-check avatar mb-2">
+                                <input class="form-check-input" type="checkbox" id="contact9" />
+                                <label for="contact9" class="avatar avatar-50 shadow-sm rounded-10">
+                                    <img src="assets/img/user1.jpg" alt="" />
+                                </label>
+                            </div>
+                            <p class="text-color-theme size-12 small">Amenda</p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="form-check avatar mb-2">
+                                <input class="form-check-input" type="checkbox" id="contact10" />
+                                <label for="contact10" class="avatar avatar-50 shadow-sm rounded-10">
+                                    <img src="assets/img/user3.jpg" alt="" />
+                                </label>
+                            </div>
+                            <p class="text-color-theme size-12 small">RXL15</p>
+                        </div>
+                    </div>
+                </ng-template>
+            </swiper>
+    </div>
+</div>
+
+<!-- Contacts -->
+<div class="row mb-3">
+    <div class="col">
+        <h6 class="title">FiMobile Contacts</h6>
+    </div>
+</div>
+<div class="row mb-3">
+    <div class="col-12 px-0">
+        <ul class="list-group list-group-flush bg-none">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="form-check avatar">
+                            <input class="form-check-input" type="checkbox" id="contact11">
+                            <label for="contact11" class="avatar avatar-44 shadow-sm rounded-10">
+                                <img src="assets/img/user1.jpg" alt="">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                        <p class="mb-1 text-color-theme">Nicolas Apurva</p>
+                        <p class="text-muted size-12">+4789680000000</p>
+                    </div>
+                    <div class="col-auto">
+                        <button routerLink="/sendmoney2" class="btn btn-default btn-44 shadow-sm">
+                            <i class="bi bi-arrow-up-right-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="form-check avatar">
+                            <input class="form-check-input" type="checkbox" id="contact12" checked>
+                            <label for="contact12" class="avatar avatar-44 shadow-sm rounded-10">
+                                <img src="assets/img/user2.jpg" alt="">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                        <p class="mb-1 text-color-theme">Alicia Doe</p>
+                        <p class="text-muted size-12">+65989280000000</p>
+                    </div>
+                    <div class="col-auto">
+                        <button routerLink="/sendmoney2" class="btn btn-default btn-44 shadow-sm">
+                            <i class="bi bi-arrow-up-right-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="form-check avatar">
+                            <input class="form-check-input" type="checkbox" id="contact13" checked>
+                            <label for="contact13" class="avatar avatar-44 shadow-sm rounded-10">
+                                <img src="assets/img/user3.jpg" alt="">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                        <p class="mb-1 text-color-theme">Christina Gyle</p>
+                        <p class="text-muted size-12">+36589680000000</p>
+                    </div>
+                    <div class="col-auto">
+                        <button routerLink="/sendmoney2" class="btn btn-default btn-44 shadow-sm">
+                            <i class="bi bi-arrow-up-right-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="form-check avatar">
+                            <input class="form-check-input" type="checkbox" id="contact14">
+                            <label for="contact14" class="avatar avatar-44 shadow-sm rounded-10">
+                                <img src="assets/img/user4.jpg" alt="">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col align-self-center ps-0">
+                        <p class="mb-1 text-color-theme">John Pattent</p>
+                        <p class="text-muted size-12">+2585740000000</p>
+                    </div>
+                    <div class="col-auto">
+                        <button routerLink="/sendmoney2" class="btn btn-default btn-44 shadow-sm">
+                            <i class="bi bi-arrow-up-right-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>

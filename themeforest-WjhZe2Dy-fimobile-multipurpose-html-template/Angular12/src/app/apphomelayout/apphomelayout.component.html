@@ -1,0 +1,26 @@
+<!-- Sidebar main menu -->
+<app-sidebar  class="sidebar-wrap  sidebar-pushcontent"></app-sidebar>
+<!-- Add overlay or fullmenu instead overlay , keep 'sidebar-[choice here]' -->
+<!-- Sidebar main menu ends-->
+
+<!-- Begin page -->
+<main #mainPage>
+
+    <!-- Header -->
+    <app-headermenu class="header position-fixed" #HeaderEl></app-headermenu>
+    <!-- Header ends -->
+
+    <!-- main page content -->
+    <div class="main-container container">
+        <div class="clearfix"></div>
+        <router-outlet></router-outlet>
+        <div class="clearfix"></div>
+    </div>
+    <!-- main page content ends -->
+
+</main>
+<!-- Page ends-->
+
+ <!-- Footer -->
+<app-staticfooter class="footer" #FooterEl></app-staticfooter>
+ <!-- Footer Ends -->

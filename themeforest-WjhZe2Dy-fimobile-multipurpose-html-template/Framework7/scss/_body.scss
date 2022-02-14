@@ -1,0 +1,331 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    overflow-y: auto;
+    background-color: var(--f7-theme-color);
+}
+
+.view .page,
+.view-main .page, .messages, .messages-content{
+    background: var(--fimobile-page-bg-2);
+    background: -moz-linear-gradient(45deg, var(--fimobile-page-bg-2) 0%, var(--fimobile-page-bg-1) 100%);
+    background: -webkit-linear-gradient(45deg, var(--fimobile-page-bg-2) 0%, var(--fimobile-page-bg-1) 100%);
+    background: linear-gradient(45deg, var(--fimobile-page-bg-2) 0%, var(--fimobile-page-bg-1) 100%);
+    background-attachment: fixed;
+}
+
+.dark-bg {
+    background-color: var(--f7-theme-color) !important;
+    background-image: url("../img/backgorund-image.svg") !important;
+    background-repeat: repeat-x;
+    background-position: bottom center !important;
+
+    animation: zoombg infinite 10s;
+    -webkit-animation: zoombg infinite 10s;
+
+    main {
+        background: transparent;
+    }
+
+    .form-list,
+    .list .item-floating-label,
+    .list .item-label {
+        color: #000000;
+    }
+    .card {
+        color: #ffffff;
+    }
+}
+
+
+@keyframes zoombg {
+    0% {
+        background-size: 100%;
+    }
+
+    50% {
+        background-size: 110%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
+}
+@-webkit-keyframes zoombg {
+    0% {
+        background-size: 100%;
+    }
+
+    50% {
+        background-size: 110%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
+}
+.dark-bg-navbar {
+    color: #ffffff;
+    .button.bg-color-white {
+        background-color: rgba(0, 0, 0, 0.15) !important;
+        border-color: rgba(0, 0, 0, 0.05) !important;
+        color: #ffffff;
+    }
+}
+.theme-bg {
+    background: var(--f7-theme-color) !important;
+    color: var(--fimobile-theme-text) !important;
+}
+.no-background {
+    background-color: transparent !important;
+}
+
+.card {
+    background-color: var(--fimobile-card-color);
+    margin: 0;
+    color: var(--fimobile-card-text);
+    border-radius: var(--fimobile-rounded);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07), inset 0 1px 0px #ffffff;
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07), inset 0 1px 0px #ffffff;
+    -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07), inset 0 1px 0px #ffffff;
+    border: 1px solid var(--fimobile-border-color);
+
+    .card-header {
+        display: block;
+        background-color: transparent;
+        border-color: var(--fimobile-theme-bordercolor);
+        padding: var(--fimobile-padding);
+        border-top-left-radius: var(--fimobile-rounded);
+        border-top-right-radius: var(--fimobile-rounded);
+        & > .row {
+            margin-left: -15px;
+            margin-right: -15px;
+            width: auto;
+            max-width: none;
+        }
+    }
+    .card-content-padding {
+        padding: var(--fimobile-padding);
+        & > .row {
+            margin-left: -15px;
+            margin-right: -15px;
+            width: auto;
+            max-width: none;
+        }
+    }
+    .card-footer {
+        display: block;
+        background-color: transparent;
+        border-color: var(--fimobile-theme-bordercolor);
+        padding: var(--fimobile-padding);
+        border-bottom-left-radius: var(--fimobile-rounded);
+        border-bottom-right-radius: var(--fimobile-rounded);
+        & > .row {
+            margin-left: -15px;
+            margin-right: -15px;
+            width: auto;
+            max-width: none;
+        }
+    }
+
+    &.theme-bg,
+    &.dark-bg,
+    &.bg-danger,
+    &.bg-success,
+    &.bg-primary,
+    &.bg-warning,
+    &.bg-info,
+    &.bg-dark,
+    &.theme-radial-gradient,
+    &.bg-opac {
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07), inset 0 1px 0px rgba(255, 255, 255, 0.18);
+        -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07), inset 0 1px 0px rgba(255, 255, 255, 0.18);
+        -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07), inset 0 1px 0px rgba(255, 255, 255, 0.18);
+        background-color: var(--fimobile-theme-color);
+        color: var(--fimobile-theme-text);
+    }
+
+    &.selected {
+        border: 2px solid var(--fimobile-green);
+    }
+    & > .card.bg-opac {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+}
+a.card {
+    text-decoration: none;
+    display: block;
+}
+.chip{
+    &.small{
+        height: 18px;
+        margin: 0;
+        font-size: 11px;
+    }
+}
+.text-color-theme {
+    color: var(--f7-theme-color) !important;
+}
+
+figure{
+    margin: 0;
+}
+
+.theme-radial-gradient {
+    background: var(--fimobile-theme-color-grad-1);
+    background: -moz-radial-gradient(
+        30% 30%,
+        ellipse cover,
+        var(--fimobile-theme-color-grad-1) 0%,
+        var(--fimobile-theme-color-grad-2) 50%,
+        var(--fimobile-theme-color-grad-3) 100%
+    );
+    background: -webkit-radial-gradient(
+        30% 30%,
+        ellipse cover,
+        var(--fimobile-theme-color-grad-1) 0%,
+        var(--fimobile-theme-color-grad-2) 50%,
+        var(--fimobile-theme-color-grad-3) 100%
+    );
+    background: radial-gradient(
+        ellipse at 30% 30%,
+        var(--fimobile-theme-color-grad-1) 0%,
+        var(--fimobile-theme-color-grad-2) 50%,
+        var(--fimobile-theme-color-grad-3) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--fimobile-theme-color-grad-1)', endColorstr='var(--fimobile-theme-color-grad-3)',GradientType=1 );
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bg-opac {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+.border-opac {
+    border-color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.alert-danger,
+.card.alert-danger,
+.bg-danger-light {
+    background-color: rgba($red, 0.2);
+}
+.alert-info,
+.card.alert-info,
+.bg-info-light {
+    background-color: rgba($teal, 0.2);
+}
+.alert-primary,
+.card.alert-primary,
+.bg-primary-light {
+    background-color: rgba($blue, 0.2);
+}
+.alert-warning,
+.card.alert-warning,
+.bg-warning-light {
+    background-color: rgba($yellow, 0.2);
+}
+.alert-success,
+.card.alert-success,
+.bg-success-light {
+    background-color: rgba($green, 0.2);
+}
+.alert-theme,
+.card.alert-theme,
+.bg-theme-light {
+    background-color: var(--fimobile-border-color);
+}
+.chartdoughnut {
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+
+    & > .datadisplay {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 35px auto;
+        text-align: center;
+        display: block;
+        border-radius: 100px;
+        height: 130px;
+        width: 130px;
+        padding: 35px 0;
+        background-color: var(--fimobile-theme-text);
+        box-sizing: border-box;
+    }
+}
+
+.smallchart {
+    width: 100.4%;
+    padding: 0;
+    display: block;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 0 0 var(--fimobile-padding) var(--fimobile-padding);
+}
+.circle-small {
+    height: 44px;
+    width: 44px;
+    position: relative;
+    & > div {
+        &:first-child {
+            position: relative;
+            width: 100%;
+        }
+    }
+    & > .avatar {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 7px;
+    }
+}
+.overlay {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: block;
+    position: absolute;
+    background: -moz-linear-gradient(top, transparent 0%, transparent 42%, rgba(0, 0, 0, 0.65) 100%);
+    background: -webkit-linear-gradient(top, transparent 0%, transparent 42%, rgba(0, 0, 0, 0.65) 100%);
+    background: linear-gradient(to bottom, transparent 0%, transparent 42%, rgba(0, 0, 0, 0.65) 100%);
+}
+
+@media screen and (max-width: 340px) {
+    :root {
+        --fimobile-padding: 10px;
+        --fimobile-rounded: 12px;
+    }
+
+    body {
+        font-size: 15px !important;
+    }
+    .logo-small img {
+        border-radius: calc(var(--fimobile-rounded) - 5px);
+    }
+    .size-12 {
+        font-size: 11px !important;
+    }
+}
+
+/* webkit - scrollbar*/
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+}   

@@ -1,0 +1,56 @@
+html.with-panel-left-reveal {
+    .framework7-root {
+        & > .view,
+        .views {
+            transform: translate3d(var(--f7-panel-left-width, var(--f7-panel-width)), 30px, 0);
+            border-radius: var(--fimobile-rounded);
+
+            .navbar-bg, .navbar, .page  {
+                border-radius: var(--fimobile-rounded)  var(--fimobile-rounded) 0  0;
+                overflow: hidden;
+            }
+        }
+        
+    }
+}
+.with-panel-left-reveal .panel-left.panel-reveal:after {
+    display: none;
+}
+
+
+
+.panel {
+    --f7-list-chevron-icon-color: rgba(255, 255, 255, 0.3);
+    --f7-list-item-min-height: 50px;
+    .list {
+        ul {
+            border-radius: var(--fimobile-rounded);
+            &::before,
+            &::after {
+                display: none;
+            }
+            li {
+                border-radius: var(--fimobile-rounded);
+                margin-bottom: 5px;
+                a {
+                    justify-content: start;
+                    justify-content: flext-start;
+                    border-radius: var(--fimobile-rounded);
+                    &::after {
+                        display: none;
+                    }
+                    &.active {
+                        background-color: rgba(255, 255, 255, 0.15);
+                    }
+                }
+                .accordion-item-content {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                &.accordion-item-opened {
+                    background-color: rgba(255, 255, 255, 0.15);
+                }
+            }
+        }
+    }
+}

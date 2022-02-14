@@ -1,0 +1,94 @@
+.text-muted {
+    opacity: 0.6;
+    color: inherit !important;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+h1,
+.h1 {
+    font-size: 32px;
+    line-height: 1.25;
+}
+
+h4, .h4 {
+    font-size: calc(1.275rem + 0.3vw);
+}
+
+h5, .h5 {
+    font-size: 1.05rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.small, small{
+    line-height: 1.22;
+    font-size: 0.875rem;
+}
+
+strong {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+.size-10 {
+    font-size: 10px;
+    line-height: 12px;
+}
+.size-12 {
+    font-size: 12px;
+}
+.size-18 {
+    font-size: 18px;
+}
+.size-20 {
+    font-size: 20px;
+}
+.size-22 {
+    font-size: 22px;
+}
+.size-32 {
+    font-size: 32px;
+}
+
+.dark-bg {
+    color: var(--f7-color-white);
+    a,
+    .text-color-theme {
+        color: var(--f7-color-white);
+    }
+    .form-control,
+    label {
+        color: #000000;
+    }
+}

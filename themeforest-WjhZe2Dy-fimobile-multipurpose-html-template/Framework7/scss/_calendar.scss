@@ -1,0 +1,32 @@
+.calendar {
+    .toolbar {
+      background-color: var(
+        --f7-calendar-selected-bg-color,
+        var(--f7-theme-color)
+      );
+      color: var(--f7-calendar-selected-text-color);
+      height: 54px;
+  
+      .toolbar-inner {
+        padding: 10px 0;
+        background-color: rgba(255, 255, 255, 0.15);
+        a,
+        button {
+          color: var(--f7-calendar-selected-text-color);
+        }
+      }
+    }
+    .calendar-week-header {
+      background-color: var(
+        --f7-calendar-selected-bg-color,
+        var(--f7-theme-color)
+      );
+      color: var(--f7-calendar-selected-text-color);
+      height: auto;
+  
+      .calendar-week-day {
+        padding: 10px 0;
+      }
+    }
+  }
+  
